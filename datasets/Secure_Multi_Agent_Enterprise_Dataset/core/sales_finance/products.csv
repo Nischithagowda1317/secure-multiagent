@@ -1,0 +1,61 @@
+﻿product_id,product_name,manufacturer,product_category,product_subcategory,standard_unit_cost_usd,list_price_usd,active,launch_date,data_classification
+PROD001,Fabrikam Laptops 101,Fabrikam,Computers,Laptops,689.84,1125.88,true,2025-06-05,Internal
+PROD002,Litware Desktops 102,Litware,Computers,Desktops,525.37,957.87,true,2024-06-13,Internal
+PROD003,Proseware Monitors 103,Proseware,Computers,Monitors,746.29,1032.1,true,2023-10-04,Internal
+PROD004,Woodgrove Accessories 104,Woodgrove,Computers,Accessories,170.08,238.52,true,2023-05-26,Internal
+PROD005,NexaCore Laptops 105,NexaCore,Computers,Laptops,1224.82,1600.64,true,2023-03-26,Internal
+PROD006,Fabrikam Desktops 106,Fabrikam,Computers,Desktops,48.85,63.63,true,2023-12-25,Internal
+PROD007,Litware Monitors 107,Litware,Computers,Monitors,1152.8,1755.31,true,2024-03-02,Internal
+PROD008,Proseware Accessories 108,Proseware,Computers,Accessories,1157.93,1472.8,true,2023-02-26,Internal
+PROD009,Woodgrove Laptops 109,Woodgrove,Computers,Laptops,614.5,910.96,true,2025-03-04,Internal
+PROD010,NexaCore Desktops 110,NexaCore,Computers,Desktops,627.42,1272.88,true,2023-09-04,Internal
+PROD011,Fabrikam Digital Cameras 111,Fabrikam,Cameras and Camcorders,Digital Cameras,392.12,809.76,true,2024-01-21,Internal
+PROD012,Litware Action Cameras 112,Litware,Cameras and Camcorders,Action Cameras,702.25,1212.64,true,2023-06-07,Internal
+PROD013,Proseware Camcorders 113,Proseware,Cameras and Camcorders,Camcorders,799.82,977.56,true,2023-03-17,Internal
+PROD014,Woodgrove Lenses 114,Woodgrove,Cameras and Camcorders,Lenses,240.55,333.13,true,2024-08-06,Internal
+PROD015,NexaCore Digital Cameras 115,NexaCore,Cameras and Camcorders,Digital Cameras,1036.23,1878.52,true,2024-08-07,Internal
+PROD016,Fabrikam Action Cameras 116,Fabrikam,Cameras and Camcorders,Action Cameras,884.68,1130.23,true,2024-05-07,Internal
+PROD017,Litware Camcorders 117,Litware,Cameras and Camcorders,Camcorders,316.4,604.38,true,2024-05-23,Internal
+PROD018,Proseware Lenses 118,Proseware,Cameras and Camcorders,Lenses,503.74,836.64,true,2023-06-06,Internal
+PROD019,Woodgrove Digital Cameras 119,Woodgrove,Cameras and Camcorders,Digital Cameras,307.42,389.97,true,2025-01-25,Internal
+PROD020,NexaCore Action Cameras 120,NexaCore,Cameras and Camcorders,Action Cameras,837.23,1227.51,true,2024-12-10,Internal
+PROD021,Fabrikam Smartphones 121,Fabrikam,Cell Phones,Smartphones,1245.88,1594.24,true,2024-03-20,Internal
+PROD022,Litware Feature Phones 122,Litware,Cell Phones,Feature Phones,775.36,1717.94,true,2025-02-22,Internal
+PROD023,Proseware Phone Accessories 123,Proseware,Cell Phones,Phone Accessories,405.36,801.15,true,2024-08-29,Internal
+PROD024,Woodgrove Smartphones 124,Woodgrove,Cell Phones,Smartphones,1242.37,2560.88,true,2024-06-18,Internal
+PROD025,NexaCore Feature Phones 125,NexaCore,Cell Phones,Feature Phones,351.93,561.74,true,2023-02-15,Internal
+PROD026,Fabrikam Phone Accessories 126,Fabrikam,Cell Phones,Phone Accessories,345.24,729.4,true,2025-04-27,Internal
+PROD027,Litware Smartphones 127,Litware,Cell Phones,Smartphones,194.66,331.37,true,2023-02-10,Internal
+PROD028,Proseware Feature Phones 128,Proseware,Cell Phones,Feature Phones,1196.04,2135.99,true,2025-05-06,Internal
+PROD029,Woodgrove Phone Accessories 129,Woodgrove,Cell Phones,Phone Accessories,473.84,728.29,true,2023-12-03,Internal
+PROD030,NexaCore Smartphones 130,NexaCore,Cell Phones,Smartphones,1032.42,1283.28,true,2025-05-04,Internal
+PROD031,Fabrikam Televisions 131,Fabrikam,TV and Video,Televisions,377.07,735.65,true,2025-01-03,Internal
+PROD032,Litware Streaming Devices 132,Litware,TV and Video,Streaming Devices,1006.72,2181.65,true,2024-01-05,Internal
+PROD033,Proseware Projectors 133,Proseware,TV and Video,Projectors,974.71,1264.36,true,2023-07-17,Internal
+PROD034,Woodgrove Televisions 134,Woodgrove,TV and Video,Televisions,484.39,645.26,true,2023-03-10,Internal
+PROD035,NexaCore Streaming Devices 135,NexaCore,TV and Video,Streaming Devices,262.16,367.73,true,2023-11-02,Internal
+PROD036,Fabrikam Projectors 136,Fabrikam,TV and Video,Projectors,525.85,973.0,true,2023-10-26,Internal
+PROD037,Litware Televisions 137,Litware,TV and Video,Televisions,466.8,638.36,true,2024-05-21,Internal
+PROD038,Proseware Streaming Devices 138,Proseware,TV and Video,Streaming Devices,931.38,1301.82,true,2024-10-30,Internal
+PROD039,Woodgrove Projectors 139,Woodgrove,TV and Video,Projectors,982.9,2098.57,true,2023-09-29,Internal
+PROD040,NexaCore Televisions 140,NexaCore,TV and Video,Televisions,162.81,223.43,true,2025-04-30,Internal
+PROD041,Fabrikam Headphones 141,Fabrikam,Audio,Headphones,65.67,93.49,true,2024-11-16,Internal
+PROD042,Litware Speakers 142,Litware,Audio,Speakers,1198.14,2538.38,true,2023-05-09,Internal
+PROD043,Proseware Home Audio 143,Proseware,Audio,Home Audio,572.43,816.57,true,2023-09-17,Internal
+PROD044,Woodgrove Headphones 144,Woodgrove,Audio,Headphones,232.18,289.44,true,2023-02-06,Internal
+PROD045,NexaCore Speakers 145,NexaCore,Audio,Speakers,75.18,110.18,true,2023-09-13,Internal
+PROD046,Fabrikam Home Audio 146,Fabrikam,Audio,Home Audio,141.63,265.16,true,2023-04-14,Internal
+PROD047,Litware Headphones 147,Litware,Audio,Headphones,96.74,165.83,true,2024-10-02,Internal
+PROD048,Proseware Speakers 148,Proseware,Audio,Speakers,811.43,1277.72,true,2023-08-16,Internal
+PROD049,Woodgrove Home Audio 149,Woodgrove,Audio,Home Audio,1060.44,1638.45,true,2023-11-07,Internal
+PROD050,NexaCore Headphones 150,NexaCore,Audio,Headphones,1107.9,1483.93,true,2024-08-08,Internal
+PROD051,Fabrikam Digital Media 151,Fabrikam,"Music, Movies and Audio Books",Digital Media,740.82,1591.15,true,2024-06-09,Internal
+PROD052,Litware Audio Books 152,Litware,"Music, Movies and Audio Books",Audio Books,1089.98,1513.84,true,2025-04-19,Internal
+PROD053,Proseware Movies 153,Proseware,"Music, Movies and Audio Books",Movies,956.49,1180.24,true,2023-02-21,Internal
+PROD054,Woodgrove Digital Media 154,Woodgrove,"Music, Movies and Audio Books",Digital Media,218.5,300.12,true,2023-04-05,Internal
+PROD055,NexaCore Audio Books 155,NexaCore,"Music, Movies and Audio Books",Audio Books,950.55,1645.73,true,2024-08-10,Internal
+PROD056,Fabrikam Movies 156,Fabrikam,"Music, Movies and Audio Books",Movies,1171.3,1473.29,true,2023-10-21,Internal
+PROD057,Litware Digital Media 157,Litware,"Music, Movies and Audio Books",Digital Media,664.36,908.66,true,2023-08-26,Internal
+PROD058,Proseware Audio Books 158,Proseware,"Music, Movies and Audio Books",Audio Books,73.3,123.86,true,2024-04-22,Internal
+PROD059,Woodgrove Movies 159,Woodgrove,"Music, Movies and Audio Books",Movies,709.15,1312.5,true,2024-09-20,Internal
+PROD060,NexaCore Digital Media 160,NexaCore,"Music, Movies and Audio Books",Digital Media,892.34,1175.38,true,2024-12-10,Internal

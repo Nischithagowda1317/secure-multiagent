@@ -1,0 +1,243 @@
+﻿approval_action_id,approval_request_id,sequence_number,approver_user_id,approver_role,decision,decision_reason,decided_at
+APA00001,APR00001,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-06-18T11:00:00
+APA00002,APR00002,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-10-29T00:00:00
+APA00003,APR00003,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-08-24T00:00:00
+APA00004,APR00004,1,U0006,Finance_Manager,Pending,,
+APA00005,APR00004,2,U0001,Executive,Pending,,
+APA00006,APR00005,1,U0006,Finance_Manager,Pending,,
+APA00007,APR00006,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-08-03T01:00:00
+APA00008,APR00006,2,U0001,Executive,Approved,Within policy and budget.,2025-08-03T01:00:00
+APA00009,APR00007,1,U0006,Finance_Manager,Pending,,
+APA00010,APR00008,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-05-25T03:00:00
+APA00011,APR00009,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-04-08T19:00:00
+APA00012,APR00010,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-07-18T02:00:00
+APA00013,APR00010,2,U0001,Executive,Approved,Within policy and budget.,2026-07-18T02:00:00
+APA00014,APR00010,3,U0123,Executive,Approved,Within policy and budget.,2026-07-18T02:00:00
+APA00015,APR00011,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-05-26T17:00:00
+APA00016,APR00012,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-07-04T07:00:00
+APA00017,APR00012,2,U0001,Executive,Approved,Within policy and budget.,2025-07-04T07:00:00
+APA00018,APR00013,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-07-04T22:00:00
+APA00019,APR00013,2,U0001,Executive,Approved,Within policy and budget.,2025-07-04T22:00:00
+APA00020,APR00014,1,U0006,Finance_Manager,Pending,,
+APA00021,APR00015,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-08-30T17:00:00
+APA00022,APR00015,2,U0001,Executive,Approved,Within policy and budget.,2025-08-30T17:00:00
+APA00023,APR00015,3,U0123,Executive,Approved,Within policy and budget.,2025-08-30T17:00:00
+APA00024,APR00016,1,U0006,Finance_Manager,Pending,,
+APA00025,APR00016,2,U0001,Executive,Pending,,
+APA00026,APR00017,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-07-18T18:00:00
+APA00027,APR00018,1,U0006,Finance_Manager,Pending,,
+APA00028,APR00019,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-06-15T04:00:00
+APA00029,APR00020,1,U0006,Finance_Manager,Pending,,
+APA00030,APR00021,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-02-07T19:00:00
+APA00031,APR00022,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-02-07T06:00:00
+APA00032,APR00022,2,U0001,Executive,Approved,Within policy and budget.,2026-02-07T06:00:00
+APA00033,APR00022,3,U0123,Executive,Approved,Within policy and budget.,2026-02-07T06:00:00
+APA00034,APR00023,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-04-05T09:00:00
+APA00035,APR00024,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-04-07T03:00:00
+APA00036,APR00025,1,U0006,Finance_Manager,Pending,,
+APA00037,APR00026,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-05-16T10:00:00
+APA00038,APR00026,2,U0001,Executive,Approved,Within policy and budget.,2026-05-16T10:00:00
+APA00039,APR00027,1,U0006,Finance_Manager,Pending,,
+APA00040,APR00028,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-05-03T18:00:00
+APA00041,APR00029,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2025-08-07T16:00:00
+APA00042,APR00029,2,U0001,Executive,Not Required,,2025-08-07T16:00:00
+APA00043,APR00029,3,U0123,Executive,Not Required,,2025-08-07T16:00:00
+APA00044,APR00030,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-02-26T19:00:00
+APA00045,APR00030,2,U0001,Executive,Approved,Within policy and budget.,2026-02-26T19:00:00
+APA00046,APR00031,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-03-08T14:00:00
+APA00047,APR00032,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-10-18T14:00:00
+APA00048,APR00033,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-08-27T15:00:00
+APA00049,APR00034,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-11-18T03:00:00
+APA00050,APR00034,2,U0001,Executive,Approved,Within policy and budget.,2025-11-18T03:00:00
+APA00051,APR00034,3,U0123,Executive,Approved,Within policy and budget.,2025-11-18T03:00:00
+APA00052,APR00035,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-08-11T03:00:00
+APA00053,APR00035,2,U0001,Executive,Approved,Within policy and budget.,2026-08-11T03:00:00
+APA00054,APR00035,3,U0123,Executive,Approved,Within policy and budget.,2026-08-11T03:00:00
+APA00055,APR00036,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2025-09-21T06:00:00
+APA00056,APR00037,1,U0006,Finance_Manager,Pending,,
+APA00057,APR00038,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-07-05T18:00:00
+APA00058,APR00039,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-09-08T23:00:00
+APA00059,APR00039,2,U0001,Executive,Approved,Within policy and budget.,2025-09-08T23:00:00
+APA00060,APR00040,1,U0006,Finance_Manager,Pending,,
+APA00061,APR00040,2,U0001,Executive,Pending,,
+APA00062,APR00041,1,U0006,Finance_Manager,Pending,,
+APA00063,APR00042,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2025-05-24T09:00:00
+APA00064,APR00042,2,U0001,Executive,Not Required,,2025-05-24T09:00:00
+APA00065,APR00042,3,U0123,Executive,Not Required,,2025-05-24T09:00:00
+APA00066,APR00043,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-05-20T19:00:00
+APA00067,APR00043,2,U0001,Executive,Approved,Within policy and budget.,2026-05-20T19:00:00
+APA00068,APR00044,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-12-15T07:00:00
+APA00069,APR00044,2,U0001,Executive,Approved,Within policy and budget.,2025-12-15T07:00:00
+APA00070,APR00044,3,U0123,Executive,Approved,Within policy and budget.,2025-12-15T07:00:00
+APA00071,APR00045,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-07-07T00:00:00
+APA00072,APR00045,2,U0001,Executive,Approved,Within policy and budget.,2026-07-07T00:00:00
+APA00073,APR00046,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-08-10T20:00:00
+APA00074,APR00047,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2026-02-19T11:00:00
+APA00075,APR00047,2,U0001,Executive,Not Required,,2026-02-19T11:00:00
+APA00076,APR00048,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-03-11T22:00:00
+APA00077,APR00049,1,U0006,Finance_Manager,Pending,,
+APA00078,APR00050,1,U0006,Finance_Manager,Pending,,
+APA00079,APR00051,1,U0006,Finance_Manager,Pending,,
+APA00080,APR00052,1,U0006,Finance_Manager,Pending,,
+APA00081,APR00053,1,U0006,Finance_Manager,Pending,,
+APA00082,APR00053,2,U0001,Executive,Pending,,
+APA00083,APR00053,3,U0123,Executive,Pending,,
+APA00084,APR00054,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-04-03T11:00:00
+APA00085,APR00055,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-02-07T16:00:00
+APA00086,APR00056,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-12-23T04:00:00
+APA00087,APR00057,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-01-28T21:00:00
+APA00088,APR00058,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-06-28T09:00:00
+APA00089,APR00058,2,U0001,Executive,Approved,Within policy and budget.,2026-06-28T09:00:00
+APA00090,APR00059,1,U0006,Finance_Manager,Pending,,
+APA00091,APR00059,2,U0001,Executive,Pending,,
+APA00092,APR00060,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2026-06-20T10:00:00
+APA00093,APR00060,2,U0001,Executive,Not Required,,2026-06-20T10:00:00
+APA00094,APR00060,3,U0123,Executive,Not Required,,2026-06-20T10:00:00
+APA00095,APR00061,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2025-09-24T21:00:00
+APA00096,APR00062,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-06-18T16:00:00
+APA00097,APR00063,1,U0006,Finance_Manager,Pending,,
+APA00098,APR00063,2,U0001,Executive,Pending,,
+APA00099,APR00064,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-03-28T17:00:00
+APA00100,APR00064,2,U0001,Executive,Approved,Within policy and budget.,2026-03-28T17:00:00
+APA00101,APR00065,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-06-07T15:00:00
+APA00102,APR00065,2,U0001,Executive,Approved,Within policy and budget.,2026-06-07T15:00:00
+APA00103,APR00066,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-05-04T13:00:00
+APA00104,APR00067,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-12-29T09:00:00
+APA00105,APR00068,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2026-06-27T07:00:00
+APA00106,APR00069,1,U0006,Finance_Manager,Rejected,Policy or budget exception.,2025-09-18T05:00:00
+APA00107,APR00070,1,U0006,Finance_Manager,Pending,,
+APA00108,APR00071,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-01-26T17:00:00
+APA00109,APR00072,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-05-20T03:00:00
+APA00110,APR00073,1,U0006,Finance_Manager,Pending,,
+APA00111,APR00074,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-05-29T17:00:00
+APA00112,APR00074,2,U0001,Executive,Approved,Within policy and budget.,2026-05-29T17:00:00
+APA00113,APR00075,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-12-06T11:00:00
+APA00114,APR00076,1,U0006,Finance_Manager,Pending,,
+APA00115,APR00076,2,U0001,Executive,Pending,,
+APA00116,APR00076,3,U0123,Executive,Pending,,
+APA00117,APR00077,1,U0006,Finance_Manager,Pending,,
+APA00118,APR00078,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-09-08T21:00:00
+APA00119,APR00079,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-06-26T15:00:00
+APA00120,APR00079,2,U0001,Executive,Approved,Within policy and budget.,2026-06-26T15:00:00
+APA00121,APR00080,1,U0006,Finance_Manager,Pending,,
+APA00122,APR00081,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-04-24T11:00:00
+APA00123,APR00082,1,U0006,Finance_Manager,Pending,,
+APA00124,APR00083,1,U0006,Finance_Manager,Approved,Within policy and budget.,2026-06-28T01:00:00
+APA00125,APR00084,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-05-08T15:00:00
+APA00126,APR00085,1,U0006,Finance_Manager,Approved,Within policy and budget.,2025-09-11T07:00:00
+APA00127,APR00085,2,U0001,Executive,Approved,Within policy and budget.,2025-09-11T07:00:00
+APA00128,APR00086,1,U0008,Project_Manager,Pending,,
+APA00129,APR00087,1,U0003,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2025-09-29T20:00:00
+APA00130,APR00088,1,U0002,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-06-20T23:00:00
+APA00131,APR00089,1,U0006,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-10-15T08:00:00
+APA00132,APR00090,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-12-14T01:00:00
+APA00133,APR00091,1,U0009,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-09-18T16:00:00
+APA00134,APR00092,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-02-22T18:00:00
+APA00135,APR00093,1,U0002,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-10-19T09:00:00
+APA00136,APR00094,1,U0002,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-07-25T21:00:00
+APA00137,APR00095,1,U0009,Project_Manager,Pending,,
+APA00138,APR00096,1,U0008,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-09-23T06:00:00
+APA00139,APR00097,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-10-15T19:00:00
+APA00140,APR00098,1,U0005,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-10-01T22:00:00
+APA00141,APR00099,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-12-31T01:00:00
+APA00142,APR00100,1,U0005,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-05-24T18:00:00
+APA00143,APR00101,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-03-15T21:00:00
+APA00144,APR00102,1,U0007,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-05-27T07:00:00
+APA00145,APR00103,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-01-20T02:00:00
+APA00146,APR00104,1,U0008,Project_Manager,Pending,,
+APA00147,APR00105,1,U0009,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-10-27T14:00:00
+APA00148,APR00106,1,U0009,Project_Manager,Cancelled,"Leave reviewed against balance, notice, and coverage.",2025-12-16T06:00:00
+APA00149,APR00107,1,U0011,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-08-05T10:00:00
+APA00150,APR00108,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-12-23T14:00:00
+APA00151,APR00109,1,U0007,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-11-22T23:00:00
+APA00152,APR00110,1,U0007,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-09-03T03:00:00
+APA00153,APR00111,1,U0004,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-12-09T20:00:00
+APA00154,APR00112,1,U0005,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-08-01T12:00:00
+APA00155,APR00113,1,U0004,Project_Manager,Pending,,
+APA00156,APR00114,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-08-23T02:00:00
+APA00157,APR00115,1,U0006,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-01-02T09:00:00
+APA00158,APR00116,1,U0006,Project_Manager,Pending,,
+APA00159,APR00117,1,U0007,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-09-14T23:00:00
+APA00160,APR00118,1,U0002,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-10-03T16:00:00
+APA00161,APR00119,1,U0007,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-06-23T15:00:00
+APA00162,APR00120,1,U0004,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-11-23T09:00:00
+APA00163,APR00121,1,U0005,Project_Manager,Pending,,
+APA00164,APR00122,1,U0009,Project_Manager,Rejected,"Leave reviewed against balance, notice, and coverage.",2026-10-07T13:00:00
+APA00165,APR00123,1,U0003,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2026-11-15T18:00:00
+APA00166,APR00124,1,U0009,Project_Manager,Pending,,
+APA00167,APR00125,1,U0008,Project_Manager,Approved,"Leave reviewed against balance, notice, and coverage.",2025-11-04T18:00:00
+APA00168,APR00126,1,U0007,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-16T00:00:00
+APA00169,APR00127,1,U0007,Project_Manager,Rejected,Workload and project impact reviewed.,2026-08-20T01:00:00
+APA00170,APR00128,1,U0007,Project_Manager,Pending,,
+APA00171,APR00129,1,U0007,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-14T11:00:00
+APA00172,APR00130,1,U0007,Project_Manager,Rejected,Workload and project impact reviewed.,2026-08-16T15:00:00
+APA00173,APR00131,1,U0007,Project_Manager,Rejected,Workload and project impact reviewed.,2026-08-17T17:00:00
+APA00174,APR00132,1,U0007,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-16T18:00:00
+APA00175,APR00133,1,U0007,Project_Manager,Pending,,
+APA00176,APR00134,1,U0007,Project_Manager,Rejected,Workload and project impact reviewed.,2026-07-13T15:00:00
+APA00177,APR00135,1,U0007,Project_Manager,Pending,,
+APA00178,APR00136,1,U0007,Project_Manager,Pending,,
+APA00179,APR00137,1,U0007,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-27T03:00:00
+APA00180,APR00138,1,U0007,Project_Manager,Pending,,
+APA00181,APR00139,1,U0007,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-10T04:00:00
+APA00182,APR00140,1,U0010,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-04T03:00:00
+APA00183,APR00141,1,U0010,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-10T15:00:00
+APA00184,APR00142,1,U0010,Project_Manager,Rejected,Workload and project impact reviewed.,2026-08-21T00:00:00
+APA00185,APR00143,1,U0010,Project_Manager,Pending,,
+APA00186,APR00144,1,U0010,Project_Manager,Pending,,
+APA00187,APR00145,1,U0010,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-11T13:00:00
+APA00188,APR00146,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-06-30T01:00:00
+APA00189,APR00147,1,U0005,Project_Manager,Pending,,
+APA00190,APR00148,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-14T06:00:00
+APA00191,APR00149,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-27T21:00:00
+APA00192,APR00150,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-06T01:00:00
+APA00193,APR00151,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-10T14:00:00
+APA00194,APR00152,1,U0005,Project_Manager,Pending,,
+APA00195,APR00153,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-30T09:00:00
+APA00196,APR00154,1,U0005,Project_Manager,Pending,,
+APA00197,APR00155,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-04T04:00:00
+APA00198,APR00156,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-14T23:00:00
+APA00199,APR00157,1,U0005,Project_Manager,Pending,,
+APA00200,APR00158,1,U0005,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-10T14:00:00
+APA00201,APR00159,1,U0002,Project_Manager,Pending,,
+APA00202,APR00160,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-28T07:00:00
+APA00203,APR00161,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-04T19:00:00
+APA00204,APR00162,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-15T16:00:00
+APA00205,APR00163,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-08T21:00:00
+APA00206,APR00164,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-17T08:00:00
+APA00207,APR00165,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-23T12:00:00
+APA00208,APR00166,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-28T06:00:00
+APA00209,APR00167,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-08-19T05:00:00
+APA00210,APR00168,1,U0002,Project_Manager,Approved,Workload and project impact reviewed.,2026-07-31T00:00:00
+APA00211,APR00169,1,U0008,Project_Manager,Pending,,
+APA00212,APR00170,1,U0008,Project_Manager,Rejected,Workload and project impact reviewed.,2026-07-31T05:00:00
+APA00213,APR00171,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2026-05-29T00:00:00
+APA00214,APR00172,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-07-21T04:00:00
+APA00215,APR00173,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-09-01T20:00:00
+APA00216,APR00174,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-07-25T14:00:00
+APA00217,APR00175,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-03-28T14:00:00
+APA00218,APR00176,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2025-12-01T13:00:00
+APA00219,APR00177,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2025-06-03T17:00:00
+APA00220,APR00178,1,U0006,Finance_Manager,Pending,,
+APA00221,APR00179,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-01-17T04:00:00
+APA00222,APR00180,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2026-01-08T23:00:00
+APA00223,APR00181,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-03-01T21:00:00
+APA00224,APR00182,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-08-22T12:00:00
+APA00225,APR00183,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-02-15T22:00:00
+APA00226,APR00184,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-03-04T14:00:00
+APA00227,APR00185,1,U0006,Finance_Manager,Pending,,
+APA00228,APR00186,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-07-09T02:00:00
+APA00229,APR00187,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-08-22T03:00:00
+APA00230,APR00188,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-05-21T21:00:00
+APA00231,APR00189,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2026-07-11T14:00:00
+APA00232,APR00190,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-11-16T22:00:00
+APA00233,APR00191,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-07-20T13:00:00
+APA00234,APR00192,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-01-30T01:00:00
+APA00235,APR00193,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-03-23T23:00:00
+APA00236,APR00194,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-02-24T18:00:00
+APA00237,APR00195,1,U0006,Finance_Manager,Pending,,
+APA00238,APR00196,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2026-07-03T21:00:00
+APA00239,APR00197,1,U0006,Finance_Manager,Pending,,
+APA00240,APR00198,1,U0006,Finance_Manager,Approved,Margin and strategic-account impact reviewed.,2025-04-12T15:00:00
+APA00241,APR00199,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2025-07-24T19:00:00
+APA00242,APR00200,1,U0006,Finance_Manager,Rejected,Margin and strategic-account impact reviewed.,2025-12-28T00:00:00

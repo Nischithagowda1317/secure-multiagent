@@ -1,0 +1,12 @@
+﻿agent_id,agent_name,executions_total,success_rate,average_duration_ms,p95_duration_ms,average_confidence_score,total_input_tokens,total_output_tokens,estimated_total_cost_usd,recovered_error_count,risk_tier
+A001,Coordinator Agent,400,1.0,475.06,814,0.8859,213644,95024,2.5235,16,Medium
+A002,Security Agent,400,1.0,459.3,805,0.8881,217240,92349,2.4432,7,High
+A003,Knowledge RAG Agent,37,1.0,870.08,1338,0.895,22841,8427,0.2067,0,Medium
+A008,Validation Agent,185,1.0,751.29,1319,0.8778,99177,42813,1.1444,4,High
+A009,Explanation Agent,213,1.0,497.62,831,0.8793,110415,48540,1.2618,6,Low
+A005,Project Agent,99,1.0,506.92,821,0.8924,51584,22346,0.6567,2,Medium
+A004,HR Agent,71,1.0,493.3,820,0.8895,35051,15929,0.3906,0,High
+A010,Approval Gateway Agent,59,1.0,440.75,824,0.8892,32864,13515,0.381,1,High
+A006,Sales Analytics Agent,71,1.0,830.76,1330,0.8758,38695,15745,0.4246,3,Medium
+A007,Finance Agent,29,1.0,432.62,785,0.9003,16379,6606,0.1753,1,High
+A011,Monitoring Agent,5,1.0,508.4,796,0.8426,3347,1178,0.0476,1,Low

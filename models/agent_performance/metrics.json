@@ -1,0 +1,8 @@
+{
+  "trained_at": "2026-08-29T11:31:24.369020+00:00",
+  "model": "RandomForest agent performance-index regressor",
+  "dataset_rows": 5000,
+  "mae": 0.002611515780632587,
+  "rmse": 0.004374255672970599,
+  "r2": 0.9989411260396514
+}

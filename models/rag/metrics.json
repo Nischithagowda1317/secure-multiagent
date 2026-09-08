@@ -1,0 +1,11 @@
+{
+  "trained_at": "2026-08-29T11:31:27.421042+00:00",
+  "model": "TF-IDF secure RAG retrieval index",
+  "documents": 14,
+  "chunks": 44,
+  "vocabulary_size": 2347,
+  "gold_questions": 160,
+  "unfiltered_top1_document_accuracy": 0.74375,
+  "unfiltered_top3_document_accuracy": 0.95,
+  "note": "Runtime retrieval additionally enforces allowed_roles and required_permission before returning evidence."
+}

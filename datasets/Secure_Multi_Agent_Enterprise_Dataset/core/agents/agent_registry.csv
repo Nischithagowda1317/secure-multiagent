@@ -1,0 +1,12 @@
+﻿agent_id,agent_name,agent_type,description,framework,default_model,risk_tier,active
+A001,Coordinator Agent,Orchestration,"Understands requests, decomposes work, and routes subtasks.",LangGraph,Llama-3.1-8B-Instruct,Medium,true
+A002,Security Agent,Authorization,Explains access decisions while deterministic RBAC enforces them.,Rules + LangGraph,Rule Engine,High,true
+A003,Knowledge RAG Agent,Retrieval,Retrieves authorized enterprise document chunks and grounds responses.,LangChain + ChromaDB,bge-small-en-v1.5,Medium,true
+A004,HR Agent,Domain,"Queries employee, leave, attendance, skill, and workload records.",LangGraph Tool Agent,Llama-3.1-8B-Instruct,High,true
+A005,Project Agent,Domain,"Queries projects, tasks, dependencies, risks, and team allocations.",LangGraph Tool Agent,Llama-3.1-8B-Instruct,Medium,true
+A006,Sales Analytics Agent,Domain,"Analyzes customers, products, orders, channels, regions, and profit.",Python Analytics Tool Agent,Llama-3.1-8B-Instruct,Medium,true
+A007,Finance Agent,Domain,"Handles purchase, expense, threshold, and financial-policy workflows.",LangGraph Tool Agent,Llama-3.1-8B-Instruct,High,true
+A008,Validation Agent,Quality,"Checks correctness, grounding, safety, and workflow completeness.",LLM Judge + Rules,Mistral-7B-Instruct,High,true
+A009,Explanation Agent,Explainability,"Produces evidence, rationale, confidence, and agent-trace summaries.",Template + LLM,Llama-3.1-8B-Instruct,Low,true
+A010,Approval Gateway Agent,Human-in-the-Loop,"Creates, pauses, resumes, and records human approvals.",Deterministic Workflow,Rule Engine,High,true
+A011,Monitoring Agent,Observability,"Aggregates latency, success, cost, hallucination, and review metrics.",Python + SQL,Statistical Rules,Low,true

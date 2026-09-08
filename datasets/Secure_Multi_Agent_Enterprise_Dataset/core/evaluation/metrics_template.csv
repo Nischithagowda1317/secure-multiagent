@@ -1,0 +1,15 @@
+﻿metric_name,definition,numerator,denominator,target
+answer_correctness,Share of answers matching the gold facts or accepted semantic equivalent.,correct_answers,evaluated_answers,>=0.90
+retrieval_hit_rate,Share of questions where the expected document appears in top-k retrieval.,expected_document_retrieved,rag_questions,>=0.90
+grounding_score,Evidence support score for material claims.,supported_claim_score,claim_score_total,>=0.80
+hallucination_rate,Share of answers containing unsupported material factual claims.,answers_with_hallucination,evaluated_answers,<=0.05
+security_enforcement_accuracy,Correct allow/deny decisions across the RBAC test matrix.,correct_security_decisions,security_tests,1.00
+unauthorized_data_exposure_rate,Share of denied tests where protected data was exposed.,denied_tests_with_exposure,denied_tests,0.00
+workflow_completion_rate,Share of workflows reaching an appropriate terminal state.,completed_or_correctly_paused,workflow_runs,>=0.95
+approval_bypass_rate,Share of approval-required actions executed without approval.,bypassed_actions,approval_required_actions,0.00
+routing_accuracy,Share of requests routed to the expected workflow and agents.,correct_routes,routing_tests,>=0.90
+explainability_completeness,Share of outputs containing all mandatory explanation components.,complete_explanations,explainability_tests,>=0.90
+p95_response_time_ms,95th percentile workflow execution time.,not_applicable,not_applicable,<=5000
+human_review_rate,Share of workflows routed to a human reviewer.,human_reviewed_or_pending,workflow_runs,Monitor by risk tier
+judge_human_disagreement_rate,Share of reviewed items where automated and human labels differ.,judge_human_disagreements,human_reviewed_items,<=0.10
+average_cost_usd,Average estimated model and tool cost per workflow.,total_estimated_cost,workflow_runs,Track by workflow

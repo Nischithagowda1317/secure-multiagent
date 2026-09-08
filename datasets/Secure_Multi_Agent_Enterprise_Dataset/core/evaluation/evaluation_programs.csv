@@ -1,0 +1,13 @@
+﻿program_id,program_name,agent_system_name,workflow_definition_id,primary_use_case,owning_team,candidate_model_name,baseline_model_name,risk_tier,created_at,status
+EVP001,Enterprise Policy Question Evaluation,secure_multi_agent_enterprise_assistant,WFD001,Enterprise Policy Question,Data and Analytics,Mistral-7B-Instruct,Rule+RAG Baseline,Low,2026-01-02,Active
+EVP002,Project Status Analysis Evaluation,secure_multi_agent_enterprise_assistant,WFD002,Project Status Analysis,Enterprise Applications,Llama-3.1-8B-Instruct,Rule+RAG Baseline,Medium,2026-01-03,Active
+EVP003,Project and Workload Analysis Evaluation,secure_multi_agent_enterprise_assistant,WFD003,Project and Workload Analysis,Data and Analytics,Mistral-7B-Instruct,Rule+RAG Baseline,Medium,2026-01-04,Active
+EVP004,Compensation Access Query Evaluation,secure_multi_agent_enterprise_assistant,WFD004,Compensation Access Query,Quality Engineering,GPT-4.1-mini,Rule+RAG Baseline,High,2026-01-05,Active
+EVP005,Task Reassignment Evaluation,secure_multi_agent_enterprise_assistant,WFD005,Task Reassignment,Quality Engineering,Mistral-7B-Instruct,Rule+RAG Baseline,High,2026-01-06,Active
+EVP006,Sales Performance Analysis Evaluation,secure_multi_agent_enterprise_assistant,WFD006,Sales Performance Analysis,Security Engineering,Llama-3.1-8B-Instruct,Rule+RAG Baseline,Medium,2026-01-07,Active
+EVP007,Sales Discount Exception Evaluation,secure_multi_agent_enterprise_assistant,WFD007,Sales Discount Exception,Quality Engineering,Mistral-7B-Instruct,Rule+RAG Baseline,High,2026-01-08,Active
+EVP008,Purchase Approval Evaluation,secure_multi_agent_enterprise_assistant,WFD008,Purchase Approval,Data and Analytics,Llama-3.1-8B-Instruct,Rule+RAG Baseline,High,2026-01-09,Active
+EVP009,Leave and Attendance Analysis Evaluation,secure_multi_agent_enterprise_assistant,WFD009,Leave and Attendance Analysis,Quality Engineering,GPT-4.1-mini,Rule+RAG Baseline,High,2026-01-10,Active
+EVP010,Restricted Document Query Evaluation,secure_multi_agent_enterprise_assistant,WFD010,Restricted Document Query,Quality Engineering,GPT-4.1-mini,Rule+RAG Baseline,High,2026-01-11,Active
+EVP011,Agent Reliability Review Evaluation,secure_multi_agent_enterprise_assistant,WFD011,Agent Reliability Review,Quality Engineering,Llama-3.1-8B-Instruct,Rule+RAG Baseline,Medium,2026-01-12,Active
+EVP012,Executive Management Briefing Evaluation,secure_multi_agent_enterprise_assistant,WFD012,Executive Management Briefing,Enterprise Applications,GPT-4.1-mini,Rule+RAG Baseline,High,2026-01-13,Active

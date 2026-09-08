@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: enterprise-assistant-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: enterprise_assistant
+      POSTGRES_USER: enterprise_user
+      POSTGRES_PASSWORD: enterprise_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - enterprise_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U enterprise_user -d enterprise_assistant"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  enterprise_postgres_data:

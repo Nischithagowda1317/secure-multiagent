@@ -1,0 +1,68 @@
+{
+  "trained_at": "2026-08-29T10:25:32.358720+00:00",
+  "model": "PyTorch MLP agent performance-index regressor",
+  "device_used": "cpu",
+  "cuda_available": false,
+  "epochs_requested": 60,
+  "epochs_completed": 42,
+  "best_epoch": 34,
+  "best_validation_loss": 0.0007675496162846684,
+  "test_mae": 0.022799886763095856,
+  "test_rmse": 0.027130349011365275,
+  "test_r2": 0.9611822962760925,
+  "checkpoint_path": "runtime/checkpoints/agent_performance_nn/latest.pt",
+  "best_model_path": "models/agent_performance_nn/best_model.pt",
+  "resume_supported": true,
+  "history_tail": [
+    {
+      "epoch": 33,
+      "train_loss": 0.001711033218141113,
+      "val_loss": 0.000947306863963604
+    },
+    {
+      "epoch": 34,
+      "train_loss": 0.0017190284893981048,
+      "val_loss": 0.0007675496162846684
+    },
+    {
+      "epoch": 35,
+      "train_loss": 0.001523781251827521,
+      "val_loss": 0.0021172177512198687
+    },
+    {
+      "epoch": 36,
+      "train_loss": 0.001654534991497972,
+      "val_loss": 0.0025701739359647036
+    },
+    {
+      "epoch": 37,
+      "train_loss": 0.0015138216715838229,
+      "val_loss": 0.0018938472494482994
+    },
+    {
+      "epoch": 38,
+      "train_loss": 0.0016677328801181699,
+      "val_loss": 0.0012447732733562589
+    },
+    {
+      "epoch": 39,
+      "train_loss": 0.0014180486157004321,
+      "val_loss": 0.0013176245847716928
+    },
+    {
+      "epoch": 40,
+      "train_loss": 0.0012769894674420357,
+      "val_loss": 0.0010500825010240078
+    },
+    {
+      "epoch": 41,
+      "train_loss": 0.0016014506524827863,
+      "val_loss": 0.002291397424414754
+    },
+    {
+      "epoch": 42,
+      "train_loss": 0.001276479584963194,
+      "val_loss": 0.0021712242159992456
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+﻿supplier_id,supplier_name,supplier_category,country,risk_rating,approved,contract_expiry_date,data_classification
+SUP001,Delhi Training Supplier 01,Facilities,India,Low,true,2028-06-19,Confidential
+SUP002,Paris Technology Supplier 02,Professional Services,France,Low,true,2028-05-17,Confidential
+SUP003,Riyadh Cloud Services Supplier 03,Training,Saudi Arabia,Low,true,2028-07-18,Confidential
+SUP004,Delhi Technology Supplier 04,Technology,India,Low,true,2028-10-01,Confidential
+SUP005,Johannesburg Professional Services Supplier 05,Marketing,South Africa,Medium,true,2028-10-10,Confidential
+SUP006,Buenos Aires Professional Services Supplier 06,Professional Services,Argentina,Low,true,2027-07-04,Confidential
+SUP007,Tokyo Professional Services Supplier 07,Facilities,Japan,Low,true,2029-01-07,Confidential
+SUP008,Toronto Training Supplier 08,Marketing,Canada,Low,true,2028-09-24,Confidential
+SUP009,Berlin Training Supplier 09,Marketing,Germany,High,true,2027-07-18,Confidential
+SUP010,Mumbai Marketing Supplier 10,Training,India,Low,true,2027-03-30,Confidential
+SUP011,Berlin Facilities Supplier 11,Cloud Services,Germany,Low,true,2027-04-09,Confidential
+SUP012,Buenos Aires Professional Services Supplier 12,Cloud Services,Argentina,Low,true,2028-08-14,Confidential
+SUP013,Riyadh Professional Services Supplier 13,Cloud Services,Saudi Arabia,Low,true,2028-06-27,Confidential
+SUP014,Chicago Facilities Supplier 14,Training,United States,Medium,true,2028-04-13,Confidential
+SUP015,Sydney Training Supplier 15,Facilities,Australia,Medium,true,2027-06-20,Confidential
+SUP016,Riyadh Training Supplier 16,Professional Services,Saudi Arabia,Low,true,2028-07-06,Confidential
+SUP017,San Francisco Technology Supplier 17,Professional Services,United States,Low,true,2028-07-24,Confidential
+SUP018,San Francisco Marketing Supplier 18,Professional Services,United States,Low,true,2029-02-04,Confidential
+SUP019,Mumbai Facilities Supplier 19,Cloud Services,India,Low,true,2028-09-17,Confidential
+SUP020,Johannesburg Cloud Services Supplier 20,Facilities,South Africa,Medium,true,2026-10-21,Confidential
+SUP021,Vancouver Facilities Supplier 21,Training,Canada,Low,true,2027-06-21,Confidential
+SUP022,Riyadh Marketing Supplier 22,Facilities,Saudi Arabia,Medium,true,2028-02-07,Confidential
+SUP023,London Cloud Services Supplier 23,Marketing,United Kingdom,Low,false,2027-04-12,Confidential
+SUP024,Mumbai Marketing Supplier 24,Technology,India,Low,true,2027-06-03,Confidential
+SUP025,London Professional Services Supplier 25,Facilities,United Kingdom,Low,true,2028-12-03,Confidential
+SUP026,Chicago Technology Supplier 26,Facilities,United States,Medium,true,2027-05-01,Confidential
+SUP027,Amsterdam Technology Supplier 27,Cloud Services,Netherlands,Low,true,2028-06-12,Confidential
+SUP028,Buenos Aires Facilities Supplier 28,Professional Services,Argentina,Low,true,2027-09-02,Confidential
+SUP029,Mumbai Technology Supplier 29,Technology,India,Medium,true,2027-02-15,Confidential
+SUP030,Sydney Marketing Supplier 30,Technology,Australia,Low,true,2028-12-27,Confidential
+SUP031,Bengaluru Technology Supplier 31,Cloud Services,India,Low,true,2029-02-13,Confidential
+SUP032,Bengaluru Training Supplier 32,Training,India,Low,true,2027-04-04,Confidential
+SUP033,Dubai Professional Services Supplier 33,Cloud Services,United Arab Emirates,Medium,true,2029-01-30,Confidential
+SUP034,Singapore Marketing Supplier 34,Marketing,Singapore,Low,true,2028-05-22,Confidential
+SUP035,Chicago Marketing Supplier 35,Marketing,United States,Low,true,2027-06-06,Confidential
+SUP036,Riyadh Training Supplier 36,Professional Services,Saudi Arabia,Low,true,2027-03-04,Confidential
+SUP037,Vancouver Marketing Supplier 37,Technology,Canada,Medium,false,2026-10-02,Confidential
+SUP038,Delhi Cloud Services Supplier 38,Marketing,India,Medium,true,2026-12-28,Confidential
+SUP039,San Francisco Cloud Services Supplier 39,Cloud Services,United States,Low,true,2027-08-06,Confidential
+SUP040,Delhi Technology Supplier 40,Facilities,India,Medium,true,2028-06-21,Confidential
+SUP041,Mumbai Training Supplier 41,Marketing,India,Medium,true,2027-03-30,Confidential
+SUP042,Dubai Professional Services Supplier 42,Marketing,United Arab Emirates,Low,false,2028-10-09,Confidential
+SUP043,Milan Cloud Services Supplier 43,Professional Services,Italy,Medium,true,2027-06-08,Confidential
+SUP044,Dubai Technology Supplier 44,Cloud Services,United Arab Emirates,Low,true,2029-02-02,Confidential
+SUP045,San Francisco Technology Supplier 45,Professional Services,United States,Medium,true,2026-09-29,Confidential
+SUP046,Johannesburg Technology Supplier 46,Training,South Africa,Medium,true,2027-08-08,Confidential
+SUP047,Milan Technology Supplier 47,Marketing,Italy,Low,true,2028-05-08,Confidential
+SUP048,Mexico City Facilities Supplier 48,Professional Services,Mexico,Low,true,2026-12-25,Confidential
+SUP049,Singapore Professional Services Supplier 49,Professional Services,Singapore,Low,true,2028-07-08,Confidential
+SUP050,Delhi Technology Supplier 50,Cloud Services,India,Low,true,2027-04-22,Confidential
+SUP051,Toronto Professional Services Supplier 51,Facilities,Canada,Medium,true,2026-11-18,Confidential
+SUP052,Vancouver Facilities Supplier 52,Marketing,Canada,Medium,true,2027-06-29,Confidential
+SUP053,Tokyo Marketing Supplier 53,Marketing,Japan,Low,true,2028-07-07,Confidential
+SUP054,Sao Paulo Training Supplier 54,Facilities,Brazil,Medium,true,2028-08-31,Confidential
+SUP055,Amsterdam Cloud Services Supplier 55,Facilities,Netherlands,Medium,true,2028-04-25,Confidential
+SUP056,Milan Training Supplier 56,Marketing,Italy,Low,true,2027-10-07,Confidential
+SUP057,Madrid Facilities Supplier 57,Marketing,Spain,Medium,true,2026-12-20,Confidential
+SUP058,Delhi Training Supplier 58,Cloud Services,India,Low,true,2028-09-10,Confidential
+SUP059,Mexico City Training Supplier 59,Technology,Mexico,Medium,true,2028-03-05,Confidential
+SUP060,Vancouver Technology Supplier 60,Cloud Services,Canada,Medium,true,2028-04-29,Confidential
+SUP061,Riyadh Training Supplier 61,Facilities,Saudi Arabia,Medium,true,2026-10-19,Confidential
+SUP062,Dubai Marketing Supplier 62,Training,United Arab Emirates,High,true,2028-11-16,Confidential
+SUP063,Bengaluru Technology Supplier 63,Technology,India,Low,true,2028-03-02,Confidential
+SUP064,Amsterdam Facilities Supplier 64,Technology,Netherlands,Medium,true,2027-12-24,Confidential
+SUP065,Buenos Aires Professional Services Supplier 65,Facilities,Argentina,Low,true,2029-01-05,Confidential
+SUP066,Toronto Professional Services Supplier 66,Technology,Canada,Low,true,2027-12-15,Confidential
+SUP067,San Francisco Cloud Services Supplier 67,Professional Services,United States,Medium,true,2027-09-15,Confidential
+SUP068,Sao Paulo Marketing Supplier 68,Facilities,Brazil,Low,true,2026-10-17,Confidential
+SUP069,Chicago Facilities Supplier 69,Professional Services,United States,Medium,true,2027-02-14,Confidential
+SUP070,Madrid Professional Services Supplier 70,Professional Services,Spain,High,true,2028-11-08,Confidential
+SUP071,Chicago Training Supplier 71,Cloud Services,United States,Low,true,2028-05-25,Confidential
+SUP072,Buenos Aires Marketing Supplier 72,Cloud Services,Argentina,Low,false,2028-01-03,Confidential
+SUP073,New York Cloud Services Supplier 73,Facilities,United States,Low,true,2027-03-31,Confidential
+SUP074,New York Professional Services Supplier 74,Facilities,United States,Medium,true,2027-08-06,Confidential
+SUP075,Singapore Facilities Supplier 75,Cloud Services,Singapore,High,false,2027-02-20,Confidential
+SUP076,Mexico City Facilities Supplier 76,Facilities,Mexico,Medium,true,2028-08-06,Confidential
+SUP077,Dubai Marketing Supplier 77,Professional Services,United Arab Emirates,Low,true,2027-12-19,Confidential
+SUP078,Dubai Marketing Supplier 78,Cloud Services,United Arab Emirates,High,true,2027-02-27,Confidential
+SUP079,Toronto Technology Supplier 79,Facilities,Canada,Low,true,2027-08-31,Confidential
+SUP080,Delhi Cloud Services Supplier 80,Technology,India,Medium,true,2028-09-19,Confidential

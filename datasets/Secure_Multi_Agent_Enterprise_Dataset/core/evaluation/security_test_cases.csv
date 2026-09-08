@@ -1,0 +1,321 @@
+﻿security_test_id,user_role,requested_permission,expected_decision,resource_type,resource_classification,policy_engine,expected_reason,must_log_decision
+ST0001,Admin,user.manage,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0002,Admin,role.manage,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0003,Admin,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0004,Admin,employee.read_sensitive,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0005,Admin,employee.salary.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0006,Admin,employee.update,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0007,Admin,leave.read_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0008,Admin,leave.read_all,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0009,Admin,leave.approve,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0010,Admin,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0011,Admin,project.create,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0012,Admin,project.update,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0013,Admin,project.assign,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0014,Admin,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0015,Admin,task.update_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0016,Admin,task.reassign,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0017,Admin,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0018,Admin,sales.export,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0019,Admin,finance.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0020,Admin,expense.approve,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0021,Admin,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0022,Admin,document.read_hr,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0023,Admin,document.read_finance,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0024,Admin,document.read_security,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0025,Admin,document.upload,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0026,Admin,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0027,Admin,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0028,Admin,ai.execute_high_risk,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0029,Admin,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0030,Admin,audit.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0031,Admin,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0032,Admin,evaluation.manage,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0033,Executive,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0034,Executive,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0035,Executive,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0036,Executive,employee.read_sensitive,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0037,Executive,employee.salary.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0038,Executive,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0039,Executive,leave.read_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0040,Executive,leave.read_all,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0041,Executive,leave.approve,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0042,Executive,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0043,Executive,project.create,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0044,Executive,project.update,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0045,Executive,project.assign,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0046,Executive,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0047,Executive,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0048,Executive,task.reassign,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0049,Executive,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0050,Executive,sales.export,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0051,Executive,finance.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0052,Executive,expense.approve,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0053,Executive,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0054,Executive,document.read_hr,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0055,Executive,document.read_finance,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0056,Executive,document.read_security,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0057,Executive,document.upload,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0058,Executive,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0059,Executive,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0060,Executive,ai.execute_high_risk,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0061,Executive,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0062,Executive,audit.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0063,Executive,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0064,Executive,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0065,HR_Manager,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0066,HR_Manager,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0067,HR_Manager,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0068,HR_Manager,employee.read_sensitive,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0069,HR_Manager,employee.salary.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0070,HR_Manager,employee.update,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0071,HR_Manager,leave.read_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0072,HR_Manager,leave.read_all,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0073,HR_Manager,leave.approve,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0074,HR_Manager,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0075,HR_Manager,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0076,HR_Manager,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0077,HR_Manager,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0078,HR_Manager,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0079,HR_Manager,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0080,HR_Manager,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0081,HR_Manager,sales.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0082,HR_Manager,sales.export,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0083,HR_Manager,finance.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0084,HR_Manager,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0085,HR_Manager,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0086,HR_Manager,document.read_hr,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0087,HR_Manager,document.read_finance,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0088,HR_Manager,document.read_security,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0089,HR_Manager,document.upload,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0090,HR_Manager,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0091,HR_Manager,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0092,HR_Manager,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0093,HR_Manager,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0094,HR_Manager,audit.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0095,HR_Manager,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0096,HR_Manager,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0097,Project_Manager,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0098,Project_Manager,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0099,Project_Manager,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0100,Project_Manager,employee.read_sensitive,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0101,Project_Manager,employee.salary.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0102,Project_Manager,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0103,Project_Manager,leave.read_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0104,Project_Manager,leave.read_all,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0105,Project_Manager,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0106,Project_Manager,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0107,Project_Manager,project.create,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0108,Project_Manager,project.update,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0109,Project_Manager,project.assign,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0110,Project_Manager,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0111,Project_Manager,task.update_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0112,Project_Manager,task.reassign,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0113,Project_Manager,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0114,Project_Manager,sales.export,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0115,Project_Manager,finance.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0116,Project_Manager,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0117,Project_Manager,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0118,Project_Manager,document.read_hr,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0119,Project_Manager,document.read_finance,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0120,Project_Manager,document.read_security,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0121,Project_Manager,document.upload,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0122,Project_Manager,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0123,Project_Manager,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0124,Project_Manager,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0125,Project_Manager,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0126,Project_Manager,audit.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0127,Project_Manager,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0128,Project_Manager,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0129,Finance_Manager,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0130,Finance_Manager,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0131,Finance_Manager,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0132,Finance_Manager,employee.read_sensitive,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0133,Finance_Manager,employee.salary.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0134,Finance_Manager,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0135,Finance_Manager,leave.read_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0136,Finance_Manager,leave.read_all,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0137,Finance_Manager,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0138,Finance_Manager,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0139,Finance_Manager,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0140,Finance_Manager,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0141,Finance_Manager,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0142,Finance_Manager,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0143,Finance_Manager,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0144,Finance_Manager,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0145,Finance_Manager,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0146,Finance_Manager,sales.export,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0147,Finance_Manager,finance.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0148,Finance_Manager,expense.approve,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0149,Finance_Manager,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0150,Finance_Manager,document.read_hr,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0151,Finance_Manager,document.read_finance,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0152,Finance_Manager,document.read_security,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0153,Finance_Manager,document.upload,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0154,Finance_Manager,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0155,Finance_Manager,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0156,Finance_Manager,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0157,Finance_Manager,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0158,Finance_Manager,audit.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0159,Finance_Manager,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0160,Finance_Manager,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0161,Sales_Manager,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0162,Sales_Manager,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0163,Sales_Manager,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0164,Sales_Manager,employee.read_sensitive,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0165,Sales_Manager,employee.salary.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0166,Sales_Manager,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0167,Sales_Manager,leave.read_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0168,Sales_Manager,leave.read_all,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0169,Sales_Manager,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0170,Sales_Manager,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0171,Sales_Manager,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0172,Sales_Manager,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0173,Sales_Manager,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0174,Sales_Manager,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0175,Sales_Manager,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0176,Sales_Manager,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0177,Sales_Manager,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0178,Sales_Manager,sales.export,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0179,Sales_Manager,finance.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0180,Sales_Manager,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0181,Sales_Manager,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0182,Sales_Manager,document.read_hr,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0183,Sales_Manager,document.read_finance,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0184,Sales_Manager,document.read_security,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0185,Sales_Manager,document.upload,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0186,Sales_Manager,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0187,Sales_Manager,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0188,Sales_Manager,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0189,Sales_Manager,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0190,Sales_Manager,audit.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0191,Sales_Manager,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0192,Sales_Manager,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0193,Security_Officer,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0194,Security_Officer,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0195,Security_Officer,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0196,Security_Officer,employee.read_sensitive,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0197,Security_Officer,employee.salary.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0198,Security_Officer,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0199,Security_Officer,leave.read_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0200,Security_Officer,leave.read_all,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0201,Security_Officer,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0202,Security_Officer,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0203,Security_Officer,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0204,Security_Officer,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0205,Security_Officer,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0206,Security_Officer,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0207,Security_Officer,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0208,Security_Officer,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0209,Security_Officer,sales.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0210,Security_Officer,sales.export,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0211,Security_Officer,finance.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0212,Security_Officer,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0213,Security_Officer,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0214,Security_Officer,document.read_hr,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0215,Security_Officer,document.read_finance,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0216,Security_Officer,document.read_security,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0217,Security_Officer,document.upload,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0218,Security_Officer,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0219,Security_Officer,ai.execute_low_risk,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0220,Security_Officer,ai.execute_high_risk,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0221,Security_Officer,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0222,Security_Officer,audit.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0223,Security_Officer,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0224,Security_Officer,evaluation.manage,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0225,Employee,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0226,Employee,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0227,Employee,employee.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0228,Employee,employee.read_sensitive,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0229,Employee,employee.salary.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0230,Employee,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0231,Employee,leave.read_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0232,Employee,leave.read_all,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0233,Employee,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0234,Employee,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0235,Employee,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0236,Employee,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0237,Employee,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0238,Employee,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0239,Employee,task.update_own,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0240,Employee,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0241,Employee,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0242,Employee,sales.export,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0243,Employee,finance.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0244,Employee,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0245,Employee,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0246,Employee,document.read_hr,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0247,Employee,document.read_finance,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0248,Employee,document.read_security,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0249,Employee,document.upload,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0250,Employee,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0251,Employee,ai.execute_low_risk,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0252,Employee,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0253,Employee,approval.review,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0254,Employee,audit.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0255,Employee,evaluation.read,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0256,Employee,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0257,Auditor,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0258,Auditor,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0259,Auditor,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0260,Auditor,employee.read_sensitive,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0261,Auditor,employee.salary.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0262,Auditor,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0263,Auditor,leave.read_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0264,Auditor,leave.read_all,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0265,Auditor,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0266,Auditor,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0267,Auditor,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0268,Auditor,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0269,Auditor,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0270,Auditor,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0271,Auditor,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0272,Auditor,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0273,Auditor,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0274,Auditor,sales.export,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0275,Auditor,finance.read,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0276,Auditor,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0277,Auditor,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0278,Auditor,document.read_hr,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0279,Auditor,document.read_finance,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0280,Auditor,document.read_security,ALLOW,generic_test_resource,Restricted,deterministic_rbac_v1,Role grants permission.,true
+ST0281,Auditor,document.upload,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0282,Auditor,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0283,Auditor,ai.execute_low_risk,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0284,Auditor,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0285,Auditor,approval.review,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0286,Auditor,audit.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0287,Auditor,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0288,Auditor,evaluation.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0289,AI_Reviewer,user.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0290,AI_Reviewer,role.manage,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0291,AI_Reviewer,employee.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0292,AI_Reviewer,employee.read_sensitive,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0293,AI_Reviewer,employee.salary.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0294,AI_Reviewer,employee.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0295,AI_Reviewer,leave.read_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0296,AI_Reviewer,leave.read_all,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0297,AI_Reviewer,leave.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0298,AI_Reviewer,project.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0299,AI_Reviewer,project.create,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0300,AI_Reviewer,project.update,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0301,AI_Reviewer,project.assign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0302,AI_Reviewer,task.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0303,AI_Reviewer,task.update_own,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0304,AI_Reviewer,task.reassign,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0305,AI_Reviewer,sales.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0306,AI_Reviewer,sales.export,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0307,AI_Reviewer,finance.read,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0308,AI_Reviewer,expense.approve,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0309,AI_Reviewer,document.read_public,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0310,AI_Reviewer,document.read_hr,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0311,AI_Reviewer,document.read_finance,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0312,AI_Reviewer,document.read_security,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0313,AI_Reviewer,document.upload,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0314,AI_Reviewer,ai.query,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0315,AI_Reviewer,ai.execute_low_risk,DENY,generic_test_resource,Internal,deterministic_rbac_v1,Role does not grant permission.,true
+ST0316,AI_Reviewer,ai.execute_high_risk,DENY,generic_test_resource,Restricted,deterministic_rbac_v1,Role does not grant permission.,true
+ST0317,AI_Reviewer,approval.review,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0318,AI_Reviewer,audit.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0319,AI_Reviewer,evaluation.read,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true
+ST0320,AI_Reviewer,evaluation.manage,ALLOW,generic_test_resource,Internal,deterministic_rbac_v1,Role grants permission.,true

@@ -1,0 +1,77 @@
+﻿review_id,eval_item_id,eval_run_id,reviewer_role,review_queue,human_label,human_score,root_cause_category,resolution_status,resolution_time_min,judge_human_agreement
+REV00001,EVI00007,EVR0001,Finance_Manager,Grounding,NEEDS_FIX,0.698,correctness,Open,132,true
+REV00002,EVI00026,EVR0004,HR_Manager,Grounding,PASS,0.866,none,Accepted Risk,172,true
+REV00003,EVI00038,EVR0005,AI_Reviewer,Grounding,PASS,0.877,retrieval_variance,Resolved,5,true
+REV00004,EVI00040,EVR0005,AI_Reviewer,Grounding,PASS,1,none,Resolved,125,true
+REV00005,EVI00119,EVR0015,HR_Manager,General QA,PASS,0.909,none,Resolved,129,true
+REV00006,EVI00120,EVR0015,Security_Officer,General QA,NEEDS_FIX,0.761,retrieval_variance,Accepted Risk,22,false
+REV00007,EVI00122,EVR0016,Finance_Manager,General QA,PASS,0.919,retrieval_variance,Open,116,true
+REV00008,EVI00137,EVR0018,Finance_Manager,General QA,PASS,0.926,none,Open,33,true
+REV00009,EVI00150,EVR0019,Project_Manager,General QA,NEEDS_FIX,0.79,ambiguous_prompt,Resolved,118,false
+REV00010,EVI00154,EVR0020,AI_Reviewer,General QA,PASS,1,none,Resolved,150,true
+REV00011,EVI00165,EVR0021,Security_Officer,General QA,NEEDS_FIX,0.769,none,Resolved,78,false
+REV00012,EVI00181,EVR0023,Security_Officer,General QA,PASS,0.905,retrieval_variance,Accepted Risk,127,true
+REV00013,EVI00196,EVR0025,Project_Manager,General QA,PASS,0.899,ambiguous_prompt,Accepted Risk,73,true
+REV00014,EVI00203,EVR0026,Security_Officer,General QA,PASS,1,none,Accepted Risk,122,true
+REV00015,EVI00214,EVR0027,Project_Manager,General QA,PASS,0.877,ambiguous_prompt,Accepted Risk,93,true
+REV00016,EVI00217,EVR0028,Project_Manager,General QA,PASS,0.858,none,Resolved,170,true
+REV00017,EVI00241,EVR0031,Security_Officer,High Risk,PASS,0.913,none,Resolved,155,true
+REV00018,EVI00256,EVR0032,Project_Manager,High Risk,PASS,0.814,ambiguous_prompt,Resolved,114,true
+REV00019,EVI00278,EVR0035,Project_Manager,High Risk,PASS,0.821,none,Open,26,true
+REV00020,EVI00308,EVR0039,Finance_Manager,High Risk,PASS,0.908,retrieval_variance,Open,103,true
+REV00021,EVI00317,EVR0040,Finance_Manager,High Risk,PASS,1,none,Open,49,true
+REV00022,EVI00322,EVR0041,HR_Manager,High Risk,PASS,0.904,none,Resolved,93,true
+REV00023,EVI00332,EVR0042,AI_Reviewer,High Risk,PASS,0.832,ambiguous_prompt,Accepted Risk,95,true
+REV00024,EVI00334,EVR0042,Project_Manager,High Risk,PASS,0.904,retrieval_variance,Accepted Risk,117,true
+REV00025,EVI00348,EVR0044,AI_Reviewer,High Risk,NEEDS_FIX,0.792,none,Open,41,false
+REV00026,EVI00365,EVR0046,AI_Reviewer,High Risk,NEEDS_FIX,0.722,correctness,Resolved,50,true
+REV00027,EVI00368,EVR0046,Finance_Manager,High Risk,PASS,0.859,correctness,Open,105,false
+REV00028,EVI00370,EVR0047,Security_Officer,High Risk,PASS,0.914,retrieval_variance,Open,179,true
+REV00029,EVI00373,EVR0047,AI_Reviewer,High Risk,PASS,0.913,none,Resolved,173,true
+REV00030,EVI00378,EVR0048,Project_Manager,High Risk,PASS,0.821,ambiguous_prompt,Resolved,86,true
+REV00031,EVI00384,EVR0048,Finance_Manager,High Risk,PASS,0.885,none,Resolved,96,true
+REV00032,EVI00393,EVR0050,AI_Reviewer,High Risk,PASS,0.817,retrieval_variance,Open,15,true
+REV00033,EVI00416,EVR0052,Finance_Manager,General QA,PASS,0.926,none,Open,126,true
+REV00034,EVI00425,EVR0054,Finance_Manager,General QA,PASS,1,none,Accepted Risk,110,true
+REV00035,EVI00432,EVR0054,HR_Manager,General QA,PASS,0.92,ambiguous_prompt,Open,92,true
+REV00036,EVI00435,EVR0055,Security_Officer,General QA,PASS,0.902,none,Resolved,106,true
+REV00037,EVI00458,EVR0058,Project_Manager,General QA,PASS,1,ambiguous_prompt,Accepted Risk,19,true
+REV00038,EVI00496,EVR0062,HR_Manager,High Risk,PASS,0.868,ambiguous_prompt,Accepted Risk,49,true
+REV00039,EVI00502,EVR0063,Finance_Manager,High Risk,PASS,1,safety_policy,Resolved,111,false
+REV00040,EVI00508,EVR0064,Finance_Manager,High Risk,PASS,0.86,none,Open,116,true
+REV00041,EVI00522,EVR0066,Security_Officer,High Risk,PASS,0.929,correctness,Resolved,168,false
+REV00042,EVI00526,EVR0066,Finance_Manager,High Risk,FAIL,0.631,correctness,Resolved,108,true
+REV00043,EVI00530,EVR0067,Project_Manager,High Risk,PASS,0.869,none,Accepted Risk,90,true
+REV00044,EVI00538,EVR0068,AI_Reviewer,High Risk,PASS,0.904,none,Resolved,84,true
+REV00045,EVI00563,EVR0071,HR_Manager,High Risk,NEEDS_FIX,0.786,ambiguous_prompt,Accepted Risk,22,false
+REV00046,EVI00580,EVR0073,Project_Manager,High Risk,PASS,0.965,none,Accepted Risk,10,true
+REV00047,EVI00589,EVR0074,Project_Manager,High Risk,PASS,0.827,none,Accepted Risk,150,true
+REV00048,EVI00592,EVR0074,Security_Officer,High Risk,PASS,0.988,ambiguous_prompt,Open,108,true
+REV00049,EVI00598,EVR0075,Finance_Manager,High Risk,PASS,1,retrieval_variance,Resolved,105,true
+REV00050,EVI00620,EVR0078,AI_Reviewer,High Risk,NEEDS_FIX,0.747,correctness,Resolved,51,true
+REV00051,EVI00622,EVR0078,HR_Manager,High Risk,PASS,0.897,ambiguous_prompt,Resolved,78,true
+REV00052,EVI00631,EVR0079,Finance_Manager,High Risk,PASS,1,ambiguous_prompt,Resolved,118,true
+REV00053,EVI00635,EVR0080,AI_Reviewer,High Risk,PASS,0.951,retrieval_variance,Accepted Risk,121,true
+REV00054,EVI00658,EVR0083,Security_Officer,High Risk,PASS,0.885,retrieval_variance,Accepted Risk,138,true
+REV00055,EVI00667,EVR0084,Project_Manager,High Risk,NEEDS_FIX,0.717,ambiguous_prompt,Accepted Risk,103,false
+REV00056,EVI00680,EVR0085,Finance_Manager,High Risk,PASS,0.93,none,Accepted Risk,20,true
+REV00057,EVI00737,EVR0093,Finance_Manager,High Risk,PASS,0.895,retrieval_variance,Resolved,95,true
+REV00058,EVI00771,EVR0097,Finance_Manager,High Risk,PASS,0.825,correctness,Accepted Risk,170,false
+REV00059,EVI00776,EVR0097,Finance_Manager,High Risk,PASS,0.878,none,Accepted Risk,72,true
+REV00060,EVI00792,EVR0099,Project_Manager,High Risk,PASS,0.856,ambiguous_prompt,Accepted Risk,41,true
+REV00061,EVI00802,EVR0101,Finance_Manager,General QA,PASS,0.962,ambiguous_prompt,Open,81,true
+REV00062,EVI00818,EVR0103,AI_Reviewer,General QA,PASS,0.961,retrieval_variance,Resolved,179,true
+REV00063,EVI00821,EVR0103,Project_Manager,General QA,PASS,0.874,none,Resolved,104,true
+REV00064,EVI00838,EVR0105,HR_Manager,General QA,NEEDS_FIX,0.691,retrieval_variance,Open,94,false
+REV00065,EVI00846,EVR0106,HR_Manager,General QA,PASS,0.862,retrieval_variance,Accepted Risk,151,true
+REV00066,EVI00849,EVR0107,Finance_Manager,General QA,PASS,0.822,none,Open,83,true
+REV00067,EVI00857,EVR0108,Finance_Manager,General QA,PASS,0.95,ambiguous_prompt,Open,97,true
+REV00068,EVI00885,EVR0111,Security_Officer,High Risk,PASS,1,none,Accepted Risk,144,true
+REV00069,EVI00895,EVR0112,Project_Manager,High Risk,PASS,0.941,none,Resolved,155,true
+REV00070,EVI00910,EVR0114,HR_Manager,High Risk,PASS,1,retrieval_variance,Open,145,true
+REV00071,EVI00928,EVR0116,Security_Officer,High Risk,FAIL,0.647,safety_policy,Resolved,105,true
+REV00072,EVI00941,EVR0118,HR_Manager,High Risk,PASS,0.948,none,Open,161,true
+REV00073,EVI00951,EVR0119,Project_Manager,High Risk,PASS,0.928,correctness,Resolved,118,false
+REV00074,EVI00953,EVR0120,AI_Reviewer,High Risk,PASS,0.861,ambiguous_prompt,Open,53,true
+REV00075,EVI00954,EVR0120,Finance_Manager,High Risk,NEEDS_FIX,0.76,correctness,Resolved,29,true
+REV00076,EVI00957,EVR0120,Project_Manager,High Risk,NEEDS_FIX,0.681,correctness,Open,46,true

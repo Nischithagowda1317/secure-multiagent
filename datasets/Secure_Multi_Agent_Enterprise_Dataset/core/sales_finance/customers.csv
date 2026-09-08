@@ -1,0 +1,251 @@
+﻿customer_id,customer_name,customer_segment,region,country,city,account_manager_employee_id,credit_limit_usd,risk_rating,active,created_at
+CUST0001,San Francisco Education Account 001,Education,North America,United States,San Francisco,E0168,295659.86,Medium,true,2025-03-03T10:00:00
+CUST0002,Buenos Aires Small Business Account 002,Small Business,Latin America,Argentina,Buenos Aires,E0097,30994.53,Low,true,2024-05-17T10:00:00
+CUST0003,Bengaluru Education Account 003,Education,Asia Pacific,India,Bengaluru,E0018,153781.2,Low,true,2024-11-09T10:00:00
+CUST0004,Delhi Small Business Account 004,Small Business,Asia Pacific,India,Delhi,E0063,469776.73,Medium,true,2025-01-07T10:00:00
+CUST0005,Buenos Aires Public Sector Account 005,Public Sector,Latin America,Argentina,Buenos Aires,E0046,162800.33,Low,true,2025-09-05T10:00:00
+CUST0006,Toronto Education Account 006,Education,North America,Canada,Toronto,E0147,433129.34,Low,true,2025-10-24T10:00:00
+CUST0007,Amsterdam Enterprise Account 007,Enterprise,Europe,Netherlands,Amsterdam,E0074,321273.4,Low,true,2025-08-21T10:00:00
+CUST0008,Singapore Public Sector Account 008,Public Sector,Asia Pacific,Singapore,Singapore,E0018,478626.74,Low,true,2024-11-01T10:00:00
+CUST0009,Riyadh Enterprise Account 009,Enterprise,Middle East & Africa,Saudi Arabia,Riyadh,E0186,42857.28,Medium,true,2024-06-12T10:00:00
+CUST0010,Dubai Mid-Market Account 010,Mid-Market,Middle East & Africa,United Arab Emirates,Dubai,E0132,202886.28,Medium,true,2024-03-28T10:00:00
+CUST0011,Delhi Small Business Account 011,Small Business,Asia Pacific,India,Delhi,E0057,101340.54,Low,true,2025-01-09T10:00:00
+CUST0012,Sao Paulo Mid-Market Account 012,Mid-Market,Latin America,Brazil,Sao Paulo,E0018,35735.5,Low,true,2024-04-14T10:00:00
+CUST0013,Chicago Enterprise Account 013,Enterprise,North America,United States,Chicago,E0074,348185.78,Low,true,2024-08-14T10:00:00
+CUST0014,Berlin Mid-Market Account 014,Mid-Market,Europe,Germany,Berlin,E0097,169804.71,Low,true,2025-08-12T10:00:00
+CUST0015,Tokyo Small Business Account 015,Small Business,Asia Pacific,Japan,Tokyo,E0159,255993.4,Low,true,2025-04-10T10:00:00
+CUST0016,Toronto Education Account 016,Education,North America,Canada,Toronto,E0025,387364.81,Low,true,2024-06-18T10:00:00
+CUST0017,New York Enterprise Account 017,Enterprise,North America,United States,New York,E0047,428841.85,Low,true,2024-10-15T10:00:00
+CUST0018,Madrid Small Business Account 018,Small Business,Europe,Spain,Madrid,E0051,267975.53,Low,true,2024-01-23T10:00:00
+CUST0019,Buenos Aires Small Business Account 019,Small Business,Latin America,Argentina,Buenos Aires,E0118,316760.5,Low,true,2025-04-09T10:00:00
+CUST0020,Sydney Enterprise Account 020,Enterprise,Asia Pacific,Australia,Sydney,E0159,404943.19,Medium,true,2025-07-02T10:00:00
+CUST0021,London Public Sector Account 021,Public Sector,Europe,United Kingdom,London,E0039,457960.11,Low,true,2024-12-08T10:00:00
+CUST0022,Vancouver Enterprise Account 022,Enterprise,North America,Canada,Vancouver,E0163,411845.02,Medium,true,2024-01-09T10:00:00
+CUST0023,Toronto Enterprise Account 023,Enterprise,North America,Canada,Toronto,E0075,124170.74,Low,true,2024-02-05T10:00:00
+CUST0024,Bengaluru Small Business Account 024,Small Business,Asia Pacific,India,Bengaluru,E0075,105160.1,Medium,true,2024-06-13T10:00:00
+CUST0025,Dubai Small Business Account 025,Small Business,Middle East & Africa,United Arab Emirates,Dubai,E0047,373723.69,Low,true,2024-03-02T10:00:00
+CUST0026,Mexico City Public Sector Account 026,Public Sector,Latin America,Mexico,Mexico City,E0025,434099.86,Low,true,2025-07-16T10:00:00
+CUST0027,London Small Business Account 027,Small Business,Europe,United Kingdom,London,E0150,455800.16,Low,true,2024-04-14T10:00:00
+CUST0028,Paris Enterprise Account 028,Enterprise,Europe,France,Paris,E0046,325866.42,Low,true,2024-06-15T10:00:00
+CUST0029,Madrid Small Business Account 029,Small Business,Europe,Spain,Madrid,E0057,81810.55,Low,true,2024-07-16T10:00:00
+CUST0030,Milan Small Business Account 030,Small Business,Europe,Italy,Milan,E0039,211136.15,High,true,2024-08-24T10:00:00
+CUST0031,New York Public Sector Account 031,Public Sector,North America,United States,New York,E0186,304939.3,Low,true,2025-04-20T10:00:00
+CUST0032,Tokyo Mid-Market Account 032,Mid-Market,Asia Pacific,Japan,Tokyo,E0118,283111.6,High,true,2024-03-29T10:00:00
+CUST0033,New York Small Business Account 033,Small Business,North America,United States,New York,E0074,377013.96,Low,true,2024-02-08T10:00:00
+CUST0034,Milan Mid-Market Account 034,Mid-Market,Europe,Italy,Milan,E0039,484243.0,Low,true,2024-08-27T10:00:00
+CUST0035,Mexico City Small Business Account 035,Small Business,Latin America,Mexico,Mexico City,E0188,441051.99,Low,true,2024-01-11T10:00:00
+CUST0036,Singapore Enterprise Account 036,Enterprise,Asia Pacific,Singapore,Singapore,E0025,402681.94,Medium,true,2024-06-29T10:00:00
+CUST0037,Toronto Education Account 037,Education,North America,Canada,Toronto,E0117,123267.95,Medium,true,2024-09-22T10:00:00
+CUST0038,Tokyo Enterprise Account 038,Enterprise,Asia Pacific,Japan,Tokyo,E0188,25866.13,Medium,true,2024-04-17T10:00:00
+CUST0039,Mexico City Small Business Account 039,Small Business,Latin America,Mexico,Mexico City,E0046,417540.56,High,true,2024-12-11T10:00:00
+CUST0040,Sydney Enterprise Account 040,Enterprise,Asia Pacific,Australia,Sydney,E0097,385738.81,Low,true,2024-12-15T10:00:00
+CUST0041,Mumbai Enterprise Account 041,Enterprise,Asia Pacific,India,Mumbai,E0074,427968.26,Low,true,2024-07-08T10:00:00
+CUST0042,Paris Small Business Account 042,Small Business,Europe,France,Paris,E0046,314058.1,Medium,true,2024-09-28T10:00:00
+CUST0043,Dubai Enterprise Account 043,Enterprise,Middle East & Africa,United Arab Emirates,Dubai,E0117,473633.11,Medium,true,2025-03-18T10:00:00
+CUST0044,Vancouver Education Account 044,Education,North America,Canada,Vancouver,E0097,44880.68,Low,true,2024-11-01T10:00:00
+CUST0045,Bengaluru Small Business Account 045,Small Business,Asia Pacific,India,Bengaluru,E0063,346343.55,Low,true,2025-11-19T10:00:00
+CUST0046,Sao Paulo Mid-Market Account 046,Mid-Market,Latin America,Brazil,Sao Paulo,E0046,196766.97,Low,true,2025-10-29T10:00:00
+CUST0047,Tokyo Enterprise Account 047,Enterprise,Asia Pacific,Japan,Tokyo,E0005,144407.46,Medium,true,2024-05-02T10:00:00
+CUST0048,Vancouver Small Business Account 048,Small Business,North America,Canada,Vancouver,E0163,226780.75,Low,true,2024-06-08T10:00:00
+CUST0049,London Enterprise Account 049,Enterprise,Europe,United Kingdom,London,E0168,219997.23,Low,true,2024-02-01T10:00:00
+CUST0050,Dubai Enterprise Account 050,Enterprise,Middle East & Africa,United Arab Emirates,Dubai,E0118,222081.38,Low,true,2025-09-19T10:00:00
+CUST0051,Mexico City Enterprise Account 051,Enterprise,Latin America,Mexico,Mexico City,E0163,289902.5,Low,true,2024-08-25T10:00:00
+CUST0052,Tokyo Enterprise Account 052,Enterprise,Asia Pacific,Japan,Tokyo,E0118,305618.41,Low,true,2025-08-06T10:00:00
+CUST0053,Berlin Education Account 053,Education,Europe,Germany,Berlin,E0039,76328.95,Low,true,2025-07-10T10:00:00
+CUST0054,Singapore Mid-Market Account 054,Mid-Market,Asia Pacific,Singapore,Singapore,E0046,269749.7,Low,true,2024-03-18T10:00:00
+CUST0055,Sydney Mid-Market Account 055,Mid-Market,Asia Pacific,Australia,Sydney,E0150,140575.13,High,true,2024-10-06T10:00:00
+CUST0056,Riyadh Mid-Market Account 056,Mid-Market,Middle East & Africa,Saudi Arabia,Riyadh,E0005,485943.16,Low,true,2024-01-31T10:00:00
+CUST0057,Chicago Education Account 057,Education,North America,United States,Chicago,E0159,196921.62,Medium,true,2025-07-10T10:00:00
+CUST0058,Delhi Small Business Account 058,Small Business,Asia Pacific,India,Delhi,E0097,153809.91,Medium,true,2025-05-16T10:00:00
+CUST0059,Mumbai Small Business Account 059,Small Business,Asia Pacific,India,Mumbai,E0147,247727.34,Low,true,2024-04-06T10:00:00
+CUST0060,Paris Education Account 060,Education,Europe,France,Paris,E0047,115751.12,Low,true,2024-06-04T10:00:00
+CUST0061,Toronto Mid-Market Account 061,Mid-Market,North America,Canada,Toronto,E0039,368736.94,Low,true,2024-07-22T10:00:00
+CUST0062,Sydney Mid-Market Account 062,Mid-Market,Asia Pacific,Australia,Sydney,E0159,268697.88,Low,true,2025-03-09T10:00:00
+CUST0063,Milan Small Business Account 063,Small Business,Europe,Italy,Milan,E0051,140428.79,Low,true,2024-02-23T10:00:00
+CUST0064,Berlin Enterprise Account 064,Enterprise,Europe,Germany,Berlin,E0051,59054.65,Medium,true,2024-01-29T10:00:00
+CUST0065,Riyadh Public Sector Account 065,Public Sector,Middle East & Africa,Saudi Arabia,Riyadh,E0168,326040.7,High,true,2025-08-07T10:00:00
+CUST0066,Milan Mid-Market Account 066,Mid-Market,Europe,Italy,Milan,E0150,180805.88,Low,true,2025-02-12T10:00:00
+CUST0067,London Small Business Account 067,Small Business,Europe,United Kingdom,London,E0188,380910.15,Medium,true,2025-01-31T10:00:00
+CUST0068,Sydney Small Business Account 068,Small Business,Asia Pacific,Australia,Sydney,E0097,26147.71,Low,true,2025-08-23T10:00:00
+CUST0069,Sydney Small Business Account 069,Small Business,Asia Pacific,Australia,Sydney,E0159,292648.35,Low,true,2025-10-16T10:00:00
+CUST0070,New York Small Business Account 070,Small Business,North America,United States,New York,E0097,412414.18,Low,true,2024-09-21T10:00:00
+CUST0071,San Francisco Education Account 071,Education,North America,United States,San Francisco,E0132,94048.32,Low,true,2024-09-26T10:00:00
+CUST0072,Paris Education Account 072,Education,Europe,France,Paris,E0005,168679.14,Medium,true,2025-07-24T10:00:00
+CUST0073,Chicago Mid-Market Account 073,Mid-Market,North America,United States,Chicago,E0005,114556.33,Low,true,2025-07-22T10:00:00
+CUST0074,Toronto Education Account 074,Education,North America,Canada,Toronto,E0005,210426.41,Medium,true,2025-10-04T10:00:00
+CUST0075,Johannesburg Small Business Account 075,Small Business,Middle East & Africa,South Africa,Johannesburg,E0047,462152.19,Low,true,2024-04-24T10:00:00
+CUST0076,Madrid Enterprise Account 076,Enterprise,Europe,Spain,Madrid,E0046,375534.64,Low,true,2025-03-18T10:00:00
+CUST0077,Toronto Enterprise Account 077,Enterprise,North America,Canada,Toronto,E0057,361404.58,Medium,true,2024-04-15T10:00:00
+CUST0078,Vancouver Mid-Market Account 078,Mid-Market,North America,Canada,Vancouver,E0046,101745.37,Low,true,2024-10-10T10:00:00
+CUST0079,Sydney Mid-Market Account 079,Mid-Market,Asia Pacific,Australia,Sydney,E0018,269314.0,Low,true,2024-03-19T10:00:00
+CUST0080,Milan Education Account 080,Education,Europe,Italy,Milan,E0147,245814.48,Low,true,2025-10-07T10:00:00
+CUST0081,Sydney Education Account 081,Education,Asia Pacific,Australia,Sydney,E0047,146710.12,Low,true,2025-06-02T10:00:00
+CUST0082,Sydney Small Business Account 082,Small Business,Asia Pacific,Australia,Sydney,E0118,160475.9,Low,true,2024-10-17T10:00:00
+CUST0083,Berlin Public Sector Account 083,Public Sector,Europe,Germany,Berlin,E0097,266825.3,Low,true,2025-11-10T10:00:00
+CUST0084,London Mid-Market Account 084,Mid-Market,Europe,United Kingdom,London,E0047,234069.29,Low,true,2024-06-23T10:00:00
+CUST0085,Berlin Education Account 085,Education,Europe,Germany,Berlin,E0118,26107.99,High,true,2025-01-21T10:00:00
+CUST0086,Sydney Small Business Account 086,Small Business,Asia Pacific,Australia,Sydney,E0057,215344.61,Low,true,2025-09-10T10:00:00
+CUST0087,Berlin Small Business Account 087,Small Business,Europe,Germany,Berlin,E0075,449126.6,Medium,true,2024-02-01T10:00:00
+CUST0088,Madrid Education Account 088,Education,Europe,Spain,Madrid,E0163,458385.04,Low,true,2025-11-08T10:00:00
+CUST0089,Berlin Public Sector Account 089,Public Sector,Europe,Germany,Berlin,E0047,173996.36,High,true,2024-02-20T10:00:00
+CUST0090,London Small Business Account 090,Small Business,Europe,United Kingdom,London,E0046,108792.79,Low,true,2024-12-31T10:00:00
+CUST0091,London Mid-Market Account 091,Mid-Market,Europe,United Kingdom,London,E0046,459425.45,Medium,true,2025-10-04T10:00:00
+CUST0092,Buenos Aires Education Account 092,Education,Latin America,Argentina,Buenos Aires,E0163,255387.5,Low,true,2025-11-12T10:00:00
+CUST0093,London Small Business Account 093,Small Business,Europe,United Kingdom,London,E0047,81313.41,Low,true,2025-03-08T10:00:00
+CUST0094,Paris Mid-Market Account 094,Mid-Market,Europe,France,Paris,E0018,455110.03,Medium,true,2024-03-27T10:00:00
+CUST0095,Riyadh Enterprise Account 095,Enterprise,Middle East & Africa,Saudi Arabia,Riyadh,E0163,319451.39,Medium,true,2024-04-02T10:00:00
+CUST0096,Delhi Public Sector Account 096,Public Sector,Asia Pacific,India,Delhi,E0005,100176.52,Low,true,2024-05-10T10:00:00
+CUST0097,Milan Mid-Market Account 097,Mid-Market,Europe,Italy,Milan,E0005,90280.12,Low,true,2024-07-07T10:00:00
+CUST0098,Dubai Education Account 098,Education,Middle East & Africa,United Arab Emirates,Dubai,E0159,488696.09,Medium,true,2024-04-14T10:00:00
+CUST0099,Sydney Mid-Market Account 099,Mid-Market,Asia Pacific,Australia,Sydney,E0186,92324.94,Low,true,2024-03-05T10:00:00
+CUST0100,Riyadh Mid-Market Account 100,Mid-Market,Middle East & Africa,Saudi Arabia,Riyadh,E0132,147400.04,Medium,true,2025-08-16T10:00:00
+CUST0101,London Mid-Market Account 101,Mid-Market,Europe,United Kingdom,London,E0046,358340.1,Low,true,2024-03-28T10:00:00
+CUST0102,San Francisco Small Business Account 102,Small Business,North America,United States,San Francisco,E0159,239327.41,High,true,2025-11-06T10:00:00
+CUST0103,Mexico City Enterprise Account 103,Enterprise,Latin America,Mexico,Mexico City,E0188,298859.51,Low,true,2025-03-09T10:00:00
+CUST0104,Delhi Education Account 104,Education,Asia Pacific,India,Delhi,E0150,445203.83,Medium,true,2024-08-28T10:00:00
+CUST0105,Tokyo Enterprise Account 105,Enterprise,Asia Pacific,Japan,Tokyo,E0163,214996.93,Low,true,2024-01-25T10:00:00
+CUST0106,Berlin Education Account 106,Education,Europe,Germany,Berlin,E0075,233127.1,Low,true,2025-08-19T10:00:00
+CUST0107,San Francisco Small Business Account 107,Small Business,North America,United States,San Francisco,E0025,486515.04,Low,true,2024-12-05T10:00:00
+CUST0108,Singapore Education Account 108,Education,Asia Pacific,Singapore,Singapore,E0039,484910.08,Medium,true,2024-11-30T10:00:00
+CUST0109,Mumbai Education Account 109,Education,Asia Pacific,India,Mumbai,E0150,53978.59,Medium,true,2024-09-17T10:00:00
+CUST0110,Buenos Aires Education Account 110,Education,Latin America,Argentina,Buenos Aires,E0159,467994.47,Low,true,2024-08-10T10:00:00
+CUST0111,Toronto Mid-Market Account 111,Mid-Market,North America,Canada,Toronto,E0168,164127.82,Low,true,2024-02-25T10:00:00
+CUST0112,Bengaluru Public Sector Account 112,Public Sector,Asia Pacific,India,Bengaluru,E0074,257561.56,Low,true,2024-12-25T10:00:00
+CUST0113,Bengaluru Small Business Account 113,Small Business,Asia Pacific,India,Bengaluru,E0057,497340.73,Medium,true,2025-02-16T10:00:00
+CUST0114,Mexico City Small Business Account 114,Small Business,Latin America,Mexico,Mexico City,E0097,369669.62,Low,true,2024-11-21T10:00:00
+CUST0115,Delhi Enterprise Account 115,Enterprise,Asia Pacific,India,Delhi,E0132,29776.7,Low,true,2025-11-09T10:00:00
+CUST0116,Sao Paulo Public Sector Account 116,Public Sector,Latin America,Brazil,Sao Paulo,E0057,457671.1,Low,true,2024-07-02T10:00:00
+CUST0117,Milan Enterprise Account 117,Enterprise,Europe,Italy,Milan,E0150,305987.35,Low,true,2024-06-23T10:00:00
+CUST0118,Riyadh Education Account 118,Education,Middle East & Africa,Saudi Arabia,Riyadh,E0147,75389.63,Low,true,2025-06-25T10:00:00
+CUST0119,Toronto Mid-Market Account 119,Mid-Market,North America,Canada,Toronto,E0168,363783.01,Low,true,2024-02-04T10:00:00
+CUST0120,Amsterdam Small Business Account 120,Small Business,Europe,Netherlands,Amsterdam,E0150,291054.33,Medium,true,2025-01-25T10:00:00
+CUST0121,Berlin Small Business Account 121,Small Business,Europe,Germany,Berlin,E0074,405687.02,Low,true,2024-07-01T10:00:00
+CUST0122,San Francisco Enterprise Account 122,Enterprise,North America,United States,San Francisco,E0051,273013.71,Low,true,2025-05-25T10:00:00
+CUST0123,Toronto Enterprise Account 123,Enterprise,North America,Canada,Toronto,E0039,141086.9,Low,true,2024-05-18T10:00:00
+CUST0124,Berlin Public Sector Account 124,Public Sector,Europe,Germany,Berlin,E0117,332490.09,Low,true,2025-04-01T10:00:00
+CUST0125,London Enterprise Account 125,Enterprise,Europe,United Kingdom,London,E0159,66434.78,Low,true,2025-06-17T10:00:00
+CUST0126,Chicago Enterprise Account 126,Enterprise,North America,United States,Chicago,E0097,138507.75,Low,true,2025-11-13T10:00:00
+CUST0127,Tokyo Mid-Market Account 127,Mid-Market,Asia Pacific,Japan,Tokyo,E0075,487307.01,Low,true,2024-05-20T10:00:00
+CUST0128,San Francisco Education Account 128,Education,North America,United States,San Francisco,E0117,388833.7,Medium,true,2025-11-15T10:00:00
+CUST0129,Delhi Mid-Market Account 129,Mid-Market,Asia Pacific,India,Delhi,E0168,32479.88,Low,true,2025-11-13T10:00:00
+CUST0130,Sydney Small Business Account 130,Small Business,Asia Pacific,Australia,Sydney,E0075,240878.51,Low,true,2024-03-05T10:00:00
+CUST0131,Amsterdam Public Sector Account 131,Public Sector,Europe,Netherlands,Amsterdam,E0051,65168.87,Low,true,2024-03-08T10:00:00
+CUST0132,Tokyo Small Business Account 132,Small Business,Asia Pacific,Japan,Tokyo,E0097,38485.95,Medium,true,2024-08-13T10:00:00
+CUST0133,Johannesburg Mid-Market Account 133,Mid-Market,Middle East & Africa,South Africa,Johannesburg,E0047,455465.86,Low,true,2024-10-30T10:00:00
+CUST0134,Paris Public Sector Account 134,Public Sector,Europe,France,Paris,E0188,464111.35,Low,true,2024-08-08T10:00:00
+CUST0135,San Francisco Mid-Market Account 135,Mid-Market,North America,United States,San Francisco,E0118,174539.77,Medium,true,2024-11-10T10:00:00
+CUST0136,Riyadh Mid-Market Account 136,Mid-Market,Middle East & Africa,Saudi Arabia,Riyadh,E0039,316241.19,Medium,true,2025-04-06T10:00:00
+CUST0137,Johannesburg Small Business Account 137,Small Business,Middle East & Africa,South Africa,Johannesburg,E0039,48191.07,Medium,true,2024-06-27T10:00:00
+CUST0138,Madrid Small Business Account 138,Small Business,Europe,Spain,Madrid,E0132,324711.04,Medium,true,2025-04-15T10:00:00
+CUST0139,Tokyo Education Account 139,Education,Asia Pacific,Japan,Tokyo,E0117,61676.05,Low,true,2024-05-11T10:00:00
+CUST0140,Amsterdam Enterprise Account 140,Enterprise,Europe,Netherlands,Amsterdam,E0132,433014.68,Low,true,2025-05-12T10:00:00
+CUST0141,Madrid Enterprise Account 141,Enterprise,Europe,Spain,Madrid,E0057,412071.83,Low,true,2024-07-18T10:00:00
+CUST0142,Tokyo Mid-Market Account 142,Mid-Market,Asia Pacific,Japan,Tokyo,E0005,320032.27,Low,true,2025-05-03T10:00:00
+CUST0143,Berlin Mid-Market Account 143,Mid-Market,Europe,Germany,Berlin,E0075,466521.15,Low,true,2024-08-24T10:00:00
+CUST0144,Delhi Small Business Account 144,Small Business,Asia Pacific,India,Delhi,E0039,470022.13,Low,true,2025-09-27T10:00:00
+CUST0145,Berlin Public Sector Account 145,Public Sector,Europe,Germany,Berlin,E0186,454714.27,Low,true,2025-09-27T10:00:00
+CUST0146,New York Small Business Account 146,Small Business,North America,United States,New York,E0150,465144.24,Low,true,2025-07-01T10:00:00
+CUST0147,Amsterdam Mid-Market Account 147,Mid-Market,Europe,Netherlands,Amsterdam,E0168,229101.44,Low,true,2025-05-28T10:00:00
+CUST0148,Amsterdam Education Account 148,Education,Europe,Netherlands,Amsterdam,E0097,398856.53,High,true,2025-07-30T10:00:00
+CUST0149,Mumbai Education Account 149,Education,Asia Pacific,India,Mumbai,E0039,203976.71,Low,true,2024-08-13T10:00:00
+CUST0150,Chicago Education Account 150,Education,North America,United States,Chicago,E0159,356703.78,Low,true,2025-01-30T10:00:00
+CUST0151,Sao Paulo Small Business Account 151,Small Business,Latin America,Brazil,Sao Paulo,E0025,481478.03,Low,true,2024-06-01T10:00:00
+CUST0152,New York Education Account 152,Education,North America,United States,New York,E0018,485957.32,Medium,true,2024-12-26T10:00:00
+CUST0153,Johannesburg Public Sector Account 153,Public Sector,Middle East & Africa,South Africa,Johannesburg,E0063,76567.45,Low,true,2025-08-03T10:00:00
+CUST0154,Riyadh Mid-Market Account 154,Mid-Market,Middle East & Africa,Saudi Arabia,Riyadh,E0046,65418.56,High,true,2024-11-21T10:00:00
+CUST0155,Vancouver Small Business Account 155,Small Business,North America,Canada,Vancouver,E0118,324116.46,Low,true,2024-12-12T10:00:00
+CUST0156,Delhi Enterprise Account 156,Enterprise,Asia Pacific,India,Delhi,E0159,220579.38,Low,true,2024-12-03T10:00:00
+CUST0157,Johannesburg Enterprise Account 157,Enterprise,Middle East & Africa,South Africa,Johannesburg,E0025,351254.54,Medium,true,2025-06-26T10:00:00
+CUST0158,Delhi Enterprise Account 158,Enterprise,Asia Pacific,India,Delhi,E0039,478467.18,Medium,true,2024-08-20T10:00:00
+CUST0159,Singapore Small Business Account 159,Small Business,Asia Pacific,Singapore,Singapore,E0039,282773.33,Medium,true,2025-10-30T10:00:00
+CUST0160,Vancouver Mid-Market Account 160,Mid-Market,North America,Canada,Vancouver,E0063,73101.62,High,true,2025-05-28T10:00:00
+CUST0161,Amsterdam Mid-Market Account 161,Mid-Market,Europe,Netherlands,Amsterdam,E0018,284995.12,Medium,true,2024-04-26T10:00:00
+CUST0162,Singapore Mid-Market Account 162,Mid-Market,Asia Pacific,Singapore,Singapore,E0097,313725.55,Low,true,2025-07-05T10:00:00
+CUST0163,Sydney Mid-Market Account 163,Mid-Market,Asia Pacific,Australia,Sydney,E0075,269321.19,Low,true,2024-12-11T10:00:00
+CUST0164,Bengaluru Education Account 164,Education,Asia Pacific,India,Bengaluru,E0150,102084.87,Low,true,2025-06-03T10:00:00
+CUST0165,Milan Small Business Account 165,Small Business,Europe,Italy,Milan,E0097,135499.21,Medium,true,2024-09-07T10:00:00
+CUST0166,Paris Education Account 166,Education,Europe,France,Paris,E0046,96755.42,High,true,2024-06-30T10:00:00
+CUST0167,Madrid Public Sector Account 167,Public Sector,Europe,Spain,Madrid,E0132,368728.34,Low,true,2024-06-30T10:00:00
+CUST0168,Buenos Aires Small Business Account 168,Small Business,Latin America,Argentina,Buenos Aires,E0005,419298.8,Low,true,2024-02-12T10:00:00
+CUST0169,Paris Education Account 169,Education,Europe,France,Paris,E0018,391848.12,Low,true,2025-09-29T10:00:00
+CUST0170,Amsterdam Mid-Market Account 170,Mid-Market,Europe,Netherlands,Amsterdam,E0150,124565.53,Low,true,2024-11-04T10:00:00
+CUST0171,New York Mid-Market Account 171,Mid-Market,North America,United States,New York,E0097,300580.46,Medium,true,2024-07-21T10:00:00
+CUST0172,Riyadh Public Sector Account 172,Public Sector,Middle East & Africa,Saudi Arabia,Riyadh,E0188,387854.88,Low,true,2024-04-28T10:00:00
+CUST0173,Riyadh Small Business Account 173,Small Business,Middle East & Africa,Saudi Arabia,Riyadh,E0046,479205.68,Medium,true,2025-05-31T10:00:00
+CUST0174,Mumbai Education Account 174,Education,Asia Pacific,India,Mumbai,E0117,236458.92,Low,true,2024-07-21T10:00:00
+CUST0175,Mumbai Small Business Account 175,Small Business,Asia Pacific,India,Mumbai,E0039,257304.14,Low,true,2024-03-21T10:00:00
+CUST0176,Sydney Small Business Account 176,Small Business,Asia Pacific,Australia,Sydney,E0147,228308.57,Medium,true,2024-10-21T10:00:00
+CUST0177,Amsterdam Enterprise Account 177,Enterprise,Europe,Netherlands,Amsterdam,E0047,469566.86,Medium,true,2025-06-21T10:00:00
+CUST0178,Buenos Aires Enterprise Account 178,Enterprise,Latin America,Argentina,Buenos Aires,E0057,354956.73,Low,true,2024-04-23T10:00:00
+CUST0179,Paris Small Business Account 179,Small Business,Europe,France,Paris,E0132,256296.34,Low,true,2024-05-25T10:00:00
+CUST0180,Madrid Enterprise Account 180,Enterprise,Europe,Spain,Madrid,E0097,94217.26,Low,true,2025-03-31T10:00:00
+CUST0181,San Francisco Mid-Market Account 181,Mid-Market,North America,United States,San Francisco,E0063,157764.9,Low,true,2024-12-31T10:00:00
+CUST0182,Chicago Enterprise Account 182,Enterprise,North America,United States,Chicago,E0132,109959.67,Medium,true,2024-08-22T10:00:00
+CUST0183,Sydney Enterprise Account 183,Enterprise,Asia Pacific,Australia,Sydney,E0118,312511.5,Low,true,2025-01-12T10:00:00
+CUST0184,London Mid-Market Account 184,Mid-Market,Europe,United Kingdom,London,E0150,330650.41,Medium,true,2025-02-26T10:00:00
+CUST0185,Delhi Education Account 185,Education,Asia Pacific,India,Delhi,E0018,433117.95,Low,true,2025-05-31T10:00:00
+CUST0186,Amsterdam Enterprise Account 186,Enterprise,Europe,Netherlands,Amsterdam,E0057,41167.08,Low,true,2024-12-29T10:00:00
+CUST0187,Mexico City Education Account 187,Education,Latin America,Mexico,Mexico City,E0168,497634.2,Low,true,2025-04-19T10:00:00
+CUST0188,Amsterdam Education Account 188,Education,Europe,Netherlands,Amsterdam,E0150,247026.37,Low,true,2024-03-16T10:00:00
+CUST0189,Vancouver Small Business Account 189,Small Business,North America,Canada,Vancouver,E0150,407980.22,High,true,2025-08-16T10:00:00
+CUST0190,Berlin Small Business Account 190,Small Business,Europe,Germany,Berlin,E0186,110994.78,Medium,true,2025-11-09T10:00:00
+CUST0191,San Francisco Enterprise Account 191,Enterprise,North America,United States,San Francisco,E0051,207823.59,Medium,true,2024-11-25T10:00:00
+CUST0192,Paris Enterprise Account 192,Enterprise,Europe,France,Paris,E0147,328059.68,Low,true,2025-10-24T10:00:00
+CUST0193,Paris Small Business Account 193,Small Business,Europe,France,Paris,E0097,402289.91,Low,true,2024-04-03T10:00:00
+CUST0194,Madrid Education Account 194,Education,Europe,Spain,Madrid,E0025,219095.38,Low,true,2024-11-19T10:00:00
+CUST0195,Madrid Small Business Account 195,Small Business,Europe,Spain,Madrid,E0046,327225.73,Low,true,2024-10-20T10:00:00
+CUST0196,Amsterdam Education Account 196,Education,Europe,Netherlands,Amsterdam,E0168,308870.93,Medium,true,2024-09-29T10:00:00
+CUST0197,Bengaluru Small Business Account 197,Small Business,Asia Pacific,India,Bengaluru,E0075,367026.39,Low,true,2025-08-08T10:00:00
+CUST0198,Riyadh Education Account 198,Education,Middle East & Africa,Saudi Arabia,Riyadh,E0147,35827.5,Low,true,2024-11-09T10:00:00
+CUST0199,Paris Small Business Account 199,Small Business,Europe,France,Paris,E0051,420253.96,Low,true,2025-01-25T10:00:00
+CUST0200,Delhi Education Account 200,Education,Asia Pacific,India,Delhi,E0025,124699.49,Low,true,2025-01-26T10:00:00
+CUST0201,New York Small Business Account 201,Small Business,North America,United States,New York,E0117,165982.73,Low,true,2024-05-26T10:00:00
+CUST0202,Milan Enterprise Account 202,Enterprise,Europe,Italy,Milan,E0074,242909.56,Medium,true,2024-01-01T10:00:00
+CUST0203,Tokyo Public Sector Account 203,Public Sector,Asia Pacific,Japan,Tokyo,E0097,100417.65,Low,true,2024-06-08T10:00:00
+CUST0204,Sao Paulo Education Account 204,Education,Latin America,Brazil,Sao Paulo,E0057,180487.28,Low,true,2024-01-21T10:00:00
+CUST0205,New York Public Sector Account 205,Public Sector,North America,United States,New York,E0075,450758.41,Medium,true,2025-10-02T10:00:00
+CUST0206,Mexico City Mid-Market Account 206,Mid-Market,Latin America,Mexico,Mexico City,E0074,159667.53,Low,true,2025-04-20T10:00:00
+CUST0207,Chicago Mid-Market Account 207,Mid-Market,North America,United States,Chicago,E0047,316492.62,High,true,2024-05-26T10:00:00
+CUST0208,Amsterdam Enterprise Account 208,Enterprise,Europe,Netherlands,Amsterdam,E0168,496665.01,Medium,true,2025-10-23T10:00:00
+CUST0209,Sydney Small Business Account 209,Small Business,Asia Pacific,Australia,Sydney,E0186,381847.34,Low,true,2024-09-06T10:00:00
+CUST0210,Delhi Mid-Market Account 210,Mid-Market,Asia Pacific,India,Delhi,E0188,395798.2,Low,true,2025-10-03T10:00:00
+CUST0211,Berlin Small Business Account 211,Small Business,Europe,Germany,Berlin,E0057,169757.67,High,true,2025-04-06T10:00:00
+CUST0212,Berlin Education Account 212,Education,Europe,Germany,Berlin,E0046,452132.57,Low,true,2025-02-21T10:00:00
+CUST0213,Mumbai Mid-Market Account 213,Mid-Market,Asia Pacific,India,Mumbai,E0150,280461.16,Medium,true,2024-08-27T10:00:00
+CUST0214,Sydney Enterprise Account 214,Enterprise,Asia Pacific,Australia,Sydney,E0025,342701.29,Medium,true,2024-10-10T10:00:00
+CUST0215,San Francisco Mid-Market Account 215,Mid-Market,North America,United States,San Francisco,E0118,333914.15,Low,true,2025-09-03T10:00:00
+CUST0216,Mumbai Small Business Account 216,Small Business,Asia Pacific,India,Mumbai,E0147,105800.45,Low,true,2024-07-28T10:00:00
+CUST0217,Madrid Public Sector Account 217,Public Sector,Europe,Spain,Madrid,E0039,471273.63,Medium,true,2024-09-17T10:00:00
+CUST0218,Riyadh Mid-Market Account 218,Mid-Market,Middle East & Africa,Saudi Arabia,Riyadh,E0075,336756.63,Low,true,2025-01-23T10:00:00
+CUST0219,Tokyo Enterprise Account 219,Enterprise,Asia Pacific,Japan,Tokyo,E0168,123544.27,Low,true,2024-12-17T10:00:00
+CUST0220,Toronto Mid-Market Account 220,Mid-Market,North America,Canada,Toronto,E0005,199687.5,Low,true,2025-09-17T10:00:00
+CUST0221,Berlin Mid-Market Account 221,Mid-Market,Europe,Germany,Berlin,E0018,420256.87,Low,true,2024-04-09T10:00:00
+CUST0222,Buenos Aires Small Business Account 222,Small Business,Latin America,Argentina,Buenos Aires,E0046,214915.14,Medium,true,2025-03-08T10:00:00
+CUST0223,Mumbai Enterprise Account 223,Enterprise,Asia Pacific,India,Mumbai,E0159,466355.77,Low,true,2025-04-24T10:00:00
+CUST0224,Mumbai Enterprise Account 224,Enterprise,Asia Pacific,India,Mumbai,E0025,371484.31,Medium,true,2025-08-17T10:00:00
+CUST0225,Amsterdam Enterprise Account 225,Enterprise,Europe,Netherlands,Amsterdam,E0188,489265.7,Low,true,2024-05-20T10:00:00
+CUST0226,Milan Mid-Market Account 226,Mid-Market,Europe,Italy,Milan,E0074,462859.24,Medium,true,2024-02-23T10:00:00
+CUST0227,Buenos Aires Mid-Market Account 227,Mid-Market,Latin America,Argentina,Buenos Aires,E0188,269294.74,Low,true,2025-06-02T10:00:00
+CUST0228,Bengaluru Enterprise Account 228,Enterprise,Asia Pacific,India,Bengaluru,E0046,130854.7,Medium,true,2024-04-25T10:00:00
+CUST0229,Sao Paulo Small Business Account 229,Small Business,Latin America,Brazil,Sao Paulo,E0117,295069.21,Low,true,2025-09-16T10:00:00
+CUST0230,Toronto Mid-Market Account 230,Mid-Market,North America,Canada,Toronto,E0063,446212.12,Low,true,2025-05-10T10:00:00
+CUST0231,Bengaluru Public Sector Account 231,Public Sector,Asia Pacific,India,Bengaluru,E0117,468887.24,Low,true,2024-07-22T10:00:00
+CUST0232,Singapore Enterprise Account 232,Enterprise,Asia Pacific,Singapore,Singapore,E0186,74636.13,Low,true,2024-04-11T10:00:00
+CUST0233,Delhi Mid-Market Account 233,Mid-Market,Asia Pacific,India,Delhi,E0163,247242.24,Low,true,2024-02-15T10:00:00
+CUST0234,Dubai Enterprise Account 234,Enterprise,Middle East & Africa,United Arab Emirates,Dubai,E0039,496213.53,Low,true,2024-04-13T10:00:00
+CUST0235,Sao Paulo Enterprise Account 235,Enterprise,Latin America,Brazil,Sao Paulo,E0132,312081.1,Low,true,2025-08-31T10:00:00
+CUST0236,Berlin Small Business Account 236,Small Business,Europe,Germany,Berlin,E0046,129937.86,Low,true,2025-08-03T10:00:00
+CUST0237,Vancouver Small Business Account 237,Small Business,North America,Canada,Vancouver,E0025,439033.74,Low,true,2025-01-09T10:00:00
+CUST0238,Johannesburg Enterprise Account 238,Enterprise,Middle East & Africa,South Africa,Johannesburg,E0046,428239.0,Low,true,2024-07-11T10:00:00
+CUST0239,Riyadh Enterprise Account 239,Enterprise,Middle East & Africa,Saudi Arabia,Riyadh,E0039,324775.94,Low,true,2025-08-28T10:00:00
+CUST0240,Chicago Public Sector Account 240,Public Sector,North America,United States,Chicago,E0039,393884.79,Low,true,2024-08-26T10:00:00
+CUST0241,Madrid Education Account 241,Education,Europe,Spain,Madrid,E0163,345913.67,Low,true,2024-04-28T10:00:00
+CUST0242,Riyadh Enterprise Account 242,Enterprise,Middle East & Africa,Saudi Arabia,Riyadh,E0163,315415.29,Low,true,2024-08-31T10:00:00
+CUST0243,Milan Mid-Market Account 243,Mid-Market,Europe,Italy,Milan,E0147,431761.81,Low,true,2024-03-29T10:00:00
+CUST0244,Madrid Education Account 244,Education,Europe,Spain,Madrid,E0186,144238.11,Medium,true,2025-09-30T10:00:00
+CUST0245,Sao Paulo Mid-Market Account 245,Mid-Market,Latin America,Brazil,Sao Paulo,E0117,115693.0,Low,true,2025-08-17T10:00:00
+CUST0246,Madrid Small Business Account 246,Small Business,Europe,Spain,Madrid,E0005,463223.4,Medium,true,2025-09-09T10:00:00
+CUST0247,Berlin Mid-Market Account 247,Mid-Market,Europe,Germany,Berlin,E0051,475301.45,Medium,true,2024-01-30T10:00:00
+CUST0248,San Francisco Enterprise Account 248,Enterprise,North America,United States,San Francisco,E0159,375191.63,Medium,true,2024-12-05T10:00:00
+CUST0249,Riyadh Education Account 249,Education,Middle East & Africa,Saudi Arabia,Riyadh,E0046,32619.48,Medium,true,2025-04-04T10:00:00
+CUST0250,Milan Small Business Account 250,Small Business,Europe,Italy,Milan,E0147,95725.81,Medium,true,2024-12-22T10:00:00

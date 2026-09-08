@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-08-29T11:31:32.103587+00:00",
+  "artifact_count": 19,
+  "artifacts": [
+    {
+      "path": "models/agent_performance/agent_performance_model.joblib",
+      "bytes": 63430330,
+      "sha256": "fe6376e12c9cb643f68cfe64cae7a14acc7458e07ba0f9c5d2f5cb74ac5ad6aa"
+    },
+    {
+      "path": "models/agent_performance/metrics.json",
+      "bytes": 237,
+      "sha256": "b50db8c98427370632e7f10fd22927c700c9843bb083412ac2e07c63fa791b6f"
+    },
+    {
+      "path": "models/agent_performance_nn/best_model.pt",
+      "bytes": 81077,
+      "sha256": "cb40ad8c21df18c54a627f12ab8fbde36d39b8012b50c68cd4c1ececb23aaa9b"
+    },
+    {
+      "path": "models/agent_performance_nn/config.json",
+      "bytes": 743,
+      "sha256": "a29e7e45842da7c92c1e453d9c84d27dd9e3cb8604e9843c41cbb8304830dfba"
+    },
+    {
+      "path": "models/agent_performance_nn/metrics.json",
+      "bytes": 1729,
+      "sha256": "1932936dc6330fada70cd1700a7d18ec99b773dc51d60331eccad8919adc0270"
+    },
+    {
+      "path": "models/agent_performance_nn/preprocessor.joblib",
+      "bytes": 5386,
+      "sha256": "92c8135c9494af7f841e533e858efa6fcc300d4846e0be6a00b576fe7db7923e"
+    },
+    {
+      "path": "models/hitl/hitl_model.joblib",
+      "bytes": 2684098,
+      "sha256": "a3bfb814398bb1b8006a09bb540ea77a08d3fda399f1d8f9ca45f044a4ad55ae"
+    },
+    {
+      "path": "models/hitl/metrics.json",
+      "bytes": 755,
+      "sha256": "c7c144c166fb55cb9c2938c86674cb367b898fb99534b0da101e621bec01cf94"
+    },
+    {
+      "path": "models/rag/metrics.json",
+      "bytes": 410,
+      "sha256": "ab8eaa388fb4a2a09291139500ff31b25c88d4e3ec63a9fa4d871ff403f4041d"
+    },
+    {
+      "path": "models/rag/rag_index.joblib",
+      "bytes": 167111,
+      "sha256": "75998feb6b6a3dc54eaab88e3db23662025946c393045c975068b13e06548130"
+    },
+    {
+      "path": "models/reports/system_evaluation.json",
+      "bytes": 356,
+      "sha256": "438c7aa1bbad643f8fc8182ab2c03dc931c3f329ee76fe02ba0664c7f91d5d6b"
+    },
+    {
+      "path": "models/router/metrics.json",
+      "bytes": 3949,
+      "sha256": "2220ac7f0f6ad12dfa8261a0fd449aaebbc0df9a0f68dce1387f0828823e4205"
+    },
+    {
+      "path": "models/router/router_model.joblib",
+      "bytes": 250988,
+      "sha256": "987b8fc872293c150f495ea385680f74dbdca684751f5bc6c61dffe1e126962a"
+    },
+    {
+      "path": "models/sales_approval/metrics.json",
+      "bytes": 931,
+      "sha256": "b19e3f15ab6a47466bb4fa19ab35cd22851c76f6565dbdfb5c1c087e9776b126"
+    },
+    {
+      "path": "models/sales_approval/sales_approval_model.joblib",
+      "bytes": 5521,
+      "sha256": "b3a5ecc71b157081e238626959c72abae16adb721829d13ea1e4ccc91f5ddaca"
+    },
+    {
+      "path": "models/task_risk/metrics.json",
+      "bytes": 1287,
+      "sha256": "b254a8ef8f2614746767f4fb89407d7458899118206bf07f02f8b0f9b7d1bc79"
+    },
+    {
+      "path": "models/task_risk/task_risk_model.joblib",
+      "bytes": 2290746,
+      "sha256": "80e4a9f496171455da45adf47fb300a5cb27db566d898f22214b1ebbd0a7775f"
+    },
+    {
+      "path": "models/workload/metrics.json",
+      "bytes": 1559,
+      "sha256": "8af855f43222fb95a4956ba86213930f7f91028ef442af818dd9d93ad01156ad"
+    },
+    {
+      "path": "models/workload/workload_model.joblib",
+      "bytes": 1232585,
+      "sha256": "862b6fcaa3395c4b12f69ad5ca66cc514545f69be671a8e046adc442705fd53e"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+﻿permission_id,permission_name,description
+P001,user.manage,Manage users
+P002,role.manage,Manage roles and permissions
+P003,employee.read,Read general employee records
+P004,employee.read_sensitive,Read sensitive employee fields
+P005,employee.salary.read,Read salary and compensation
+P006,employee.update,Update employee records
+P007,leave.read_own,Read own leave records
+P008,leave.read_all,Read all leave records
+P009,leave.approve,Approve leave requests
+P010,project.read,Read projects
+P011,project.create,Create projects
+P012,project.update,Update project records
+P013,project.assign,Assign project members
+P014,task.read,Read tasks
+P015,task.update_own,Update assigned tasks
+P016,task.reassign,Reassign tasks
+P017,sales.read,Read sales data
+P018,sales.export,Export sales data
+P019,finance.read,Read finance data
+P020,expense.approve,Approve expenses and purchases
+P021,document.read_public,Read public/internal documents
+P022,document.read_hr,Read HR confidential documents
+P023,document.read_finance,Read finance confidential documents
+P024,document.read_security,Read security restricted documents
+P025,document.upload,Upload and publish knowledge documents
+P026,ai.query,Use enterprise AI assistant
+P027,ai.execute_low_risk,Execute low-risk AI actions
+P028,ai.execute_high_risk,Execute high-risk AI actions
+P029,approval.review,Review human approval requests
+P030,audit.read,Read audit logs
+P031,evaluation.read,Read AI evaluation results
+P032,evaluation.manage,Manage AI evaluation programs

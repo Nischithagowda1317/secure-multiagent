@@ -1,0 +1,52 @@
+﻿risk_id,project_id,risk_title,risk_category,probability_score_1_5,impact_score_1_5,risk_score,status,owner_employee_id,mitigation_plan,identified_date,next_review_date
+RISK0001,PRJ001,Resource capacity,People,5,3,15,Monitoring,E0072,Redistribute high-priority work and secure backup resources.,2025-02-07,2026-09-28
+RISK0002,PRJ001,Data quality,Data,3,3,9,Open,E0072,"Apply validation rules, reconciliation, and accountable data ownership.",2025-05-11,2026-09-16
+RISK0003,PRJ001,Integration dependency,Technical,2,4,8,Open,E0030,"Use interface mocks, daily dependency tracking, and escalation.",2025-03-23,2026-09-14
+RISK0004,PRJ001,Scope change,Governance,5,5,25,Open,E0030,Use formal change control and impact assessment.,2025-05-15,2026-09-26
+RISK0005,PRJ002,Data quality,Data,3,4,12,Monitoring,E0105,"Apply validation rules, reconciliation, and accountable data ownership.",2025-05-05,2026-09-09
+RISK0006,PRJ002,Integration dependency,Technical,1,2,2,Mitigating,E0080,"Use interface mocks, daily dependency tracking, and escalation.",2025-04-06,2026-09-23
+RISK0007,PRJ003,Scope change,Governance,2,4,8,Mitigating,E0025,Use formal change control and impact assessment.,2025-03-12,2026-09-20
+RISK0008,PRJ003,Integration dependency,Technical,4,3,12,Monitoring,E0058,"Use interface mocks, daily dependency tracking, and escalation.",2025-06-01,2026-09-14
+RISK0009,PRJ003,Resource capacity,People,2,2,4,Monitoring,E0058,Redistribute high-priority work and secure backup resources.,2025-03-22,2026-09-25
+RISK0010,PRJ004,Resource capacity,People,2,2,4,Mitigating,E0079,Redistribute high-priority work and secure backup resources.,2025-05-30,2026-09-07
+RISK0011,PRJ004,Security approval delay,Security,3,3,9,Mitigating,E0105,Schedule early review and maintain complete evidence.,2025-03-25,2026-09-07
+RISK0012,PRJ004,Integration dependency,Technical,3,3,9,Monitoring,E0077,"Use interface mocks, daily dependency tracking, and escalation.",2025-05-19,2026-09-09
+RISK0013,PRJ005,Vendor delivery,External,3,5,15,Monitoring,E0038,Track milestones and maintain contingency options.,2025-05-02,2026-10-02
+RISK0014,PRJ005,Resource capacity,People,4,4,16,Open,E0077,Redistribute high-priority work and secure backup resources.,2025-04-24,2026-09-30
+RISK0015,PRJ005,Security approval delay,Security,3,4,12,Open,E0200,Schedule early review and maintain complete evidence.,2025-06-18,2026-09-19
+RISK0016,PRJ005,Integration dependency,Technical,5,5,25,Mitigating,E0049,"Use interface mocks, daily dependency tracking, and escalation.",2025-07-20,2026-09-19
+RISK0017,PRJ006,Vendor delivery,External,2,2,4,Mitigating,E0062,Track milestones and maintain contingency options.,2025-05-19,2026-09-12
+RISK0018,PRJ006,Security approval delay,Security,3,4,12,Monitoring,E0062,Schedule early review and maintain complete evidence.,2025-05-28,2026-09-11
+RISK0019,PRJ007,Integration dependency,Technical,5,3,15,Monitoring,E0173,"Use interface mocks, daily dependency tracking, and escalation.",2025-08-08,2026-09-15
+RISK0020,PRJ007,Resource capacity,People,3,2,6,Mitigating,E0173,Redistribute high-priority work and secure backup resources.,2025-07-17,2026-09-27
+RISK0021,PRJ007,Scope change,Governance,3,2,6,Mitigating,E0054,Use formal change control and impact assessment.,2025-07-09,2026-09-21
+RISK0022,PRJ008,Security approval delay,Security,3,5,15,Monitoring,E0197,Schedule early review and maintain complete evidence.,2025-06-04,2026-09-07
+RISK0023,PRJ008,Integration dependency,Technical,5,4,20,Mitigating,E0083,"Use interface mocks, daily dependency tracking, and escalation.",2025-05-30,2026-09-13
+RISK0024,PRJ008,Resource capacity,People,3,4,12,Mitigating,E0182,Redistribute high-priority work and secure backup resources.,2025-08-17,2026-09-29
+RISK0025,PRJ008,Vendor delivery,External,5,5,25,Monitoring,E0182,Track milestones and maintain contingency options.,2025-06-21,2026-09-09
+RISK0026,PRJ009,Scope change,Governance,3,4,12,Open,E0038,Use formal change control and impact assessment.,2025-06-15,2026-09-03
+RISK0027,PRJ009,Integration dependency,Technical,2,3,6,Open,E0038,"Use interface mocks, daily dependency tracking, and escalation.",2025-08-27,2026-09-20
+RISK0028,PRJ010,Integration dependency,Technical,5,3,15,Mitigating,E0029,"Use interface mocks, daily dependency tracking, and escalation.",2025-09-25,2026-09-14
+RISK0029,PRJ010,Resource capacity,People,2,4,8,Mitigating,E0093,Redistribute high-priority work and secure backup resources.,2025-07-18,2026-09-29
+RISK0030,PRJ010,Vendor delivery,External,2,3,6,Monitoring,E0029,Track milestones and maintain contingency options.,2025-08-27,2026-09-22
+RISK0031,PRJ011,Integration dependency,Technical,2,3,6,Open,E0053,"Use interface mocks, daily dependency tracking, and escalation.",2025-09-28,2026-09-11
+RISK0032,PRJ011,Scope change,Governance,5,4,20,Monitoring,E0071,Use formal change control and impact assessment.,2025-08-09,2026-09-12
+RISK0033,PRJ011,Resource capacity,People,3,4,12,Mitigating,E0149,Redistribute high-priority work and secure backup resources.,2025-09-10,2026-09-11
+RISK0034,PRJ012,Vendor delivery,External,3,3,9,Mitigating,E0114,Track milestones and maintain contingency options.,2025-11-05,2026-09-08
+RISK0035,PRJ012,Data quality,Data,1,3,3,Monitoring,E0079,"Apply validation rules, reconciliation, and accountable data ownership.",2025-10-25,2026-09-18
+RISK0036,PRJ013,Scope change,Governance,1,3,3,Monitoring,E0079,Use formal change control and impact assessment.,2025-11-06,2026-09-25
+RISK0037,PRJ013,Resource capacity,People,1,3,3,Monitoring,E0147,Redistribute high-priority work and secure backup resources.,2025-10-12,2026-09-14
+RISK0038,PRJ014,Data quality,Data,3,3,9,Open,E0017,"Apply validation rules, reconciliation, and accountable data ownership.",2025-10-21,2026-09-11
+RISK0039,PRJ014,Vendor delivery,External,5,5,25,Mitigating,E0020,Track milestones and maintain contingency options.,2025-11-20,2026-09-22
+RISK0040,PRJ014,Integration dependency,Technical,5,5,25,Mitigating,E0020,"Use interface mocks, daily dependency tracking, and escalation.",2025-12-05,2026-10-02
+RISK0041,PRJ014,Security approval delay,Security,2,5,10,Mitigating,E0008,Schedule early review and maintain complete evidence.,2025-09-02,2026-09-28
+RISK0042,PRJ015,Vendor delivery,External,3,2,6,Mitigating,E0087,Track milestones and maintain contingency options.,2025-10-10,2026-09-04
+RISK0043,PRJ015,Scope change,Governance,5,4,20,Open,E0054,Use formal change control and impact assessment.,2025-10-16,2026-09-03
+RISK0044,PRJ015,Security approval delay,Security,2,2,4,Mitigating,E0054,Schedule early review and maintain complete evidence.,2025-09-20,2026-09-09
+RISK0045,PRJ016,Vendor delivery,External,4,4,16,Mitigating,E0200,Track milestones and maintain contingency options.,2026-01-16,2026-09-14
+RISK0046,PRJ016,Data quality,Data,2,3,6,Monitoring,E0058,"Apply validation rules, reconciliation, and accountable data ownership.",2025-12-03,2026-09-07
+RISK0047,PRJ016,Integration dependency,Technical,2,2,4,Monitoring,E0095,"Use interface mocks, daily dependency tracking, and escalation.",2025-12-26,2026-09-08
+RISK0048,PRJ017,Data quality,Data,1,4,4,Open,E0079,"Apply validation rules, reconciliation, and accountable data ownership.",2025-11-28,2026-09-05
+RISK0049,PRJ017,Vendor delivery,External,1,4,4,Mitigating,E0100,Track milestones and maintain contingency options.,2026-01-02,2026-09-09
+RISK0050,PRJ018,Resource capacity,People,2,3,6,Monitoring,E0012,Redistribute high-priority work and secure backup resources.,2025-12-22,2026-10-02
+RISK0051,PRJ018,Scope change,Governance,1,4,4,Monitoring,E0078,Use formal change control and impact assessment.,2026-02-24,2026-09-07

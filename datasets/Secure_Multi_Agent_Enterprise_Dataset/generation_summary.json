@@ -1,0 +1,76 @@
+{
+  "dataset_name": "Secure Multi-Agent Enterprise Assistant Complete Dataset",
+  "synthetic_company": "NexaCore Technologies",
+  "snapshot_date": "2026-08-28",
+  "generation_seed": 20260828,
+  "core_csv_table_count": 50,
+  "core_total_rows": 20053,
+  "knowledge_docx_count": 14,
+  "knowledge_pdf_count": 14,
+  "key_table_rows": {
+    "core/identity_access/departments.csv": 12,
+    "core/hr/employees.csv": 200,
+    "core/identity_access/users.csv": 200,
+    "core/identity_access/roles.csv": 10,
+    "core/identity_access/permissions.csv": 32,
+    "core/projects/projects.csv": 18,
+    "core/projects/project_members.csv": 197,
+    "core/projects/tasks.csv": 539,
+    "core/sales_finance/sales_orders.csv": 5000,
+    "core/agents/agent_registry.csv": 11,
+    "core/agents/workflow_runs.csv": 400,
+    "core/agents/agent_execution_logs.csv": 1569,
+    "core/security_audit/approval_requests.csv": 200,
+    "core/security_audit/access_control_decisions.csv": 700,
+    "core/security_audit/audit_logs.csv": 1300,
+    "core/rag/document_catalog.csv": 14,
+    "core/rag/rag_chunks.csv": 44,
+    "core/rag/rag_evaluation_questions.csv": 160,
+    "core/rag/prompt_injection_tests.csv": 60,
+    "core/evaluation/security_test_cases.csv": 320,
+    "core/evaluation/routing_test_cases.csv": 120,
+    "core/evaluation/workflow_test_cases.csv": 96,
+    "core/evaluation/evaluation_items.csv": 960,
+    "core/evaluation/judge_results.csv": 960
+  },
+  "deterministic_demo_facts": {
+    "atlas_progress_percent": 58,
+    "atlas_expected_progress_percent": 78,
+    "atlas_overdue_unfinished_tasks": 6,
+    "atlas_blocked_tasks": 2,
+    "atlas_overloaded_employees": {
+      "E0013": 125,
+      "E0017": 112
+    },
+    "nova_progress_percent": 82,
+    "nova_expected_progress_percent": 80,
+    "nova_overdue_unfinished_tasks": 1,
+    "nova_blocked_tasks": 0,
+    "leave_entitlements_days": {
+      "casual": 12,
+      "sick": 10,
+      "annual": 18
+    },
+    "remote_work_days_per_week": 2,
+    "auto_release_thresholds": {
+      "confidence_minimum": 0.75,
+      "grounding_minimum": 0.8
+    }
+  },
+  "raw_sources": [
+    "raw_sources/DUPLICATE_FILE_NOTE.txt",
+    "raw_sources/Employees_source.xlsx",
+    "raw_sources/agentic_ai_performance_source.csv",
+    "raw_sources/company_sales_source.xlsx",
+    "raw_sources/evaluation_quality_sample/README_FREE.md",
+    "raw_sources/evaluation_quality_sample/daily_evaluation_metrics.csv",
+    "raw_sources/evaluation_quality_sample/evaluation_items.csv",
+    "raw_sources/evaluation_quality_sample/evaluation_programs.csv",
+    "raw_sources/evaluation_quality_sample/evaluation_runs.csv",
+    "raw_sources/evaluation_quality_sample/judge_results.csv",
+    "raw_sources/evaluation_quality_sample/quick_analysis_original.ipynb",
+    "raw_sources/evaluation_quality_sample/reviewer_decisions.csv"
+  ],
+  "validation_report": "validation_report.json",
+  "notes": "Use core/evaluation for linked evaluation records. raw_sources/evaluation_quality_sample is preserved as originally uploaded."
+}

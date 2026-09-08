@@ -1,0 +1,252 @@
+[
+  {
+    "table": "identity_access_demo_credentials",
+    "rows": 12,
+    "source": "core/identity_access/demo_credentials.csv"
+  },
+  {
+    "table": "identity_access_departments",
+    "rows": 12,
+    "source": "core/identity_access/departments.csv"
+  },
+  {
+    "table": "identity_access_permissions",
+    "rows": 32,
+    "source": "core/identity_access/permissions.csv"
+  },
+  {
+    "table": "identity_access_role_permissions",
+    "rows": 165,
+    "source": "core/identity_access/role_permissions.csv"
+  },
+  {
+    "table": "identity_access_roles",
+    "rows": 10,
+    "source": "core/identity_access/roles.csv"
+  },
+  {
+    "table": "identity_access_user_roles",
+    "rows": 218,
+    "source": "core/identity_access/user_roles.csv"
+  },
+  {
+    "table": "identity_access_users",
+    "rows": 200,
+    "source": "core/identity_access/users.csv"
+  },
+  {
+    "table": "hr_attendance_summary",
+    "rows": 2400,
+    "source": "core/hr/attendance_summary.csv"
+  },
+  {
+    "table": "hr_employee_skills",
+    "rows": 600,
+    "source": "core/hr/employee_skills.csv"
+  },
+  {
+    "table": "hr_employee_workload_snapshots",
+    "rows": 800,
+    "source": "core/hr/employee_workload_snapshots.csv"
+  },
+  {
+    "table": "hr_employees",
+    "rows": 200,
+    "source": "core/hr/employees.csv"
+  },
+  {
+    "table": "hr_leave_requests",
+    "rows": 160,
+    "source": "core/hr/leave_requests.csv"
+  },
+  {
+    "table": "projects_project_members",
+    "rows": 197,
+    "source": "core/projects/project_members.csv"
+  },
+  {
+    "table": "projects_project_risks",
+    "rows": 51,
+    "source": "core/projects/project_risks.csv"
+  },
+  {
+    "table": "projects_projects",
+    "rows": 18,
+    "source": "core/projects/projects.csv"
+  },
+  {
+    "table": "projects_task_dependencies",
+    "rows": 272,
+    "source": "core/projects/task_dependencies.csv"
+  },
+  {
+    "table": "projects_tasks",
+    "rows": 539,
+    "source": "core/projects/tasks.csv"
+  },
+  {
+    "table": "sales_finance_customers",
+    "rows": 250,
+    "source": "core/sales_finance/customers.csv"
+  },
+  {
+    "table": "sales_finance_expense_claims",
+    "rows": 260,
+    "source": "core/sales_finance/expense_claims.csv"
+  },
+  {
+    "table": "sales_finance_products",
+    "rows": 60,
+    "source": "core/sales_finance/products.csv"
+  },
+  {
+    "table": "sales_finance_purchase_requests",
+    "rows": 180,
+    "source": "core/sales_finance/purchase_requests.csv"
+  },
+  {
+    "table": "sales_finance_sales_orders",
+    "rows": 5000,
+    "source": "core/sales_finance/sales_orders.csv"
+  },
+  {
+    "table": "sales_finance_sales_targets",
+    "rows": 100,
+    "source": "core/sales_finance/sales_targets.csv"
+  },
+  {
+    "table": "sales_finance_suppliers",
+    "rows": 80,
+    "source": "core/sales_finance/suppliers.csv"
+  },
+  {
+    "table": "agents_agent_execution_logs",
+    "rows": 1569,
+    "source": "core/agents/agent_execution_logs.csv"
+  },
+  {
+    "table": "agents_agent_registry",
+    "rows": 11,
+    "source": "core/agents/agent_registry.csv"
+  },
+  {
+    "table": "agents_agent_tool_permissions",
+    "rows": 36,
+    "source": "core/agents/agent_tool_permissions.csv"
+  },
+  {
+    "table": "agents_tool_registry",
+    "rows": 20,
+    "source": "core/agents/tool_registry.csv"
+  },
+  {
+    "table": "agents_workflow_definitions",
+    "rows": 12,
+    "source": "core/agents/workflow_definitions.csv"
+  },
+  {
+    "table": "agents_workflow_runs",
+    "rows": 400,
+    "source": "core/agents/workflow_runs.csv"
+  },
+  {
+    "table": "security_audit_access_control_decisions",
+    "rows": 700,
+    "source": "core/security_audit/access_control_decisions.csv"
+  },
+  {
+    "table": "security_audit_approval_actions",
+    "rows": 242,
+    "source": "core/security_audit/approval_actions.csv"
+  },
+  {
+    "table": "security_audit_approval_requests",
+    "rows": 200,
+    "source": "core/security_audit/approval_requests.csv"
+  },
+  {
+    "table": "security_audit_audit_logs",
+    "rows": 1300,
+    "source": "core/security_audit/audit_logs.csv"
+  },
+  {
+    "table": "rag_document_catalog",
+    "rows": 14,
+    "source": "core/rag/document_catalog.csv"
+  },
+  {
+    "table": "rag_prompt_injection_tests",
+    "rows": 60,
+    "source": "core/rag/prompt_injection_tests.csv"
+  },
+  {
+    "table": "rag_rag_chunks",
+    "rows": 44,
+    "source": "core/rag/rag_chunks.csv"
+  },
+  {
+    "table": "rag_rag_evaluation_questions",
+    "rows": 160,
+    "source": "core/rag/rag_evaluation_questions.csv"
+  },
+  {
+    "table": "evaluation_agent_performance_summary",
+    "rows": 11,
+    "source": "core/evaluation/agent_performance_summary.csv"
+  },
+  {
+    "table": "evaluation_daily_evaluation_metrics",
+    "rows": 720,
+    "source": "core/evaluation/daily_evaluation_metrics.csv"
+  },
+  {
+    "table": "evaluation_evaluation_items",
+    "rows": 960,
+    "source": "core/evaluation/evaluation_items.csv"
+  },
+  {
+    "table": "evaluation_evaluation_programs",
+    "rows": 12,
+    "source": "core/evaluation/evaluation_programs.csv"
+  },
+  {
+    "table": "evaluation_evaluation_runs",
+    "rows": 120,
+    "source": "core/evaluation/evaluation_runs.csv"
+  },
+  {
+    "table": "evaluation_explainability_test_cases",
+    "rows": 60,
+    "source": "core/evaluation/explainability_test_cases.csv"
+  },
+  {
+    "table": "evaluation_judge_results",
+    "rows": 960,
+    "source": "core/evaluation/judge_results.csv"
+  },
+  {
+    "table": "evaluation_metrics_template",
+    "rows": 14,
+    "source": "core/evaluation/metrics_template.csv"
+  },
+  {
+    "table": "evaluation_reviewer_decisions",
+    "rows": 76,
+    "source": "core/evaluation/reviewer_decisions.csv"
+  },
+  {
+    "table": "evaluation_routing_test_cases",
+    "rows": 120,
+    "source": "core/evaluation/routing_test_cases.csv"
+  },
+  {
+    "table": "evaluation_security_test_cases",
+    "rows": 320,
+    "source": "core/evaluation/security_test_cases.csv"
+  },
+  {
+    "table": "evaluation_workflow_test_cases",
+    "rows": 96,
+    "source": "core/evaluation/workflow_test_cases.csv"
+  }
+]

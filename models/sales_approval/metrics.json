@@ -1,0 +1,35 @@
+{
+  "trained_at": "2026-08-29T11:31:12.485320+00:00",
+  "model": "Preprocessed Logistic Regression discount-approval classifier",
+  "dataset_rows": 5000,
+  "accuracy": 0.982,
+  "macro_f1": 0.978809967791151,
+  "roc_auc": 0.9998323682534209,
+  "classification_report": {
+    "False": {
+      "precision": 1.0,
+      "recall": 0.9743954480796586,
+      "f1-score": 0.9870317002881844,
+      "support": 703.0
+    },
+    "True": {
+      "precision": 0.9428571428571428,
+      "recall": 1.0,
+      "f1-score": 0.9705882352941176,
+      "support": 297.0
+    },
+    "accuracy": 0.982,
+    "macro avg": {
+      "precision": 0.9714285714285714,
+      "recall": 0.9871977240398293,
+      "f1-score": 0.978809967791151,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.9830285714285715,
+      "recall": 0.982,
+      "f1-score": 0.9821479911849466,
+      "support": 1000.0
+    }
+  }
+}

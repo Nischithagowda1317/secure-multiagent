@@ -1,0 +1,625 @@
+{
+  "package_name": "Secure Multi-Agent Enterprise Assistant Complete Code",
+  "version": "1.0.0-academic",
+  "generated_at": "2026-08-29T10:35:35.657070+00:00",
+  "file_count": 270,
+  "total_uncompressed_bytes": 83442034,
+  "dataset_core_csv_tables": 50,
+  "dataset_core_rows": 20053,
+  "knowledge_base_pdfs": 14,
+  "knowledge_base_docx": 14,
+  "trained_artifact_count": 9,
+  "trained_artifacts": [
+    {
+      "path": "models/agent_performance/agent_performance_model.joblib",
+      "bytes": 63430394,
+      "sha256": "ad17c4142eeba658a1d63225a387e4dd785434134220e4d8637052f4fadec3a9"
+    },
+    {
+      "path": "models/agent_performance_nn/best_model.pt",
+      "bytes": 81077,
+      "sha256": "cb40ad8c21df18c54a627f12ab8fbde36d39b8012b50c68cd4c1ececb23aaa9b"
+    },
+    {
+      "path": "models/agent_performance_nn/preprocessor.joblib",
+      "bytes": 5386,
+      "sha256": "92c8135c9494af7f841e533e858efa6fcc300d4846e0be6a00b576fe7db7923e"
+    },
+    {
+      "path": "models/hitl/hitl_model.joblib",
+      "bytes": 2670722,
+      "sha256": "2eedb63bb6f4c07bcedb3a9c9fcd0d2471c508de4a94588f072cd3c9862d4c87"
+    },
+    {
+      "path": "models/rag/rag_index.joblib",
+      "bytes": 167111,
+      "sha256": "17744011fdf41285331f5e9c7bb58213f23148109e31a3d04957a9d9dcb9155d"
+    },
+    {
+      "path": "models/router/router_model.joblib",
+      "bytes": 250972,
+      "sha256": "1b5d6b21f3d3906604f917f275088fcd8a24060f0afc49d82fbb24e897fb7819"
+    },
+    {
+      "path": "models/sales_approval/sales_approval_model.joblib",
+      "bytes": 5553,
+      "sha256": "b830fa69ab709ac7fc4692b9b8824a351b4ef221e36d7341028f6eda154e1ad6"
+    },
+    {
+      "path": "models/task_risk/task_risk_model.joblib",
+      "bytes": 2303466,
+      "sha256": "cc812a23dbcbf1b6e625fb236bfe17af8433d59f688ea9c688e430f2e4701bf7"
+    },
+    {
+      "path": "models/workload/workload_model.joblib",
+      "bytes": 1241241,
+      "sha256": "5f874b8be7e2dc9bda6c5c37527c2e98bd170eefd66ecf297c05ab70c0e1def2"
+    }
+  ],
+  "test_results": {
+    "pytest": "8 passed",
+    "backend_smoke_test": "PASS",
+    "frontend_static_javascript_syntax": "PASS",
+    "dataset_validation": "PASS",
+    "dataset_checksums": "PASS",
+    "python_compileall": "PASS"
+  },
+  "default_mode": {
+    "data_backend": "csv",
+    "runtime_store": "sqlite",
+    "rag_backend": "tfidf",
+    "llm_provider": "extractive"
+  },
+  "optional_mode": {
+    "data_backend": "postgres",
+    "rag_backend": "chroma",
+    "llm_provider": "ollama",
+    "neural_training": "pytorch cuda or cpu"
+  },
+  "metrics": {
+    "agent_performance": {
+      "trained_at": "2026-08-29T10:04:45.444521+00:00",
+      "model": "RandomForest agent performance-index regressor",
+      "dataset_rows": 5000,
+      "mae": 0.0026120383630458574,
+      "rmse": 0.004379085666064554,
+      "r2": 0.9989387863604474
+    },
+    "agent_performance_nn": {
+      "trained_at": "2026-08-29T10:25:32.358720+00:00",
+      "model": "PyTorch MLP agent performance-index regressor",
+      "device_used": "cpu",
+      "cuda_available": false,
+      "epochs_requested": 60,
+      "epochs_completed": 42,
+      "best_epoch": 34,
+      "best_validation_loss": 0.0007675496162846684,
+      "test_mae": 0.022799886763095856,
+      "test_rmse": 0.027130349011365275,
+      "test_r2": 0.9611822962760925,
+      "checkpoint_path": "runtime/checkpoints/agent_performance_nn/latest.pt",
+      "best_model_path": "models/agent_performance_nn/best_model.pt",
+      "resume_supported": true,
+      "history_tail": [
+        {
+          "epoch": 33,
+          "train_loss": 0.001711033218141113,
+          "val_loss": 0.000947306863963604
+        },
+        {
+          "epoch": 34,
+          "train_loss": 0.0017190284893981048,
+          "val_loss": 0.0007675496162846684
+        },
+        {
+          "epoch": 35,
+          "train_loss": 0.001523781251827521,
+          "val_loss": 0.0021172177512198687
+        },
+        {
+          "epoch": 36,
+          "train_loss": 0.001654534991497972,
+          "val_loss": 0.0025701739359647036
+        },
+        {
+          "epoch": 37,
+          "train_loss": 0.0015138216715838229,
+          "val_loss": 0.0018938472494482994
+        },
+        {
+          "epoch": 38,
+          "train_loss": 0.0016677328801181699,
+          "val_loss": 0.0012447732733562589
+        },
+        {
+          "epoch": 39,
+          "train_loss": 0.0014180486157004321,
+          "val_loss": 0.0013176245847716928
+        },
+        {
+          "epoch": 40,
+          "train_loss": 0.0012769894674420357,
+          "val_loss": 0.0010500825010240078
+        },
+        {
+          "epoch": 41,
+          "train_loss": 0.0016014506524827863,
+          "val_loss": 0.002291397424414754
+        },
+        {
+          "epoch": 42,
+          "train_loss": 0.001276479584963194,
+          "val_loss": 0.0021712242159992456
+        }
+      ]
+    },
+    "hitl": {
+      "trained_at": "2026-08-29T10:04:40.738867+00:00",
+      "model": "RandomForest human-intervention requirement classifier",
+      "dataset_rows": 5000,
+      "accuracy": 0.999,
+      "macro_f1": 0.997641058787174,
+      "roc_auc": 1.0,
+      "classification_report": {
+        "False": {
+          "precision": 1.0,
+          "recall": 0.9917355371900827,
+          "f1-score": 0.995850622406639,
+          "support": 121.0
+        },
+        "True": {
+          "precision": 0.9988636363636364,
+          "recall": 1.0,
+          "f1-score": 0.9994314951677089,
+          "support": 879.0
+        },
+        "accuracy": 0.999,
+        "macro avg": {
+          "precision": 0.9994318181818183,
+          "recall": 0.9958677685950413,
+          "f1-score": 0.997641058787174,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.9990011363636364,
+          "recall": 0.999,
+          "f1-score": 0.9989982095636194,
+          "support": 1000.0
+        }
+      }
+    },
+    "rag": {
+      "trained_at": "2026-08-29T10:04:46.775753+00:00",
+      "model": "TF-IDF secure RAG retrieval index",
+      "documents": 14,
+      "chunks": 44,
+      "vocabulary_size": 2347,
+      "gold_questions": 160,
+      "unfiltered_top1_document_accuracy": 0.74375,
+      "unfiltered_top3_document_accuracy": 0.95,
+      "note": "Runtime retrieval additionally enforces allowed_roles and required_permission before returning evidence."
+    },
+    "router": {
+      "trained_at": "2026-08-29T10:04:31.979583+00:00",
+      "model": "TF-IDF word+character Logistic Regression router",
+      "dataset_rows": 120,
+      "train_rows": 90,
+      "test_rows": 30,
+      "classes": [
+        "WFD001",
+        "WFD002",
+        "WFD003",
+        "WFD004",
+        "WFD005",
+        "WFD006",
+        "WFD007",
+        "WFD008",
+        "WFD009",
+        "WFD010",
+        "WFD011",
+        "WFD012"
+      ],
+      "accuracy": 0.9666666666666667,
+      "macro_f1": 0.9666666666666667,
+      "classification_report": {
+        "WFD001": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "WFD002": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3.0
+        },
+        "WFD003": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 2.0
+        },
+        "WFD004": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "WFD005": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "WFD006": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "WFD007": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "WFD008": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "WFD009": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "WFD010": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "WFD011": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2.0
+        },
+        "WFD012": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3.0
+        },
+        "accuracy": 0.9666666666666667,
+        "macro avg": {
+          "precision": 0.9722222222222222,
+          "recall": 0.9722222222222222,
+          "f1-score": 0.9666666666666667,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.9777777777777777,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.9666666666666667,
+          "support": 30.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ]
+    },
+    "sales_approval": {
+      "trained_at": "2026-08-29T10:04:38.406539+00:00",
+      "model": "Preprocessed Logistic Regression discount-approval classifier",
+      "dataset_rows": 5000,
+      "accuracy": 0.982,
+      "macro_f1": 0.978809967791151,
+      "roc_auc": 0.9998323682534209,
+      "classification_report": {
+        "False": {
+          "precision": 1.0,
+          "recall": 0.9743954480796586,
+          "f1-score": 0.9870317002881844,
+          "support": 703.0
+        },
+        "True": {
+          "precision": 0.9428571428571428,
+          "recall": 1.0,
+          "f1-score": 0.9705882352941176,
+          "support": 297.0
+        },
+        "accuracy": 0.982,
+        "macro avg": {
+          "precision": 0.9714285714285714,
+          "recall": 0.9871977240398293,
+          "f1-score": 0.978809967791151,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.9830285714285715,
+          "recall": 0.982,
+          "f1-score": 0.9821479911849466,
+          "support": 1000.0
+        }
+      }
+    },
+    "task_risk": {
+      "trained_at": "2026-08-29T10:04:36.922711+00:00",
+      "model": "Preprocessed RandomForest task delivery-risk classifier",
+      "dataset_rows": 539,
+      "label_note": "Labels are deterministic academic risk labels derived from blocked, overdue, progress, priority, approval, and effort-overrun indicators.",
+      "class_distribution": {
+        "Medium": 303,
+        "Low": 132,
+        "High": 104
+      },
+      "accuracy": 0.9814814814814815,
+      "macro_f1": 0.9801161296487694,
+      "classification_report": {
+        "High": {
+          "precision": 1.0,
+          "recall": 0.9523809523809523,
+          "f1-score": 0.975609756097561,
+          "support": 21.0
+        },
+        "Low": {
+          "precision": 0.9629629629629629,
+          "recall": 1.0,
+          "f1-score": 0.9811320754716981,
+          "support": 26.0
+        },
+        "Medium": {
+          "precision": 0.9836065573770492,
+          "recall": 0.9836065573770492,
+          "f1-score": 0.9836065573770492,
+          "support": 61.0
+        },
+        "accuracy": 0.9814814814814815,
+        "macro avg": {
+          "precision": 0.9821898401133374,
+          "recall": 0.9786625032526671,
+          "f1-score": 0.9801161296487694,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.9818244170096022,
+          "recall": 0.9814814814814815,
+          "f1-score": 0.9814559151880827,
+          "support": 108.0
+        }
+      }
+    },
+    "workload": {
+      "trained_at": "2026-08-29T10:04:34.635090+00:00",
+      "model": "RandomForest workload-status classifier",
+      "dataset_rows": 800,
+      "features": [
+        "total_workload_percent",
+        "billable_workload_percent",
+        "active_project_count",
+        "open_task_count",
+        "overdue_task_count"
+      ],
+      "accuracy": 0.99375,
+      "macro_f1": 0.9877064220183487,
+      "classification_report": {
+        "Available": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 78.0
+        },
+        "High": {
+          "precision": 0.9230769230769231,
+          "recall": 1.0,
+          "f1-score": 0.96,
+          "support": 12.0
+        },
+        "Normal": {
+          "precision": 1.0,
+          "recall": 0.9818181818181818,
+          "f1-score": 0.9908256880733946,
+          "support": 55.0
+        },
+        "Overloaded": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "accuracy": 0.99375,
+        "macro avg": {
+          "precision": 0.9807692307692308,
+          "recall": 0.9954545454545455,
+          "f1-score": 0.9877064220183487,
+          "support": 160.0
+        },
+        "weighted avg": {
+          "precision": 0.9942307692307694,
+          "recall": 0.99375,
+          "f1-score": 0.9938463302752293,
+          "support": 160.0
+        }
+      },
+      "feature_importance": {
+        "total_workload_percent": 0.5599766143102027,
+        "billable_workload_percent": 0.2591626463481931,
+        "active_project_count": 0.1488324536540727,
+        "open_task_count": 0.027014106831429314,
+        "overdue_task_count": 0.005014178856102003
+      }
+    }
+  },
+  "academic_notice": "The datasets and reported metrics are synthetic/curated for an academic prototype and are not production validation."
+}

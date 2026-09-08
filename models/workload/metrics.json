@@ -1,0 +1,60 @@
+{
+  "trained_at": "2026-08-29T11:31:03.853369+00:00",
+  "model": "RandomForest workload-status classifier",
+  "dataset_rows": 800,
+  "features": [
+    "total_workload_percent",
+    "billable_workload_percent",
+    "active_project_count",
+    "open_task_count",
+    "overdue_task_count"
+  ],
+  "accuracy": 0.99375,
+  "macro_f1": 0.9877064220183487,
+  "classification_report": {
+    "Available": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 78.0
+    },
+    "High": {
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "f1-score": 0.96,
+      "support": 12.0
+    },
+    "Normal": {
+      "precision": 1.0,
+      "recall": 0.9818181818181818,
+      "f1-score": 0.9908256880733946,
+      "support": 55.0
+    },
+    "Overloaded": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "accuracy": 0.99375,
+    "macro avg": {
+      "precision": 0.9807692307692308,
+      "recall": 0.9954545454545455,
+      "f1-score": 0.9877064220183487,
+      "support": 160.0
+    },
+    "weighted avg": {
+      "precision": 0.9942307692307694,
+      "recall": 0.99375,
+      "f1-score": 0.9938463302752293,
+      "support": 160.0
+    }
+  },
+  "feature_importance": {
+    "total_workload_percent": 0.5585697779685926,
+    "billable_workload_percent": 0.2586843512480951,
+    "active_project_count": 0.14986210390284996,
+    "open_task_count": 0.027475022534832114,
+    "overdue_task_count": 0.005408744345630181
+  }
+}

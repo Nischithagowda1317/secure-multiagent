@@ -1,0 +1,961 @@
+﻿eval_item_id,eval_run_id,program_id,scenario_id,task_category,difficulty_tier,input_modality,requires_tool_use,requires_grounding,policy_sensitivity,input_text,expected_workflow_definition_id
+EVI00001,EVR0001,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text+csv,false,true,Low,How many casual leave days are available?,WFD001
+EVI00002,EVR0001,EVP001,WFD001-SCN-02,Enterprise Policy Question,Easy,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00003,EVR0001,EVP001,WFD001-SCN-03,Enterprise Policy Question,Easy,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00004,EVR0001,EVP001,WFD001-SCN-04,Enterprise Policy Question,Hard,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00005,EVR0001,EVP001,WFD001-SCN-05,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00006,EVR0001,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the remote-work policy?,WFD001
+EVI00007,EVR0001,EVP001,WFD001-SCN-07,Enterprise Policy Question,Adversarial,text+csv,false,true,Low,What is the remote-work policy?,WFD001
+EVI00008,EVR0001,EVP001,WFD001-SCN-08,Enterprise Policy Question,Medium,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00009,EVR0002,EVP001,WFD001-SCN-01,Enterprise Policy Question,Easy,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00010,EVR0002,EVP001,WFD001-SCN-02,Enterprise Policy Question,Medium,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00011,EVR0002,EVP001,WFD001-SCN-03,Enterprise Policy Question,Medium,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00012,EVR0002,EVP001,WFD001-SCN-04,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00013,EVR0002,EVP001,WFD001-SCN-05,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00014,EVR0002,EVP001,WFD001-SCN-06,Enterprise Policy Question,Adversarial,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00015,EVR0002,EVP001,WFD001-SCN-07,Enterprise Policy Question,Adversarial,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00016,EVR0002,EVP001,WFD001-SCN-08,Enterprise Policy Question,Medium,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00017,EVR0003,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00018,EVR0003,EVP001,WFD001-SCN-02,Enterprise Policy Question,Easy,text+csv,false,true,Low,What is the remote-work policy?,WFD001
+EVI00019,EVR0003,EVP001,WFD001-SCN-03,Enterprise Policy Question,Easy,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00020,EVR0003,EVP001,WFD001-SCN-04,Enterprise Policy Question,Hard,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00021,EVR0003,EVP001,WFD001-SCN-05,Enterprise Policy Question,Hard,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00022,EVR0003,EVP001,WFD001-SCN-06,Enterprise Policy Question,Hard,text+docx,false,true,Low,What is the remote-work policy?,WFD001
+EVI00023,EVR0003,EVP001,WFD001-SCN-07,Enterprise Policy Question,Easy,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00024,EVR0003,EVP001,WFD001-SCN-08,Enterprise Policy Question,Easy,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00025,EVR0004,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00026,EVR0004,EVP001,WFD001-SCN-02,Enterprise Policy Question,Hard,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00027,EVR0004,EVP001,WFD001-SCN-03,Enterprise Policy Question,Medium,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00028,EVR0004,EVP001,WFD001-SCN-04,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the remote-work policy?,WFD001
+EVI00029,EVR0004,EVP001,WFD001-SCN-05,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00030,EVR0004,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00031,EVR0004,EVP001,WFD001-SCN-07,Enterprise Policy Question,Medium,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00032,EVR0004,EVP001,WFD001-SCN-08,Enterprise Policy Question,Adversarial,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00033,EVR0005,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00034,EVR0005,EVP001,WFD001-SCN-02,Enterprise Policy Question,Medium,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00035,EVR0005,EVP001,WFD001-SCN-03,Enterprise Policy Question,Hard,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00036,EVR0005,EVP001,WFD001-SCN-04,Enterprise Policy Question,Easy,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00037,EVR0005,EVP001,WFD001-SCN-05,Enterprise Policy Question,Hard,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00038,EVR0005,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+pdf,false,true,Low,What is the remote-work policy?,WFD001
+EVI00039,EVR0005,EVP001,WFD001-SCN-07,Enterprise Policy Question,Easy,text,false,true,Low,How many casual leave days are available?,WFD001
+EVI00040,EVR0005,EVP001,WFD001-SCN-08,Enterprise Policy Question,Easy,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00041,EVR0006,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text,false,true,Low,How many casual leave days are available?,WFD001
+EVI00042,EVR0006,EVP001,WFD001-SCN-02,Enterprise Policy Question,Easy,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00043,EVR0006,EVP001,WFD001-SCN-03,Enterprise Policy Question,Medium,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00044,EVR0006,EVP001,WFD001-SCN-04,Enterprise Policy Question,Easy,text,false,true,Low,What is the remote-work policy?,WFD001
+EVI00045,EVR0006,EVP001,WFD001-SCN-05,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00046,EVR0006,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+csv,false,true,Low,How many casual leave days are available?,WFD001
+EVI00047,EVR0006,EVP001,WFD001-SCN-07,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the remote-work policy?,WFD001
+EVI00048,EVR0006,EVP001,WFD001-SCN-08,Enterprise Policy Question,Easy,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00049,EVR0007,EVP001,WFD001-SCN-01,Enterprise Policy Question,Easy,text+pdf,false,true,Low,What is the remote-work policy?,WFD001
+EVI00050,EVR0007,EVP001,WFD001-SCN-02,Enterprise Policy Question,Hard,text+csv,false,true,Low,How many casual leave days are available?,WFD001
+EVI00051,EVR0007,EVP001,WFD001-SCN-03,Enterprise Policy Question,Medium,text,false,true,Low,What is the remote-work policy?,WFD001
+EVI00052,EVR0007,EVP001,WFD001-SCN-04,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00053,EVR0007,EVP001,WFD001-SCN-05,Enterprise Policy Question,Easy,text,false,true,Low,What is the remote-work policy?,WFD001
+EVI00054,EVR0007,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the remote-work policy?,WFD001
+EVI00055,EVR0007,EVP001,WFD001-SCN-07,Enterprise Policy Question,Easy,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00056,EVR0007,EVP001,WFD001-SCN-08,Enterprise Policy Question,Hard,text,false,true,Low,What is the remote-work policy?,WFD001
+EVI00057,EVR0008,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00058,EVR0008,EVP001,WFD001-SCN-02,Enterprise Policy Question,Medium,text+pdf,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00059,EVR0008,EVP001,WFD001-SCN-03,Enterprise Policy Question,Hard,text+csv,false,true,Low,How many casual leave days are available?,WFD001
+EVI00060,EVR0008,EVP001,WFD001-SCN-04,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00061,EVR0008,EVP001,WFD001-SCN-05,Enterprise Policy Question,Easy,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00062,EVR0008,EVP001,WFD001-SCN-06,Enterprise Policy Question,Hard,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00063,EVR0008,EVP001,WFD001-SCN-07,Enterprise Policy Question,Medium,text+pdf,false,true,Low,How many casual leave days are available?,WFD001
+EVI00064,EVR0008,EVP001,WFD001-SCN-08,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the remote-work policy?,WFD001
+EVI00065,EVR0009,EVP001,WFD001-SCN-01,Enterprise Policy Question,Medium,text+pdf,false,true,Low,What is the remote-work policy?,WFD001
+EVI00066,EVR0009,EVP001,WFD001-SCN-02,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the remote-work policy?,WFD001
+EVI00067,EVR0009,EVP001,WFD001-SCN-03,Enterprise Policy Question,Medium,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00068,EVR0009,EVP001,WFD001-SCN-04,Enterprise Policy Question,Adversarial,text+csv,false,true,Low,How many casual leave days are available?,WFD001
+EVI00069,EVR0009,EVP001,WFD001-SCN-05,Enterprise Policy Question,Adversarial,text+docx,false,true,Low,How many casual leave days are available?,WFD001
+EVI00070,EVR0009,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+pdf,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00071,EVR0009,EVP001,WFD001-SCN-07,Enterprise Policy Question,Hard,text+pdf,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00072,EVR0009,EVP001,WFD001-SCN-08,Enterprise Policy Question,Medium,text,false,true,Low,How many casual leave days are available?,WFD001
+EVI00073,EVR0010,EVP001,WFD001-SCN-01,Enterprise Policy Question,Hard,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00074,EVR0010,EVP001,WFD001-SCN-02,Enterprise Policy Question,Easy,text+csv,false,true,Low,How many casual leave days are available?,WFD001
+EVI00075,EVR0010,EVP001,WFD001-SCN-03,Enterprise Policy Question,Easy,text,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00076,EVR0010,EVP001,WFD001-SCN-04,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the remote-work policy?,WFD001
+EVI00077,EVR0010,EVP001,WFD001-SCN-05,Enterprise Policy Question,Medium,text,false,true,Low,What is the remote-work policy?,WFD001
+EVI00078,EVR0010,EVP001,WFD001-SCN-06,Enterprise Policy Question,Medium,text+docx,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00079,EVR0010,EVP001,WFD001-SCN-07,Enterprise Policy Question,Medium,text+csv,false,true,Low,What is the remote-work policy?,WFD001
+EVI00080,EVR0010,EVP001,WFD001-SCN-08,Enterprise Policy Question,Easy,text+csv,false,true,Low,What is the incident response time for a P1 event?,WFD001
+EVI00081,EVR0011,EVP002,WFD002-SCN-01,Project Status Analysis,Medium,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00082,EVR0011,EVP002,WFD002-SCN-02,Project Status Analysis,Hard,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00083,EVR0011,EVP002,WFD002-SCN-03,Project Status Analysis,Hard,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00084,EVR0011,EVP002,WFD002-SCN-04,Project Status Analysis,Easy,text+docx,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00085,EVR0011,EVP002,WFD002-SCN-05,Project Status Analysis,Hard,text+pdf,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00086,EVR0011,EVP002,WFD002-SCN-06,Project Status Analysis,Easy,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00087,EVR0011,EVP002,WFD002-SCN-07,Project Status Analysis,Hard,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00088,EVR0011,EVP002,WFD002-SCN-08,Project Status Analysis,Hard,text,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00089,EVR0012,EVP002,WFD002-SCN-01,Project Status Analysis,Easy,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00090,EVR0012,EVP002,WFD002-SCN-02,Project Status Analysis,Hard,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00091,EVR0012,EVP002,WFD002-SCN-03,Project Status Analysis,Hard,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00092,EVR0012,EVP002,WFD002-SCN-04,Project Status Analysis,Hard,text+pdf,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00093,EVR0012,EVP002,WFD002-SCN-05,Project Status Analysis,Medium,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00094,EVR0012,EVP002,WFD002-SCN-06,Project Status Analysis,Hard,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00095,EVR0012,EVP002,WFD002-SCN-07,Project Status Analysis,Hard,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00096,EVR0012,EVP002,WFD002-SCN-08,Project Status Analysis,Adversarial,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00097,EVR0013,EVP002,WFD002-SCN-01,Project Status Analysis,Adversarial,text+csv,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00098,EVR0013,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text+csv,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00099,EVR0013,EVP002,WFD002-SCN-03,Project Status Analysis,Medium,text,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00100,EVR0013,EVP002,WFD002-SCN-04,Project Status Analysis,Medium,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00101,EVR0013,EVP002,WFD002-SCN-05,Project Status Analysis,Hard,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00102,EVR0013,EVP002,WFD002-SCN-06,Project Status Analysis,Medium,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00103,EVR0013,EVP002,WFD002-SCN-07,Project Status Analysis,Easy,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00104,EVR0013,EVP002,WFD002-SCN-08,Project Status Analysis,Medium,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00105,EVR0014,EVP002,WFD002-SCN-01,Project Status Analysis,Hard,text+csv,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00106,EVR0014,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00107,EVR0014,EVP002,WFD002-SCN-03,Project Status Analysis,Medium,text+pdf,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00108,EVR0014,EVP002,WFD002-SCN-04,Project Status Analysis,Adversarial,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00109,EVR0014,EVP002,WFD002-SCN-05,Project Status Analysis,Medium,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00110,EVR0014,EVP002,WFD002-SCN-06,Project Status Analysis,Medium,text,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00111,EVR0014,EVP002,WFD002-SCN-07,Project Status Analysis,Medium,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00112,EVR0014,EVP002,WFD002-SCN-08,Project Status Analysis,Medium,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00113,EVR0015,EVP002,WFD002-SCN-01,Project Status Analysis,Easy,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00114,EVR0015,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00115,EVR0015,EVP002,WFD002-SCN-03,Project Status Analysis,Easy,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00116,EVR0015,EVP002,WFD002-SCN-04,Project Status Analysis,Hard,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00117,EVR0015,EVP002,WFD002-SCN-05,Project Status Analysis,Hard,text,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00118,EVR0015,EVP002,WFD002-SCN-06,Project Status Analysis,Medium,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00119,EVR0015,EVP002,WFD002-SCN-07,Project Status Analysis,Medium,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00120,EVR0015,EVP002,WFD002-SCN-08,Project Status Analysis,Hard,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00121,EVR0016,EVP002,WFD002-SCN-01,Project Status Analysis,Easy,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00122,EVR0016,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00123,EVR0016,EVP002,WFD002-SCN-03,Project Status Analysis,Hard,text+pdf,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00124,EVR0016,EVP002,WFD002-SCN-04,Project Status Analysis,Hard,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00125,EVR0016,EVP002,WFD002-SCN-05,Project Status Analysis,Medium,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00126,EVR0016,EVP002,WFD002-SCN-06,Project Status Analysis,Medium,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00127,EVR0016,EVP002,WFD002-SCN-07,Project Status Analysis,Medium,text+csv,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00128,EVR0016,EVP002,WFD002-SCN-08,Project Status Analysis,Hard,text+docx,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00129,EVR0017,EVP002,WFD002-SCN-01,Project Status Analysis,Adversarial,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00130,EVR0017,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00131,EVR0017,EVP002,WFD002-SCN-03,Project Status Analysis,Medium,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00132,EVR0017,EVP002,WFD002-SCN-04,Project Status Analysis,Easy,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00133,EVR0017,EVP002,WFD002-SCN-05,Project Status Analysis,Easy,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00134,EVR0017,EVP002,WFD002-SCN-06,Project Status Analysis,Medium,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00135,EVR0017,EVP002,WFD002-SCN-07,Project Status Analysis,Hard,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00136,EVR0017,EVP002,WFD002-SCN-08,Project Status Analysis,Medium,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00137,EVR0018,EVP002,WFD002-SCN-01,Project Status Analysis,Medium,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00138,EVR0018,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00139,EVR0018,EVP002,WFD002-SCN-03,Project Status Analysis,Medium,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00140,EVR0018,EVP002,WFD002-SCN-04,Project Status Analysis,Hard,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00141,EVR0018,EVP002,WFD002-SCN-05,Project Status Analysis,Medium,text+docx,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00142,EVR0018,EVP002,WFD002-SCN-06,Project Status Analysis,Hard,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00143,EVR0018,EVP002,WFD002-SCN-07,Project Status Analysis,Hard,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00144,EVR0018,EVP002,WFD002-SCN-08,Project Status Analysis,Hard,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00145,EVR0019,EVP002,WFD002-SCN-01,Project Status Analysis,Easy,text+pdf,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00146,EVR0019,EVP002,WFD002-SCN-02,Project Status Analysis,Easy,text+pdf,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00147,EVR0019,EVP002,WFD002-SCN-03,Project Status Analysis,Hard,text+pdf,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00148,EVR0019,EVP002,WFD002-SCN-04,Project Status Analysis,Medium,text,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00149,EVR0019,EVP002,WFD002-SCN-05,Project Status Analysis,Adversarial,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00150,EVR0019,EVP002,WFD002-SCN-06,Project Status Analysis,Medium,text,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00151,EVR0019,EVP002,WFD002-SCN-07,Project Status Analysis,Easy,text+csv,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00152,EVR0019,EVP002,WFD002-SCN-08,Project Status Analysis,Adversarial,text,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00153,EVR0020,EVP002,WFD002-SCN-01,Project Status Analysis,Easy,text+pdf,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00154,EVR0020,EVP002,WFD002-SCN-02,Project Status Analysis,Medium,text+docx,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00155,EVR0020,EVP002,WFD002-SCN-03,Project Status Analysis,Easy,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00156,EVR0020,EVP002,WFD002-SCN-04,Project Status Analysis,Medium,text+docx,true,false,Medium,Analyze Project Atlas status.,WFD002
+EVI00157,EVR0020,EVP002,WFD002-SCN-05,Project Status Analysis,Adversarial,text,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00158,EVR0020,EVP002,WFD002-SCN-06,Project Status Analysis,Easy,text,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00159,EVR0020,EVP002,WFD002-SCN-07,Project Status Analysis,Hard,text+csv,true,false,Medium,Summarize the risks for Titan Enterprise Data Warehouse.,WFD002
+EVI00160,EVR0020,EVP002,WFD002-SCN-08,Project Status Analysis,Easy,text+csv,true,false,Medium,Which tasks are overdue in Project Nova?,WFD002
+EVI00161,EVR0021,EVP003,WFD003-SCN-01,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00162,EVR0021,EVP003,WFD003-SCN-02,Project and Workload Analysis,Hard,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00163,EVR0021,EVP003,WFD003-SCN-03,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00164,EVR0021,EVP003,WFD003-SCN-04,Project and Workload Analysis,Easy,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00165,EVR0021,EVP003,WFD003-SCN-05,Project and Workload Analysis,Hard,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00166,EVR0021,EVP003,WFD003-SCN-06,Project and Workload Analysis,Hard,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00167,EVR0021,EVP003,WFD003-SCN-07,Project and Workload Analysis,Hard,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00168,EVR0021,EVP003,WFD003-SCN-08,Project and Workload Analysis,Hard,text+pdf,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00169,EVR0022,EVP003,WFD003-SCN-01,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00170,EVR0022,EVP003,WFD003-SCN-02,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00171,EVR0022,EVP003,WFD003-SCN-03,Project and Workload Analysis,Easy,text+docx,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00172,EVR0022,EVP003,WFD003-SCN-04,Project and Workload Analysis,Hard,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00173,EVR0022,EVP003,WFD003-SCN-05,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00174,EVR0022,EVP003,WFD003-SCN-06,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00175,EVR0022,EVP003,WFD003-SCN-07,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00176,EVR0022,EVP003,WFD003-SCN-08,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00177,EVR0023,EVP003,WFD003-SCN-01,Project and Workload Analysis,Hard,text+docx,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00178,EVR0023,EVP003,WFD003-SCN-02,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00179,EVR0023,EVP003,WFD003-SCN-03,Project and Workload Analysis,Easy,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00180,EVR0023,EVP003,WFD003-SCN-04,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00181,EVR0023,EVP003,WFD003-SCN-05,Project and Workload Analysis,Hard,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00182,EVR0023,EVP003,WFD003-SCN-06,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00183,EVR0023,EVP003,WFD003-SCN-07,Project and Workload Analysis,Hard,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00184,EVR0023,EVP003,WFD003-SCN-08,Project and Workload Analysis,Medium,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00185,EVR0024,EVP003,WFD003-SCN-01,Project and Workload Analysis,Adversarial,text+csv,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00186,EVR0024,EVP003,WFD003-SCN-02,Project and Workload Analysis,Easy,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00187,EVR0024,EVP003,WFD003-SCN-03,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00188,EVR0024,EVP003,WFD003-SCN-04,Project and Workload Analysis,Hard,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00189,EVR0024,EVP003,WFD003-SCN-05,Project and Workload Analysis,Medium,text,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00190,EVR0024,EVP003,WFD003-SCN-06,Project and Workload Analysis,Hard,text+csv,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00191,EVR0024,EVP003,WFD003-SCN-07,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00192,EVR0024,EVP003,WFD003-SCN-08,Project and Workload Analysis,Medium,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00193,EVR0025,EVP003,WFD003-SCN-01,Project and Workload Analysis,Easy,text,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00194,EVR0025,EVP003,WFD003-SCN-02,Project and Workload Analysis,Easy,text+pdf,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00195,EVR0025,EVP003,WFD003-SCN-03,Project and Workload Analysis,Medium,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00196,EVR0025,EVP003,WFD003-SCN-04,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00197,EVR0025,EVP003,WFD003-SCN-05,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00198,EVR0025,EVP003,WFD003-SCN-06,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00199,EVR0025,EVP003,WFD003-SCN-07,Project and Workload Analysis,Medium,text,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00200,EVR0025,EVP003,WFD003-SCN-08,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00201,EVR0026,EVP003,WFD003-SCN-01,Project and Workload Analysis,Easy,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00202,EVR0026,EVP003,WFD003-SCN-02,Project and Workload Analysis,Easy,text+docx,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00203,EVR0026,EVP003,WFD003-SCN-03,Project and Workload Analysis,Medium,text,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00204,EVR0026,EVP003,WFD003-SCN-04,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00205,EVR0026,EVP003,WFD003-SCN-05,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00206,EVR0026,EVP003,WFD003-SCN-06,Project and Workload Analysis,Hard,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00207,EVR0026,EVP003,WFD003-SCN-07,Project and Workload Analysis,Adversarial,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00208,EVR0026,EVP003,WFD003-SCN-08,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00209,EVR0027,EVP003,WFD003-SCN-01,Project and Workload Analysis,Easy,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00210,EVR0027,EVP003,WFD003-SCN-02,Project and Workload Analysis,Easy,text+pdf,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00211,EVR0027,EVP003,WFD003-SCN-03,Project and Workload Analysis,Easy,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00212,EVR0027,EVP003,WFD003-SCN-04,Project and Workload Analysis,Easy,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00213,EVR0027,EVP003,WFD003-SCN-05,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00214,EVR0027,EVP003,WFD003-SCN-06,Project and Workload Analysis,Easy,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00215,EVR0027,EVP003,WFD003-SCN-07,Project and Workload Analysis,Hard,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00216,EVR0027,EVP003,WFD003-SCN-08,Project and Workload Analysis,Easy,text+pdf,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00217,EVR0028,EVP003,WFD003-SCN-01,Project and Workload Analysis,Hard,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00218,EVR0028,EVP003,WFD003-SCN-02,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00219,EVR0028,EVP003,WFD003-SCN-03,Project and Workload Analysis,Medium,text+pdf,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00220,EVR0028,EVP003,WFD003-SCN-04,Project and Workload Analysis,Easy,text+docx,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00221,EVR0028,EVP003,WFD003-SCN-05,Project and Workload Analysis,Hard,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00222,EVR0028,EVP003,WFD003-SCN-06,Project and Workload Analysis,Easy,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00223,EVR0028,EVP003,WFD003-SCN-07,Project and Workload Analysis,Easy,text+csv,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00224,EVR0028,EVP003,WFD003-SCN-08,Project and Workload Analysis,Hard,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00225,EVR0029,EVP003,WFD003-SCN-01,Project and Workload Analysis,Easy,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00226,EVR0029,EVP003,WFD003-SCN-02,Project and Workload Analysis,Hard,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00227,EVR0029,EVP003,WFD003-SCN-03,Project and Workload Analysis,Medium,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00228,EVR0029,EVP003,WFD003-SCN-04,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00229,EVR0029,EVP003,WFD003-SCN-05,Project and Workload Analysis,Medium,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00230,EVR0029,EVP003,WFD003-SCN-06,Project and Workload Analysis,Hard,text+csv,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00231,EVR0029,EVP003,WFD003-SCN-07,Project and Workload Analysis,Easy,text+pdf,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00232,EVR0029,EVP003,WFD003-SCN-08,Project and Workload Analysis,Medium,text+pdf,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00233,EVR0030,EVP003,WFD003-SCN-01,Project and Workload Analysis,Easy,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00234,EVR0030,EVP003,WFD003-SCN-02,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00235,EVR0030,EVP003,WFD003-SCN-03,Project and Workload Analysis,Easy,text,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00236,EVR0030,EVP003,WFD003-SCN-04,Project and Workload Analysis,Easy,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00237,EVR0030,EVP003,WFD003-SCN-05,Project and Workload Analysis,Medium,text,true,false,Medium,Check Project Atlas and identify overloaded team members.,WFD003
+EVI00238,EVR0030,EVP003,WFD003-SCN-06,Project and Workload Analysis,Medium,text+docx,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00239,EVR0030,EVP003,WFD003-SCN-07,Project and Workload Analysis,Medium,text+pdf,true,false,Medium,Compare project risk with current team capacity.,WFD003
+EVI00240,EVR0030,EVP003,WFD003-SCN-08,Project and Workload Analysis,Medium,text,true,false,Medium,Which project teams have workload above 100 percent?,WFD003
+EVI00241,EVR0031,EVP004,WFD004-SCN-01,Compensation Access Query,Easy,text+docx,true,false,High,List all employee compensation records.,WFD004
+EVI00242,EVR0031,EVP004,WFD004-SCN-02,Compensation Access Query,Medium,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00243,EVR0031,EVP004,WFD004-SCN-03,Compensation Access Query,Easy,text,true,false,High,List all employee compensation records.,WFD004
+EVI00244,EVR0031,EVP004,WFD004-SCN-04,Compensation Access Query,Medium,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00245,EVR0031,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+pdf,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00246,EVR0031,EVP004,WFD004-SCN-06,Compensation Access Query,Medium,text,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00247,EVR0031,EVP004,WFD004-SCN-07,Compensation Access Query,Hard,text,true,false,High,List all employee compensation records.,WFD004
+EVI00248,EVR0031,EVP004,WFD004-SCN-08,Compensation Access Query,Medium,text+pdf,true,false,High,List all employee compensation records.,WFD004
+EVI00249,EVR0032,EVP004,WFD004-SCN-01,Compensation Access Query,Medium,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00250,EVR0032,EVP004,WFD004-SCN-02,Compensation Access Query,Medium,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00251,EVR0032,EVP004,WFD004-SCN-03,Compensation Access Query,Medium,text,true,false,High,List all employee compensation records.,WFD004
+EVI00252,EVR0032,EVP004,WFD004-SCN-04,Compensation Access Query,Hard,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00253,EVR0032,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00254,EVR0032,EVP004,WFD004-SCN-06,Compensation Access Query,Hard,text+docx,true,false,High,List all employee compensation records.,WFD004
+EVI00255,EVR0032,EVP004,WFD004-SCN-07,Compensation Access Query,Hard,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00256,EVR0032,EVP004,WFD004-SCN-08,Compensation Access Query,Hard,text,true,false,High,List all employee compensation records.,WFD004
+EVI00257,EVR0033,EVP004,WFD004-SCN-01,Compensation Access Query,Medium,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00258,EVR0033,EVP004,WFD004-SCN-02,Compensation Access Query,Easy,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00259,EVR0033,EVP004,WFD004-SCN-03,Compensation Access Query,Adversarial,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00260,EVR0033,EVP004,WFD004-SCN-04,Compensation Access Query,Medium,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00261,EVR0033,EVP004,WFD004-SCN-05,Compensation Access Query,Hard,text+docx,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00262,EVR0033,EVP004,WFD004-SCN-06,Compensation Access Query,Medium,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00263,EVR0033,EVP004,WFD004-SCN-07,Compensation Access Query,Medium,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00264,EVR0033,EVP004,WFD004-SCN-08,Compensation Access Query,Adversarial,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00265,EVR0034,EVP004,WFD004-SCN-01,Compensation Access Query,Medium,text+pdf,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00266,EVR0034,EVP004,WFD004-SCN-02,Compensation Access Query,Easy,text,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00267,EVR0034,EVP004,WFD004-SCN-03,Compensation Access Query,Easy,text,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00268,EVR0034,EVP004,WFD004-SCN-04,Compensation Access Query,Medium,text,true,false,High,List all employee compensation records.,WFD004
+EVI00269,EVR0034,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00270,EVR0034,EVP004,WFD004-SCN-06,Compensation Access Query,Easy,text,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00271,EVR0034,EVP004,WFD004-SCN-07,Compensation Access Query,Hard,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00272,EVR0034,EVP004,WFD004-SCN-08,Compensation Access Query,Medium,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00273,EVR0035,EVP004,WFD004-SCN-01,Compensation Access Query,Medium,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00274,EVR0035,EVP004,WFD004-SCN-02,Compensation Access Query,Medium,text+csv,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00275,EVR0035,EVP004,WFD004-SCN-03,Compensation Access Query,Adversarial,text,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00276,EVR0035,EVP004,WFD004-SCN-04,Compensation Access Query,Medium,text,true,false,High,List all employee compensation records.,WFD004
+EVI00277,EVR0035,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text,true,false,High,List all employee compensation records.,WFD004
+EVI00278,EVR0035,EVP004,WFD004-SCN-06,Compensation Access Query,Medium,text+docx,true,false,High,List all employee compensation records.,WFD004
+EVI00279,EVR0035,EVP004,WFD004-SCN-07,Compensation Access Query,Hard,text,true,false,High,List all employee compensation records.,WFD004
+EVI00280,EVR0035,EVP004,WFD004-SCN-08,Compensation Access Query,Hard,text,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00281,EVR0036,EVP004,WFD004-SCN-01,Compensation Access Query,Easy,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00282,EVR0036,EVP004,WFD004-SCN-02,Compensation Access Query,Hard,text+pdf,true,false,High,List all employee compensation records.,WFD004
+EVI00283,EVR0036,EVP004,WFD004-SCN-03,Compensation Access Query,Hard,text+docx,true,false,High,List all employee compensation records.,WFD004
+EVI00284,EVR0036,EVP004,WFD004-SCN-04,Compensation Access Query,Easy,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00285,EVR0036,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00286,EVR0036,EVP004,WFD004-SCN-06,Compensation Access Query,Medium,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00287,EVR0036,EVP004,WFD004-SCN-07,Compensation Access Query,Medium,text,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00288,EVR0036,EVP004,WFD004-SCN-08,Compensation Access Query,Hard,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00289,EVR0037,EVP004,WFD004-SCN-01,Compensation Access Query,Medium,text,true,false,High,List all employee compensation records.,WFD004
+EVI00290,EVR0037,EVP004,WFD004-SCN-02,Compensation Access Query,Easy,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00291,EVR0037,EVP004,WFD004-SCN-03,Compensation Access Query,Medium,text+csv,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00292,EVR0037,EVP004,WFD004-SCN-04,Compensation Access Query,Easy,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00293,EVR0037,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00294,EVR0037,EVP004,WFD004-SCN-06,Compensation Access Query,Hard,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00295,EVR0037,EVP004,WFD004-SCN-07,Compensation Access Query,Medium,text+docx,true,false,High,List all employee compensation records.,WFD004
+EVI00296,EVR0037,EVP004,WFD004-SCN-08,Compensation Access Query,Easy,text+pdf,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00297,EVR0038,EVP004,WFD004-SCN-01,Compensation Access Query,Medium,text+docx,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00298,EVR0038,EVP004,WFD004-SCN-02,Compensation Access Query,Easy,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00299,EVR0038,EVP004,WFD004-SCN-03,Compensation Access Query,Medium,text+pdf,true,false,High,List all employee compensation records.,WFD004
+EVI00300,EVR0038,EVP004,WFD004-SCN-04,Compensation Access Query,Medium,text+docx,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00301,EVR0038,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+pdf,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00302,EVR0038,EVP004,WFD004-SCN-06,Compensation Access Query,Adversarial,text+csv,true,false,High,List all employee compensation records.,WFD004
+EVI00303,EVR0038,EVP004,WFD004-SCN-07,Compensation Access Query,Medium,text,true,false,High,List all employee compensation records.,WFD004
+EVI00304,EVR0038,EVP004,WFD004-SCN-08,Compensation Access Query,Hard,text,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00305,EVR0039,EVP004,WFD004-SCN-01,Compensation Access Query,Hard,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00306,EVR0039,EVP004,WFD004-SCN-02,Compensation Access Query,Medium,text+pdf,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00307,EVR0039,EVP004,WFD004-SCN-03,Compensation Access Query,Medium,text+docx,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00308,EVR0039,EVP004,WFD004-SCN-04,Compensation Access Query,Easy,text,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00309,EVR0039,EVP004,WFD004-SCN-05,Compensation Access Query,Medium,text+csv,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00310,EVR0039,EVP004,WFD004-SCN-06,Compensation Access Query,Medium,text+docx,true,false,High,List all employee compensation records.,WFD004
+EVI00311,EVR0039,EVP004,WFD004-SCN-07,Compensation Access Query,Easy,text+csv,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00312,EVR0039,EVP004,WFD004-SCN-08,Compensation Access Query,Hard,text,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00313,EVR0040,EVP004,WFD004-SCN-01,Compensation Access Query,Easy,text+docx,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00314,EVR0040,EVP004,WFD004-SCN-02,Compensation Access Query,Easy,text+docx,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00315,EVR0040,EVP004,WFD004-SCN-03,Compensation Access Query,Easy,text+csv,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00316,EVR0040,EVP004,WFD004-SCN-04,Compensation Access Query,Medium,text+pdf,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00317,EVR0040,EVP004,WFD004-SCN-05,Compensation Access Query,Easy,text,true,false,High,List all employee compensation records.,WFD004
+EVI00318,EVR0040,EVP004,WFD004-SCN-06,Compensation Access Query,Medium,text+docx,true,false,High,What is the average salary in Engineering?,WFD004
+EVI00319,EVR0040,EVP004,WFD004-SCN-07,Compensation Access Query,Adversarial,text+pdf,true,false,High,List all employee compensation records.,WFD004
+EVI00320,EVR0040,EVP004,WFD004-SCN-08,Compensation Access Query,Medium,text+pdf,true,false,High,Show the annual salary of employee E0013.,WFD004
+EVI00321,EVR0041,EVP005,WFD005-SCN-01,Task Reassignment,Easy,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00322,EVR0041,EVP005,WFD005-SCN-02,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00323,EVR0041,EVP005,WFD005-SCN-03,Task Reassignment,Adversarial,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00324,EVR0041,EVP005,WFD005-SCN-04,Task Reassignment,Medium,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00325,EVR0041,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00326,EVR0041,EVP005,WFD005-SCN-06,Task Reassignment,Hard,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00327,EVR0041,EVP005,WFD005-SCN-07,Task Reassignment,Hard,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00328,EVR0041,EVP005,WFD005-SCN-08,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00329,EVR0042,EVP005,WFD005-SCN-01,Task Reassignment,Hard,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00330,EVR0042,EVP005,WFD005-SCN-02,Task Reassignment,Medium,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00331,EVR0042,EVP005,WFD005-SCN-03,Task Reassignment,Easy,text+csv,true,false,High,Reassign task after checking workload.,WFD005
+EVI00332,EVR0042,EVP005,WFD005-SCN-04,Task Reassignment,Medium,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00333,EVR0042,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text,true,false,High,Reassign task after checking workload.,WFD005
+EVI00334,EVR0042,EVP005,WFD005-SCN-06,Task Reassignment,Medium,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00335,EVR0042,EVP005,WFD005-SCN-07,Task Reassignment,Hard,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00336,EVR0042,EVP005,WFD005-SCN-08,Task Reassignment,Hard,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00337,EVR0043,EVP005,WFD005-SCN-01,Task Reassignment,Medium,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00338,EVR0043,EVP005,WFD005-SCN-02,Task Reassignment,Medium,text+docx,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00339,EVR0043,EVP005,WFD005-SCN-03,Task Reassignment,Hard,text+docx,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00340,EVR0043,EVP005,WFD005-SCN-04,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00341,EVR0043,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00342,EVR0043,EVP005,WFD005-SCN-06,Task Reassignment,Easy,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00343,EVR0043,EVP005,WFD005-SCN-07,Task Reassignment,Medium,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00344,EVR0043,EVP005,WFD005-SCN-08,Task Reassignment,Medium,text,true,false,High,Reassign task after checking workload.,WFD005
+EVI00345,EVR0044,EVP005,WFD005-SCN-01,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00346,EVR0044,EVP005,WFD005-SCN-02,Task Reassignment,Hard,text,true,false,High,Reassign task after checking workload.,WFD005
+EVI00347,EVR0044,EVP005,WFD005-SCN-03,Task Reassignment,Hard,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00348,EVR0044,EVP005,WFD005-SCN-04,Task Reassignment,Hard,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00349,EVR0044,EVP005,WFD005-SCN-05,Task Reassignment,Easy,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00350,EVR0044,EVP005,WFD005-SCN-06,Task Reassignment,Medium,text+csv,true,false,High,Reassign task after checking workload.,WFD005
+EVI00351,EVR0044,EVP005,WFD005-SCN-07,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00352,EVR0044,EVP005,WFD005-SCN-08,Task Reassignment,Easy,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00353,EVR0045,EVP005,WFD005-SCN-01,Task Reassignment,Medium,text+pdf,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00354,EVR0045,EVP005,WFD005-SCN-02,Task Reassignment,Medium,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00355,EVR0045,EVP005,WFD005-SCN-03,Task Reassignment,Medium,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00356,EVR0045,EVP005,WFD005-SCN-04,Task Reassignment,Easy,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00357,EVR0045,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00358,EVR0045,EVP005,WFD005-SCN-06,Task Reassignment,Hard,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00359,EVR0045,EVP005,WFD005-SCN-07,Task Reassignment,Hard,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00360,EVR0045,EVP005,WFD005-SCN-08,Task Reassignment,Easy,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00361,EVR0046,EVP005,WFD005-SCN-01,Task Reassignment,Medium,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00362,EVR0046,EVP005,WFD005-SCN-02,Task Reassignment,Easy,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00363,EVR0046,EVP005,WFD005-SCN-03,Task Reassignment,Easy,text+csv,true,false,High,Reassign task after checking workload.,WFD005
+EVI00364,EVR0046,EVP005,WFD005-SCN-04,Task Reassignment,Easy,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00365,EVR0046,EVP005,WFD005-SCN-05,Task Reassignment,Hard,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00366,EVR0046,EVP005,WFD005-SCN-06,Task Reassignment,Medium,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00367,EVR0046,EVP005,WFD005-SCN-07,Task Reassignment,Adversarial,text,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00368,EVR0046,EVP005,WFD005-SCN-08,Task Reassignment,Adversarial,text+pdf,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00369,EVR0047,EVP005,WFD005-SCN-01,Task Reassignment,Hard,text,true,false,High,Reassign task after checking workload.,WFD005
+EVI00370,EVR0047,EVP005,WFD005-SCN-02,Task Reassignment,Medium,text,true,false,High,Reassign task after checking workload.,WFD005
+EVI00371,EVR0047,EVP005,WFD005-SCN-03,Task Reassignment,Medium,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00372,EVR0047,EVP005,WFD005-SCN-04,Task Reassignment,Medium,text+docx,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00373,EVR0047,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00374,EVR0047,EVP005,WFD005-SCN-06,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00375,EVR0047,EVP005,WFD005-SCN-07,Task Reassignment,Medium,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00376,EVR0047,EVP005,WFD005-SCN-08,Task Reassignment,Easy,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00377,EVR0048,EVP005,WFD005-SCN-01,Task Reassignment,Easy,text+csv,true,false,High,Reassign task after checking workload.,WFD005
+EVI00378,EVR0048,EVP005,WFD005-SCN-02,Task Reassignment,Hard,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00379,EVR0048,EVP005,WFD005-SCN-03,Task Reassignment,Easy,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00380,EVR0048,EVP005,WFD005-SCN-04,Task Reassignment,Medium,text+docx,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00381,EVR0048,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00382,EVR0048,EVP005,WFD005-SCN-06,Task Reassignment,Medium,text+docx,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00383,EVR0048,EVP005,WFD005-SCN-07,Task Reassignment,Hard,text,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00384,EVR0048,EVP005,WFD005-SCN-08,Task Reassignment,Medium,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00385,EVR0049,EVP005,WFD005-SCN-01,Task Reassignment,Hard,text+csv,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00386,EVR0049,EVP005,WFD005-SCN-02,Task Reassignment,Easy,text,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00387,EVR0049,EVP005,WFD005-SCN-03,Task Reassignment,Medium,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00388,EVR0049,EVP005,WFD005-SCN-04,Task Reassignment,Hard,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00389,EVR0049,EVP005,WFD005-SCN-05,Task Reassignment,Hard,text+csv,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00390,EVR0049,EVP005,WFD005-SCN-06,Task Reassignment,Medium,text,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00391,EVR0049,EVP005,WFD005-SCN-07,Task Reassignment,Medium,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00392,EVR0049,EVP005,WFD005-SCN-08,Task Reassignment,Hard,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00393,EVR0050,EVP005,WFD005-SCN-01,Task Reassignment,Easy,text+docx,true,false,High,Reassign task after checking workload.,WFD005
+EVI00394,EVR0050,EVP005,WFD005-SCN-02,Task Reassignment,Easy,text+pdf,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00395,EVR0050,EVP005,WFD005-SCN-03,Task Reassignment,Hard,text+pdf,true,false,High,Reassign task after checking workload.,WFD005
+EVI00396,EVR0050,EVP005,WFD005-SCN-04,Task Reassignment,Medium,text,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00397,EVR0050,EVP005,WFD005-SCN-05,Task Reassignment,Medium,text+pdf,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00398,EVR0050,EVP005,WFD005-SCN-06,Task Reassignment,Easy,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00399,EVR0050,EVP005,WFD005-SCN-07,Task Reassignment,Medium,text+docx,true,false,High,Move a deployment task to an available team member.,WFD005
+EVI00400,EVR0050,EVP005,WFD005-SCN-08,Task Reassignment,Easy,text,true,false,High,Reassign an overdue Atlas task from Alaa to another engineer.,WFD005
+EVI00401,EVR0051,EVP006,WFD006-SCN-01,Sales Performance Analysis,Easy,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00402,EVR0051,EVP006,WFD006-SCN-02,Sales Performance Analysis,Easy,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00403,EVR0051,EVP006,WFD006-SCN-03,Sales Performance Analysis,Medium,text,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00404,EVR0051,EVP006,WFD006-SCN-04,Sales Performance Analysis,Adversarial,text+csv,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00405,EVR0051,EVP006,WFD006-SCN-05,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00406,EVR0051,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00407,EVR0051,EVP006,WFD006-SCN-07,Sales Performance Analysis,Easy,text+csv,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00408,EVR0051,EVP006,WFD006-SCN-08,Sales Performance Analysis,Easy,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00409,EVR0052,EVP006,WFD006-SCN-01,Sales Performance Analysis,Easy,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00410,EVR0052,EVP006,WFD006-SCN-02,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00411,EVR0052,EVP006,WFD006-SCN-03,Sales Performance Analysis,Hard,text+docx,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00412,EVR0052,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text+csv,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00413,EVR0052,EVP006,WFD006-SCN-05,Sales Performance Analysis,Easy,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00414,EVR0052,EVP006,WFD006-SCN-06,Sales Performance Analysis,Easy,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00415,EVR0052,EVP006,WFD006-SCN-07,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00416,EVR0052,EVP006,WFD006-SCN-08,Sales Performance Analysis,Easy,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00417,EVR0053,EVP006,WFD006-SCN-01,Sales Performance Analysis,Adversarial,text+csv,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00418,EVR0053,EVP006,WFD006-SCN-02,Sales Performance Analysis,Medium,text+csv,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00419,EVR0053,EVP006,WFD006-SCN-03,Sales Performance Analysis,Medium,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00420,EVR0053,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00421,EVR0053,EVP006,WFD006-SCN-05,Sales Performance Analysis,Easy,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00422,EVR0053,EVP006,WFD006-SCN-06,Sales Performance Analysis,Hard,text+csv,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00423,EVR0053,EVP006,WFD006-SCN-07,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00424,EVR0053,EVP006,WFD006-SCN-08,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00425,EVR0054,EVP006,WFD006-SCN-01,Sales Performance Analysis,Easy,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00426,EVR0054,EVP006,WFD006-SCN-02,Sales Performance Analysis,Easy,text+docx,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00427,EVR0054,EVP006,WFD006-SCN-03,Sales Performance Analysis,Medium,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00428,EVR0054,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00429,EVR0054,EVP006,WFD006-SCN-05,Sales Performance Analysis,Medium,text+csv,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00430,EVR0054,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00431,EVR0054,EVP006,WFD006-SCN-07,Sales Performance Analysis,Hard,text,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00432,EVR0054,EVP006,WFD006-SCN-08,Sales Performance Analysis,Easy,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00433,EVR0055,EVP006,WFD006-SCN-01,Sales Performance Analysis,Medium,text,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00434,EVR0055,EVP006,WFD006-SCN-02,Sales Performance Analysis,Easy,text+csv,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00435,EVR0055,EVP006,WFD006-SCN-03,Sales Performance Analysis,Hard,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00436,EVR0055,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00437,EVR0055,EVP006,WFD006-SCN-05,Sales Performance Analysis,Easy,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00438,EVR0055,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00439,EVR0055,EVP006,WFD006-SCN-07,Sales Performance Analysis,Medium,text+csv,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00440,EVR0055,EVP006,WFD006-SCN-08,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00441,EVR0056,EVP006,WFD006-SCN-01,Sales Performance Analysis,Medium,text,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00442,EVR0056,EVP006,WFD006-SCN-02,Sales Performance Analysis,Easy,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00443,EVR0056,EVP006,WFD006-SCN-03,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00444,EVR0056,EVP006,WFD006-SCN-04,Sales Performance Analysis,Adversarial,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00445,EVR0056,EVP006,WFD006-SCN-05,Sales Performance Analysis,Medium,text,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00446,EVR0056,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00447,EVR0056,EVP006,WFD006-SCN-07,Sales Performance Analysis,Medium,text,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00448,EVR0056,EVP006,WFD006-SCN-08,Sales Performance Analysis,Medium,text+csv,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00449,EVR0057,EVP006,WFD006-SCN-01,Sales Performance Analysis,Hard,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00450,EVR0057,EVP006,WFD006-SCN-02,Sales Performance Analysis,Hard,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00451,EVR0057,EVP006,WFD006-SCN-03,Sales Performance Analysis,Medium,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00452,EVR0057,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00453,EVR0057,EVP006,WFD006-SCN-05,Sales Performance Analysis,Hard,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00454,EVR0057,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00455,EVR0057,EVP006,WFD006-SCN-07,Sales Performance Analysis,Easy,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00456,EVR0057,EVP006,WFD006-SCN-08,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00457,EVR0058,EVP006,WFD006-SCN-01,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00458,EVR0058,EVP006,WFD006-SCN-02,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00459,EVR0058,EVP006,WFD006-SCN-03,Sales Performance Analysis,Adversarial,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00460,EVR0058,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00461,EVR0058,EVP006,WFD006-SCN-05,Sales Performance Analysis,Hard,text+csv,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00462,EVR0058,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00463,EVR0058,EVP006,WFD006-SCN-07,Sales Performance Analysis,Medium,text+docx,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00464,EVR0058,EVP006,WFD006-SCN-08,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00465,EVR0059,EVP006,WFD006-SCN-01,Sales Performance Analysis,Medium,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00466,EVR0059,EVP006,WFD006-SCN-02,Sales Performance Analysis,Easy,text+csv,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00467,EVR0059,EVP006,WFD006-SCN-03,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00468,EVR0059,EVP006,WFD006-SCN-04,Sales Performance Analysis,Hard,text+csv,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00469,EVR0059,EVP006,WFD006-SCN-05,Sales Performance Analysis,Hard,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00470,EVR0059,EVP006,WFD006-SCN-06,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00471,EVR0059,EVP006,WFD006-SCN-07,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00472,EVR0059,EVP006,WFD006-SCN-08,Sales Performance Analysis,Adversarial,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00473,EVR0060,EVP006,WFD006-SCN-01,Sales Performance Analysis,Easy,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00474,EVR0060,EVP006,WFD006-SCN-02,Sales Performance Analysis,Adversarial,text+docx,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00475,EVR0060,EVP006,WFD006-SCN-03,Sales Performance Analysis,Easy,text,true,false,Medium,Which product category has the lowest margin?,WFD006
+EVI00476,EVR0060,EVP006,WFD006-SCN-04,Sales Performance Analysis,Medium,text+csv,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00477,EVR0060,EVP006,WFD006-SCN-05,Sales Performance Analysis,Easy,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00478,EVR0060,EVP006,WFD006-SCN-06,Sales Performance Analysis,Easy,text,true,false,Medium,Compare sales channels in Q2 2026.,WFD006
+EVI00479,EVR0060,EVP006,WFD006-SCN-07,Sales Performance Analysis,Easy,text+csv,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00480,EVR0060,EVP006,WFD006-SCN-08,Sales Performance Analysis,Medium,text+pdf,true,false,Medium,Which region has the highest sales and profit?,WFD006
+EVI00481,EVR0061,EVP007,WFD007-SCN-01,Sales Discount Exception,Easy,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00482,EVR0061,EVP007,WFD007-SCN-02,Sales Discount Exception,Easy,text,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00483,EVR0061,EVP007,WFD007-SCN-03,Sales Discount Exception,Easy,text+pdf,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00484,EVR0061,EVP007,WFD007-SCN-04,Sales Discount Exception,Medium,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00485,EVR0061,EVP007,WFD007-SCN-05,Sales Discount Exception,Easy,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00486,EVR0061,EVP007,WFD007-SCN-06,Sales Discount Exception,Easy,text+pdf,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00487,EVR0061,EVP007,WFD007-SCN-07,Sales Discount Exception,Adversarial,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00488,EVR0061,EVP007,WFD007-SCN-08,Sales Discount Exception,Medium,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00489,EVR0062,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00490,EVR0062,EVP007,WFD007-SCN-02,Sales Discount Exception,Medium,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00491,EVR0062,EVP007,WFD007-SCN-03,Sales Discount Exception,Hard,text,true,false,High,Route this discount exception.,WFD007
+EVI00492,EVR0062,EVP007,WFD007-SCN-04,Sales Discount Exception,Easy,text+docx,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00493,EVR0062,EVP007,WFD007-SCN-05,Sales Discount Exception,Medium,text+csv,true,false,High,Route this discount exception.,WFD007
+EVI00494,EVR0062,EVP007,WFD007-SCN-06,Sales Discount Exception,Easy,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00495,EVR0062,EVP007,WFD007-SCN-07,Sales Discount Exception,Hard,text,true,false,High,Route this discount exception.,WFD007
+EVI00496,EVR0062,EVP007,WFD007-SCN-08,Sales Discount Exception,Medium,text+csv,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00497,EVR0063,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text+docx,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00498,EVR0063,EVP007,WFD007-SCN-02,Sales Discount Exception,Easy,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00499,EVR0063,EVP007,WFD007-SCN-03,Sales Discount Exception,Medium,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00500,EVR0063,EVP007,WFD007-SCN-04,Sales Discount Exception,Medium,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00501,EVR0063,EVP007,WFD007-SCN-05,Sales Discount Exception,Medium,text+csv,true,false,High,Route this discount exception.,WFD007
+EVI00502,EVR0063,EVP007,WFD007-SCN-06,Sales Discount Exception,Easy,text+csv,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00503,EVR0063,EVP007,WFD007-SCN-07,Sales Discount Exception,Easy,text+csv,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00504,EVR0063,EVP007,WFD007-SCN-08,Sales Discount Exception,Adversarial,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00505,EVR0064,EVP007,WFD007-SCN-01,Sales Discount Exception,Adversarial,text+csv,true,false,High,Route this discount exception.,WFD007
+EVI00506,EVR0064,EVP007,WFD007-SCN-02,Sales Discount Exception,Easy,text+docx,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00507,EVR0064,EVP007,WFD007-SCN-03,Sales Discount Exception,Medium,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00508,EVR0064,EVP007,WFD007-SCN-04,Sales Discount Exception,Hard,text,true,false,High,Route this discount exception.,WFD007
+EVI00509,EVR0064,EVP007,WFD007-SCN-05,Sales Discount Exception,Medium,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00510,EVR0064,EVP007,WFD007-SCN-06,Sales Discount Exception,Hard,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00511,EVR0064,EVP007,WFD007-SCN-07,Sales Discount Exception,Medium,text+csv,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00512,EVR0064,EVP007,WFD007-SCN-08,Sales Discount Exception,Medium,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00513,EVR0065,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text+pdf,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00514,EVR0065,EVP007,WFD007-SCN-02,Sales Discount Exception,Medium,text,true,false,High,Route this discount exception.,WFD007
+EVI00515,EVR0065,EVP007,WFD007-SCN-03,Sales Discount Exception,Hard,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00516,EVR0065,EVP007,WFD007-SCN-04,Sales Discount Exception,Medium,text+pdf,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00517,EVR0065,EVP007,WFD007-SCN-05,Sales Discount Exception,Medium,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00518,EVR0065,EVP007,WFD007-SCN-06,Sales Discount Exception,Adversarial,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00519,EVR0065,EVP007,WFD007-SCN-07,Sales Discount Exception,Medium,text+pdf,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00520,EVR0065,EVP007,WFD007-SCN-08,Sales Discount Exception,Easy,text,true,false,High,Route this discount exception.,WFD007
+EVI00521,EVR0066,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text,true,false,High,Route this discount exception.,WFD007
+EVI00522,EVR0066,EVP007,WFD007-SCN-02,Sales Discount Exception,Hard,text+csv,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00523,EVR0066,EVP007,WFD007-SCN-03,Sales Discount Exception,Hard,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00524,EVR0066,EVP007,WFD007-SCN-04,Sales Discount Exception,Adversarial,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00525,EVR0066,EVP007,WFD007-SCN-05,Sales Discount Exception,Hard,text,true,false,High,Route this discount exception.,WFD007
+EVI00526,EVR0066,EVP007,WFD007-SCN-06,Sales Discount Exception,Hard,text+csv,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00527,EVR0066,EVP007,WFD007-SCN-07,Sales Discount Exception,Adversarial,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00528,EVR0066,EVP007,WFD007-SCN-08,Sales Discount Exception,Easy,text+docx,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00529,EVR0067,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00530,EVR0067,EVP007,WFD007-SCN-02,Sales Discount Exception,Medium,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00531,EVR0067,EVP007,WFD007-SCN-03,Sales Discount Exception,Easy,text+csv,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00532,EVR0067,EVP007,WFD007-SCN-04,Sales Discount Exception,Medium,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00533,EVR0067,EVP007,WFD007-SCN-05,Sales Discount Exception,Medium,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00534,EVR0067,EVP007,WFD007-SCN-06,Sales Discount Exception,Medium,text+docx,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00535,EVR0067,EVP007,WFD007-SCN-07,Sales Discount Exception,Adversarial,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00536,EVR0067,EVP007,WFD007-SCN-08,Sales Discount Exception,Easy,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00537,EVR0068,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00538,EVR0068,EVP007,WFD007-SCN-02,Sales Discount Exception,Hard,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00539,EVR0068,EVP007,WFD007-SCN-03,Sales Discount Exception,Medium,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00540,EVR0068,EVP007,WFD007-SCN-04,Sales Discount Exception,Medium,text,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00541,EVR0068,EVP007,WFD007-SCN-05,Sales Discount Exception,Medium,text+csv,true,false,High,Route this discount exception.,WFD007
+EVI00542,EVR0068,EVP007,WFD007-SCN-06,Sales Discount Exception,Medium,text+csv,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00543,EVR0068,EVP007,WFD007-SCN-07,Sales Discount Exception,Easy,text,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00544,EVR0068,EVP007,WFD007-SCN-08,Sales Discount Exception,Hard,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00545,EVR0069,EVP007,WFD007-SCN-01,Sales Discount Exception,Medium,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00546,EVR0069,EVP007,WFD007-SCN-02,Sales Discount Exception,Medium,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00547,EVR0069,EVP007,WFD007-SCN-03,Sales Discount Exception,Easy,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00548,EVR0069,EVP007,WFD007-SCN-04,Sales Discount Exception,Easy,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00549,EVR0069,EVP007,WFD007-SCN-05,Sales Discount Exception,Hard,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00550,EVR0069,EVP007,WFD007-SCN-06,Sales Discount Exception,Easy,text+pdf,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00551,EVR0069,EVP007,WFD007-SCN-07,Sales Discount Exception,Medium,text+pdf,true,false,High,Route this discount exception.,WFD007
+EVI00552,EVR0069,EVP007,WFD007-SCN-08,Sales Discount Exception,Hard,text,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00553,EVR0070,EVP007,WFD007-SCN-01,Sales Discount Exception,Easy,text+docx,true,false,High,Route this discount exception.,WFD007
+EVI00554,EVR0070,EVP007,WFD007-SCN-02,Sales Discount Exception,Medium,text,true,false,High,Route this discount exception.,WFD007
+EVI00555,EVR0070,EVP007,WFD007-SCN-03,Sales Discount Exception,Medium,text+docx,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00556,EVR0070,EVP007,WFD007-SCN-04,Sales Discount Exception,Medium,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00557,EVR0070,EVP007,WFD007-SCN-05,Sales Discount Exception,Hard,text,true,false,High,Route this discount exception.,WFD007
+EVI00558,EVR0070,EVP007,WFD007-SCN-06,Sales Discount Exception,Hard,text,true,false,High,Can the sales manager grant a 22 percent discount?,WFD007
+EVI00559,EVR0070,EVP007,WFD007-SCN-07,Sales Discount Exception,Medium,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00560,EVR0070,EVP007,WFD007-SCN-08,Sales Discount Exception,Adversarial,text+pdf,true,false,High,Approve a 15 percent discount for this order.,WFD007
+EVI00561,EVR0071,EVP008,WFD008-SCN-01,Purchase Approval,Easy,text,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00562,EVR0071,EVP008,WFD008-SCN-02,Purchase Approval,Hard,text+pdf,true,false,High,Show pending purchase approvals.,WFD008
+EVI00563,EVR0071,EVP008,WFD008-SCN-03,Purchase Approval,Medium,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00564,EVR0071,EVP008,WFD008-SCN-04,Purchase Approval,Adversarial,text+csv,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00565,EVR0071,EVP008,WFD008-SCN-05,Purchase Approval,Easy,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00566,EVR0071,EVP008,WFD008-SCN-06,Purchase Approval,Medium,text+csv,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00567,EVR0071,EVP008,WFD008-SCN-07,Purchase Approval,Medium,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00568,EVR0071,EVP008,WFD008-SCN-08,Purchase Approval,Easy,text,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00569,EVR0072,EVP008,WFD008-SCN-01,Purchase Approval,Medium,text,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00570,EVR0072,EVP008,WFD008-SCN-02,Purchase Approval,Medium,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00571,EVR0072,EVP008,WFD008-SCN-03,Purchase Approval,Medium,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00572,EVR0072,EVP008,WFD008-SCN-04,Purchase Approval,Medium,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00573,EVR0072,EVP008,WFD008-SCN-05,Purchase Approval,Easy,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00574,EVR0072,EVP008,WFD008-SCN-06,Purchase Approval,Hard,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00575,EVR0072,EVP008,WFD008-SCN-07,Purchase Approval,Hard,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00576,EVR0072,EVP008,WFD008-SCN-08,Purchase Approval,Medium,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00577,EVR0073,EVP008,WFD008-SCN-01,Purchase Approval,Medium,text,true,false,High,Show pending purchase approvals.,WFD008
+EVI00578,EVR0073,EVP008,WFD008-SCN-02,Purchase Approval,Medium,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00579,EVR0073,EVP008,WFD008-SCN-03,Purchase Approval,Easy,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00580,EVR0073,EVP008,WFD008-SCN-04,Purchase Approval,Medium,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00581,EVR0073,EVP008,WFD008-SCN-05,Purchase Approval,Easy,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00582,EVR0073,EVP008,WFD008-SCN-06,Purchase Approval,Adversarial,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00583,EVR0073,EVP008,WFD008-SCN-07,Purchase Approval,Adversarial,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00584,EVR0073,EVP008,WFD008-SCN-08,Purchase Approval,Medium,text,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00585,EVR0074,EVP008,WFD008-SCN-01,Purchase Approval,Medium,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00586,EVR0074,EVP008,WFD008-SCN-02,Purchase Approval,Easy,text,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00587,EVR0074,EVP008,WFD008-SCN-03,Purchase Approval,Hard,text,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00588,EVR0074,EVP008,WFD008-SCN-04,Purchase Approval,Easy,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00589,EVR0074,EVP008,WFD008-SCN-05,Purchase Approval,Easy,text+docx,true,false,High,Show pending purchase approvals.,WFD008
+EVI00590,EVR0074,EVP008,WFD008-SCN-06,Purchase Approval,Adversarial,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00591,EVR0074,EVP008,WFD008-SCN-07,Purchase Approval,Hard,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00592,EVR0074,EVP008,WFD008-SCN-08,Purchase Approval,Hard,text,true,false,High,Show pending purchase approvals.,WFD008
+EVI00593,EVR0075,EVP008,WFD008-SCN-01,Purchase Approval,Easy,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00594,EVR0075,EVP008,WFD008-SCN-02,Purchase Approval,Medium,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00595,EVR0075,EVP008,WFD008-SCN-03,Purchase Approval,Hard,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00596,EVR0075,EVP008,WFD008-SCN-04,Purchase Approval,Medium,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00597,EVR0075,EVP008,WFD008-SCN-05,Purchase Approval,Medium,text+csv,true,false,High,Show pending purchase approvals.,WFD008
+EVI00598,EVR0075,EVP008,WFD008-SCN-06,Purchase Approval,Medium,text+csv,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00599,EVR0075,EVP008,WFD008-SCN-07,Purchase Approval,Easy,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00600,EVR0075,EVP008,WFD008-SCN-08,Purchase Approval,Adversarial,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00601,EVR0076,EVP008,WFD008-SCN-01,Purchase Approval,Medium,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00602,EVR0076,EVP008,WFD008-SCN-02,Purchase Approval,Hard,text+csv,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00603,EVR0076,EVP008,WFD008-SCN-03,Purchase Approval,Hard,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00604,EVR0076,EVP008,WFD008-SCN-04,Purchase Approval,Hard,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00605,EVR0076,EVP008,WFD008-SCN-05,Purchase Approval,Hard,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00606,EVR0076,EVP008,WFD008-SCN-06,Purchase Approval,Medium,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00607,EVR0076,EVP008,WFD008-SCN-07,Purchase Approval,Hard,text+docx,true,false,High,Show pending purchase approvals.,WFD008
+EVI00608,EVR0076,EVP008,WFD008-SCN-08,Purchase Approval,Easy,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00609,EVR0077,EVP008,WFD008-SCN-01,Purchase Approval,Easy,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00610,EVR0077,EVP008,WFD008-SCN-02,Purchase Approval,Hard,text+csv,true,false,High,Show pending purchase approvals.,WFD008
+EVI00611,EVR0077,EVP008,WFD008-SCN-03,Purchase Approval,Medium,text+csv,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00612,EVR0077,EVP008,WFD008-SCN-04,Purchase Approval,Medium,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00613,EVR0077,EVP008,WFD008-SCN-05,Purchase Approval,Hard,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00614,EVR0077,EVP008,WFD008-SCN-06,Purchase Approval,Hard,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00615,EVR0077,EVP008,WFD008-SCN-07,Purchase Approval,Easy,text,true,false,High,Show pending purchase approvals.,WFD008
+EVI00616,EVR0077,EVP008,WFD008-SCN-08,Purchase Approval,Medium,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00617,EVR0078,EVP008,WFD008-SCN-01,Purchase Approval,Easy,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00618,EVR0078,EVP008,WFD008-SCN-02,Purchase Approval,Hard,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00619,EVR0078,EVP008,WFD008-SCN-03,Purchase Approval,Medium,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00620,EVR0078,EVP008,WFD008-SCN-04,Purchase Approval,Adversarial,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00621,EVR0078,EVP008,WFD008-SCN-05,Purchase Approval,Easy,text+pdf,true,false,High,Show pending purchase approvals.,WFD008
+EVI00622,EVR0078,EVP008,WFD008-SCN-06,Purchase Approval,Easy,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00623,EVR0078,EVP008,WFD008-SCN-07,Purchase Approval,Medium,text+pdf,true,false,High,Show pending purchase approvals.,WFD008
+EVI00624,EVR0078,EVP008,WFD008-SCN-08,Purchase Approval,Medium,text+pdf,true,false,High,Show pending purchase approvals.,WFD008
+EVI00625,EVR0079,EVP008,WFD008-SCN-01,Purchase Approval,Hard,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00626,EVR0079,EVP008,WFD008-SCN-02,Purchase Approval,Medium,text+docx,true,false,High,Show pending purchase approvals.,WFD008
+EVI00627,EVR0079,EVP008,WFD008-SCN-03,Purchase Approval,Easy,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00628,EVR0079,EVP008,WFD008-SCN-04,Purchase Approval,Medium,text+pdf,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00629,EVR0079,EVP008,WFD008-SCN-05,Purchase Approval,Hard,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00630,EVR0079,EVP008,WFD008-SCN-06,Purchase Approval,Easy,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00631,EVR0079,EVP008,WFD008-SCN-07,Purchase Approval,Medium,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00632,EVR0079,EVP008,WFD008-SCN-08,Purchase Approval,Hard,text+csv,true,false,High,Show pending purchase approvals.,WFD008
+EVI00633,EVR0080,EVP008,WFD008-SCN-01,Purchase Approval,Easy,text+csv,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00634,EVR0080,EVP008,WFD008-SCN-02,Purchase Approval,Medium,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00635,EVR0080,EVP008,WFD008-SCN-03,Purchase Approval,Medium,text+pdf,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00636,EVR0080,EVP008,WFD008-SCN-04,Purchase Approval,Medium,text,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00637,EVR0080,EVP008,WFD008-SCN-05,Purchase Approval,Medium,text+csv,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00638,EVR0080,EVP008,WFD008-SCN-06,Purchase Approval,Easy,text+csv,true,false,High,Show pending purchase approvals.,WFD008
+EVI00639,EVR0080,EVP008,WFD008-SCN-07,Purchase Approval,Easy,text+docx,true,false,High,Which approvers are required for a 30000 dollar purchase?,WFD008
+EVI00640,EVR0080,EVP008,WFD008-SCN-08,Purchase Approval,Hard,text+docx,true,false,High,Approve the purchase request according to policy.,WFD008
+EVI00641,EVR0081,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00642,EVR0081,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Easy,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00643,EVR0081,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00644,EVR0081,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00645,EVR0081,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Easy,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00646,EVR0081,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00647,EVR0081,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00648,EVR0081,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Medium,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00649,EVR0082,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Medium,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00650,EVR0082,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Medium,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00651,EVR0082,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Medium,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00652,EVR0082,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Easy,text+pdf,true,false,High,Show my leave history.,WFD009
+EVI00653,EVR0082,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Hard,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00654,EVR0082,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Easy,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00655,EVR0082,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Easy,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00656,EVR0082,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00657,EVR0083,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Easy,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00658,EVR0083,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Hard,text+csv,true,false,High,Approve a four-day leave request.,WFD009
+EVI00659,EVR0083,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00660,EVR0083,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Medium,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00661,EVR0083,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Adversarial,text+pdf,true,false,High,Show my leave history.,WFD009
+EVI00662,EVR0083,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Adversarial,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00663,EVR0083,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00664,EVR0083,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Medium,text,true,false,High,Summarize sick leave by department.,WFD009
+EVI00665,EVR0084,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Medium,text,true,false,High,Show my leave history.,WFD009
+EVI00666,EVR0084,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00667,EVR0084,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Medium,text,true,false,High,Summarize sick leave by department.,WFD009
+EVI00668,EVR0084,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00669,EVR0084,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Approve a four-day leave request.,WFD009
+EVI00670,EVR0084,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00671,EVR0084,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00672,EVR0084,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Summarize sick leave by department.,WFD009
+EVI00673,EVR0085,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Easy,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00674,EVR0085,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Medium,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00675,EVR0085,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00676,EVR0085,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Medium,text,true,false,High,Show my leave history.,WFD009
+EVI00677,EVR0085,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Easy,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00678,EVR0085,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00679,EVR0085,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00680,EVR0085,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Adversarial,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00681,EVR0086,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00682,EVR0086,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Approve a four-day leave request.,WFD009
+EVI00683,EVR0086,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Hard,text,true,false,High,Summarize sick leave by department.,WFD009
+EVI00684,EVR0086,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Hard,text+csv,true,false,High,Summarize sick leave by department.,WFD009
+EVI00685,EVR0086,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Medium,text,true,false,High,Show my leave history.,WFD009
+EVI00686,EVR0086,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Medium,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00687,EVR0086,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00688,EVR0086,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Summarize sick leave by department.,WFD009
+EVI00689,EVR0087,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Easy,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00690,EVR0087,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Easy,text,true,false,High,Show my leave history.,WFD009
+EVI00691,EVR0087,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00692,EVR0087,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Hard,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00693,EVR0087,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Approve a four-day leave request.,WFD009
+EVI00694,EVR0087,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00695,EVR0087,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Easy,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00696,EVR0087,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00697,EVR0088,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Hard,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00698,EVR0088,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00699,EVR0088,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00700,EVR0088,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Hard,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00701,EVR0088,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00702,EVR0088,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Hard,text,true,false,High,Summarize sick leave by department.,WFD009
+EVI00703,EVR0088,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00704,EVR0088,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Adversarial,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00705,EVR0089,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Easy,text+docx,true,false,High,Show my leave history.,WFD009
+EVI00706,EVR0089,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Easy,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00707,EVR0089,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Summarize sick leave by department.,WFD009
+EVI00708,EVR0089,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Easy,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00709,EVR0089,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00710,EVR0089,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Medium,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00711,EVR0089,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00712,EVR0089,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Hard,text,true,false,High,Summarize sick leave by department.,WFD009
+EVI00713,EVR0090,EVP009,WFD009-SCN-01,Leave and Attendance Analysis,Medium,text+docx,true,false,High,Summarize sick leave by department.,WFD009
+EVI00714,EVR0090,EVP009,WFD009-SCN-02,Leave and Attendance Analysis,Easy,text,true,false,High,Approve a four-day leave request.,WFD009
+EVI00715,EVR0090,EVP009,WFD009-SCN-03,Leave and Attendance Analysis,Hard,text+csv,true,false,High,Summarize sick leave by department.,WFD009
+EVI00716,EVR0090,EVP009,WFD009-SCN-04,Leave and Attendance Analysis,Easy,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00717,EVR0090,EVP009,WFD009-SCN-05,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Approve a four-day leave request.,WFD009
+EVI00718,EVR0090,EVP009,WFD009-SCN-06,Leave and Attendance Analysis,Hard,text+docx,true,false,High,Approve a four-day leave request.,WFD009
+EVI00719,EVR0090,EVP009,WFD009-SCN-07,Leave and Attendance Analysis,Medium,text+csv,true,false,High,Show my leave history.,WFD009
+EVI00720,EVR0090,EVP009,WFD009-SCN-08,Leave and Attendance Analysis,Easy,text+pdf,true,false,High,Approve a four-day leave request.,WFD009
+EVI00721,EVR0091,EVP010,WFD010-SCN-01,Restricted Document Query,Medium,text+pdf,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00722,EVR0091,EVP010,WFD010-SCN-02,Restricted Document Query,Medium,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00723,EVR0091,EVP010,WFD010-SCN-03,Restricted Document Query,Medium,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00724,EVR0091,EVP010,WFD010-SCN-04,Restricted Document Query,Hard,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00725,EVR0091,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00726,EVR0091,EVP010,WFD010-SCN-06,Restricted Document Query,Hard,text,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00727,EVR0091,EVP010,WFD010-SCN-07,Restricted Document Query,Easy,text,false,true,High,Show the salary access policy.,WFD010
+EVI00728,EVR0091,EVP010,WFD010-SCN-08,Restricted Document Query,Hard,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00729,EVR0092,EVP010,WFD010-SCN-01,Restricted Document Query,Easy,text+pdf,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00730,EVR0092,EVP010,WFD010-SCN-02,Restricted Document Query,Medium,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00731,EVR0092,EVP010,WFD010-SCN-03,Restricted Document Query,Medium,text+csv,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00732,EVR0092,EVP010,WFD010-SCN-04,Restricted Document Query,Easy,text,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00733,EVR0092,EVP010,WFD010-SCN-05,Restricted Document Query,Hard,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00734,EVR0092,EVP010,WFD010-SCN-06,Restricted Document Query,Hard,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00735,EVR0092,EVP010,WFD010-SCN-07,Restricted Document Query,Medium,text+docx,false,true,High,Show the salary access policy.,WFD010
+EVI00736,EVR0092,EVP010,WFD010-SCN-08,Restricted Document Query,Easy,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00737,EVR0093,EVP010,WFD010-SCN-01,Restricted Document Query,Medium,text+docx,false,true,High,Show the salary access policy.,WFD010
+EVI00738,EVR0093,EVP010,WFD010-SCN-02,Restricted Document Query,Medium,text,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00739,EVR0093,EVP010,WFD010-SCN-03,Restricted Document Query,Easy,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00740,EVR0093,EVP010,WFD010-SCN-04,Restricted Document Query,Easy,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00741,EVR0093,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00742,EVR0093,EVP010,WFD010-SCN-06,Restricted Document Query,Medium,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00743,EVR0093,EVP010,WFD010-SCN-07,Restricted Document Query,Medium,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00744,EVR0093,EVP010,WFD010-SCN-08,Restricted Document Query,Medium,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00745,EVR0094,EVP010,WFD010-SCN-01,Restricted Document Query,Adversarial,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00746,EVR0094,EVP010,WFD010-SCN-02,Restricted Document Query,Hard,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00747,EVR0094,EVP010,WFD010-SCN-03,Restricted Document Query,Hard,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00748,EVR0094,EVP010,WFD010-SCN-04,Restricted Document Query,Medium,text+csv,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00749,EVR0094,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00750,EVR0094,EVP010,WFD010-SCN-06,Restricted Document Query,Medium,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00751,EVR0094,EVP010,WFD010-SCN-07,Restricted Document Query,Easy,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00752,EVR0094,EVP010,WFD010-SCN-08,Restricted Document Query,Easy,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00753,EVR0095,EVP010,WFD010-SCN-01,Restricted Document Query,Hard,text+csv,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00754,EVR0095,EVP010,WFD010-SCN-02,Restricted Document Query,Easy,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00755,EVR0095,EVP010,WFD010-SCN-03,Restricted Document Query,Easy,text+docx,false,true,High,Show the salary access policy.,WFD010
+EVI00756,EVR0095,EVP010,WFD010-SCN-04,Restricted Document Query,Medium,text,false,true,High,Show the salary access policy.,WFD010
+EVI00757,EVR0095,EVP010,WFD010-SCN-05,Restricted Document Query,Easy,text+pdf,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00758,EVR0095,EVP010,WFD010-SCN-06,Restricted Document Query,Easy,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00759,EVR0095,EVP010,WFD010-SCN-07,Restricted Document Query,Medium,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00760,EVR0095,EVP010,WFD010-SCN-08,Restricted Document Query,Easy,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00761,EVR0096,EVP010,WFD010-SCN-01,Restricted Document Query,Medium,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00762,EVR0096,EVP010,WFD010-SCN-02,Restricted Document Query,Easy,text+pdf,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00763,EVR0096,EVP010,WFD010-SCN-03,Restricted Document Query,Medium,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00764,EVR0096,EVP010,WFD010-SCN-04,Restricted Document Query,Medium,text+pdf,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00765,EVR0096,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00766,EVR0096,EVP010,WFD010-SCN-06,Restricted Document Query,Medium,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00767,EVR0096,EVP010,WFD010-SCN-07,Restricted Document Query,Medium,text+docx,false,true,High,Show the salary access policy.,WFD010
+EVI00768,EVR0096,EVP010,WFD010-SCN-08,Restricted Document Query,Medium,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00769,EVR0097,EVP010,WFD010-SCN-01,Restricted Document Query,Easy,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00770,EVR0097,EVP010,WFD010-SCN-02,Restricted Document Query,Medium,text,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00771,EVR0097,EVP010,WFD010-SCN-03,Restricted Document Query,Hard,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00772,EVR0097,EVP010,WFD010-SCN-04,Restricted Document Query,Medium,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00773,EVR0097,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00774,EVR0097,EVP010,WFD010-SCN-06,Restricted Document Query,Easy,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00775,EVR0097,EVP010,WFD010-SCN-07,Restricted Document Query,Easy,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00776,EVR0097,EVP010,WFD010-SCN-08,Restricted Document Query,Medium,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00777,EVR0098,EVP010,WFD010-SCN-01,Restricted Document Query,Easy,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00778,EVR0098,EVP010,WFD010-SCN-02,Restricted Document Query,Medium,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00779,EVR0098,EVP010,WFD010-SCN-03,Restricted Document Query,Medium,text+csv,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00780,EVR0098,EVP010,WFD010-SCN-04,Restricted Document Query,Hard,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00781,EVR0098,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00782,EVR0098,EVP010,WFD010-SCN-06,Restricted Document Query,Hard,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00783,EVR0098,EVP010,WFD010-SCN-07,Restricted Document Query,Easy,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00784,EVR0098,EVP010,WFD010-SCN-08,Restricted Document Query,Easy,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00785,EVR0099,EVP010,WFD010-SCN-01,Restricted Document Query,Medium,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00786,EVR0099,EVP010,WFD010-SCN-02,Restricted Document Query,Hard,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00787,EVR0099,EVP010,WFD010-SCN-03,Restricted Document Query,Easy,text+docx,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00788,EVR0099,EVP010,WFD010-SCN-04,Restricted Document Query,Adversarial,text,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00789,EVR0099,EVP010,WFD010-SCN-05,Restricted Document Query,Hard,text,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00790,EVR0099,EVP010,WFD010-SCN-06,Restricted Document Query,Hard,text+pdf,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00791,EVR0099,EVP010,WFD010-SCN-07,Restricted Document Query,Medium,text+csv,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00792,EVR0099,EVP010,WFD010-SCN-08,Restricted Document Query,Medium,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00793,EVR0100,EVP010,WFD010-SCN-01,Restricted Document Query,Easy,text+pdf,false,true,High,Can an employee read the compensation policy?,WFD010
+EVI00794,EVR0100,EVP010,WFD010-SCN-02,Restricted Document Query,Medium,text+docx,false,true,High,Show the salary access policy.,WFD010
+EVI00795,EVR0100,EVP010,WFD010-SCN-03,Restricted Document Query,Easy,text,false,true,High,Show the salary access policy.,WFD010
+EVI00796,EVR0100,EVP010,WFD010-SCN-04,Restricted Document Query,Medium,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00797,EVR0100,EVP010,WFD010-SCN-05,Restricted Document Query,Medium,text+docx,false,true,High,Retrieve the restricted security policy.,WFD010
+EVI00798,EVR0100,EVP010,WFD010-SCN-06,Restricted Document Query,Easy,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00799,EVR0100,EVP010,WFD010-SCN-07,Restricted Document Query,Medium,text+pdf,false,true,High,Show the salary access policy.,WFD010
+EVI00800,EVR0100,EVP010,WFD010-SCN-08,Restricted Document Query,Easy,text+csv,false,true,High,Show the salary access policy.,WFD010
+EVI00801,EVR0101,EVP011,WFD011-SCN-01,Agent Reliability Review,Hard,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00802,EVR0101,EVP011,WFD011-SCN-02,Agent Reliability Review,Medium,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00803,EVR0101,EVP011,WFD011-SCN-03,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00804,EVR0101,EVP011,WFD011-SCN-04,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00805,EVR0101,EVP011,WFD011-SCN-05,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00806,EVR0101,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00807,EVR0101,EVP011,WFD011-SCN-07,Agent Reliability Review,Medium,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00808,EVR0101,EVP011,WFD011-SCN-08,Agent Reliability Review,Medium,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00809,EVR0102,EVP011,WFD011-SCN-01,Agent Reliability Review,Medium,text+docx,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00810,EVR0102,EVP011,WFD011-SCN-02,Agent Reliability Review,Adversarial,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00811,EVR0102,EVP011,WFD011-SCN-03,Agent Reliability Review,Medium,text+csv,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00812,EVR0102,EVP011,WFD011-SCN-04,Agent Reliability Review,Medium,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00813,EVR0102,EVP011,WFD011-SCN-05,Agent Reliability Review,Hard,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00814,EVR0102,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text+docx,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00815,EVR0102,EVP011,WFD011-SCN-07,Agent Reliability Review,Easy,text+docx,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00816,EVR0102,EVP011,WFD011-SCN-08,Agent Reliability Review,Easy,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00817,EVR0103,EVP011,WFD011-SCN-01,Agent Reliability Review,Medium,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00818,EVR0103,EVP011,WFD011-SCN-02,Agent Reliability Review,Medium,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00819,EVR0103,EVP011,WFD011-SCN-03,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00820,EVR0103,EVP011,WFD011-SCN-04,Agent Reliability Review,Medium,text,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00821,EVR0103,EVP011,WFD011-SCN-05,Agent Reliability Review,Hard,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00822,EVR0103,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00823,EVR0103,EVP011,WFD011-SCN-07,Agent Reliability Review,Easy,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00824,EVR0103,EVP011,WFD011-SCN-08,Agent Reliability Review,Adversarial,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00825,EVR0104,EVP011,WFD011-SCN-01,Agent Reliability Review,Medium,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00826,EVR0104,EVP011,WFD011-SCN-02,Agent Reliability Review,Medium,text+csv,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00827,EVR0104,EVP011,WFD011-SCN-03,Agent Reliability Review,Hard,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00828,EVR0104,EVP011,WFD011-SCN-04,Agent Reliability Review,Easy,text+csv,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00829,EVR0104,EVP011,WFD011-SCN-05,Agent Reliability Review,Medium,text+docx,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00830,EVR0104,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00831,EVR0104,EVP011,WFD011-SCN-07,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00832,EVR0104,EVP011,WFD011-SCN-08,Agent Reliability Review,Hard,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00833,EVR0105,EVP011,WFD011-SCN-01,Agent Reliability Review,Hard,text+docx,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00834,EVR0105,EVP011,WFD011-SCN-02,Agent Reliability Review,Adversarial,text+csv,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00835,EVR0105,EVP011,WFD011-SCN-03,Agent Reliability Review,Easy,text,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00836,EVR0105,EVP011,WFD011-SCN-04,Agent Reliability Review,Medium,text,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00837,EVR0105,EVP011,WFD011-SCN-05,Agent Reliability Review,Hard,text+docx,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00838,EVR0105,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00839,EVR0105,EVP011,WFD011-SCN-07,Agent Reliability Review,Hard,text,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00840,EVR0105,EVP011,WFD011-SCN-08,Agent Reliability Review,Hard,text+pdf,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00841,EVR0106,EVP011,WFD011-SCN-01,Agent Reliability Review,Easy,text+pdf,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00842,EVR0106,EVP011,WFD011-SCN-02,Agent Reliability Review,Hard,text+docx,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00843,EVR0106,EVP011,WFD011-SCN-03,Agent Reliability Review,Medium,text+docx,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00844,EVR0106,EVP011,WFD011-SCN-04,Agent Reliability Review,Hard,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00845,EVR0106,EVP011,WFD011-SCN-05,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00846,EVR0106,EVP011,WFD011-SCN-06,Agent Reliability Review,Hard,text+docx,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00847,EVR0106,EVP011,WFD011-SCN-07,Agent Reliability Review,Hard,text+csv,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00848,EVR0106,EVP011,WFD011-SCN-08,Agent Reliability Review,Hard,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00849,EVR0107,EVP011,WFD011-SCN-01,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00850,EVR0107,EVP011,WFD011-SCN-02,Agent Reliability Review,Medium,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00851,EVR0107,EVP011,WFD011-SCN-03,Agent Reliability Review,Adversarial,text,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00852,EVR0107,EVP011,WFD011-SCN-04,Agent Reliability Review,Easy,text,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00853,EVR0107,EVP011,WFD011-SCN-05,Agent Reliability Review,Medium,text,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00854,EVR0107,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text+docx,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00855,EVR0107,EVP011,WFD011-SCN-07,Agent Reliability Review,Medium,text+docx,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00856,EVR0107,EVP011,WFD011-SCN-08,Agent Reliability Review,Easy,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00857,EVR0108,EVP011,WFD011-SCN-01,Agent Reliability Review,Easy,text,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00858,EVR0108,EVP011,WFD011-SCN-02,Agent Reliability Review,Easy,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00859,EVR0108,EVP011,WFD011-SCN-03,Agent Reliability Review,Medium,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00860,EVR0108,EVP011,WFD011-SCN-04,Agent Reliability Review,Medium,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00861,EVR0108,EVP011,WFD011-SCN-05,Agent Reliability Review,Easy,text+pdf,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00862,EVR0108,EVP011,WFD011-SCN-06,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00863,EVR0108,EVP011,WFD011-SCN-07,Agent Reliability Review,Easy,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00864,EVR0108,EVP011,WFD011-SCN-08,Agent Reliability Review,Hard,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00865,EVR0109,EVP011,WFD011-SCN-01,Agent Reliability Review,Medium,text+docx,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00866,EVR0109,EVP011,WFD011-SCN-02,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00867,EVR0109,EVP011,WFD011-SCN-03,Agent Reliability Review,Medium,text+csv,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00868,EVR0109,EVP011,WFD011-SCN-04,Agent Reliability Review,Hard,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00869,EVR0109,EVP011,WFD011-SCN-05,Agent Reliability Review,Easy,text+docx,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00870,EVR0109,EVP011,WFD011-SCN-06,Agent Reliability Review,Easy,text+docx,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00871,EVR0109,EVP011,WFD011-SCN-07,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00872,EVR0109,EVP011,WFD011-SCN-08,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00873,EVR0110,EVP011,WFD011-SCN-01,Agent Reliability Review,Hard,text+csv,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00874,EVR0110,EVP011,WFD011-SCN-02,Agent Reliability Review,Hard,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00875,EVR0110,EVP011,WFD011-SCN-03,Agent Reliability Review,Easy,text+csv,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00876,EVR0110,EVP011,WFD011-SCN-04,Agent Reliability Review,Easy,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00877,EVR0110,EVP011,WFD011-SCN-05,Agent Reliability Review,Easy,text+pdf,true,false,Medium,Show current hallucination and pass rates.,WFD011
+EVI00878,EVR0110,EVP011,WFD011-SCN-06,Agent Reliability Review,Easy,text,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00879,EVR0110,EVP011,WFD011-SCN-07,Agent Reliability Review,Medium,text+pdf,true,false,Medium,Which evaluation program has the highest regression rate?,WFD011
+EVI00880,EVR0110,EVP011,WFD011-SCN-08,Agent Reliability Review,Medium,text+docx,true,false,Medium,Compare judge and human disagreement.,WFD011
+EVI00881,EVR0111,EVP012,WFD012-SCN-01,Executive Management Briefing,Medium,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00882,EVR0111,EVP012,WFD012-SCN-02,Executive Management Briefing,Easy,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00883,EVR0111,EVP012,WFD012-SCN-03,Executive Management Briefing,Hard,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00884,EVR0111,EVP012,WFD012-SCN-04,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00885,EVR0111,EVP012,WFD012-SCN-05,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00886,EVR0111,EVP012,WFD012-SCN-06,Executive Management Briefing,Adversarial,text+csv,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00887,EVR0111,EVP012,WFD012-SCN-07,Executive Management Briefing,Medium,text+csv,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00888,EVR0111,EVP012,WFD012-SCN-08,Executive Management Briefing,Medium,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00889,EVR0112,EVP012,WFD012-SCN-01,Executive Management Briefing,Hard,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00890,EVR0112,EVP012,WFD012-SCN-02,Executive Management Briefing,Medium,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00891,EVR0112,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00892,EVR0112,EVP012,WFD012-SCN-04,Executive Management Briefing,Medium,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00893,EVR0112,EVP012,WFD012-SCN-05,Executive Management Briefing,Easy,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00894,EVR0112,EVP012,WFD012-SCN-06,Executive Management Briefing,Easy,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00895,EVR0112,EVP012,WFD012-SCN-07,Executive Management Briefing,Easy,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00896,EVR0112,EVP012,WFD012-SCN-08,Executive Management Briefing,Medium,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00897,EVR0113,EVP012,WFD012-SCN-01,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00898,EVR0113,EVP012,WFD012-SCN-02,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00899,EVR0113,EVP012,WFD012-SCN-03,Executive Management Briefing,Easy,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00900,EVR0113,EVP012,WFD012-SCN-04,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00901,EVR0113,EVP012,WFD012-SCN-05,Executive Management Briefing,Hard,text+docx,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00902,EVR0113,EVP012,WFD012-SCN-06,Executive Management Briefing,Hard,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00903,EVR0113,EVP012,WFD012-SCN-07,Executive Management Briefing,Easy,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00904,EVR0113,EVP012,WFD012-SCN-08,Executive Management Briefing,Medium,text+csv,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00905,EVR0114,EVP012,WFD012-SCN-01,Executive Management Briefing,Adversarial,text+pdf,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00906,EVR0114,EVP012,WFD012-SCN-02,Executive Management Briefing,Medium,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00907,EVR0114,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00908,EVR0114,EVP012,WFD012-SCN-04,Executive Management Briefing,Medium,text+csv,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00909,EVR0114,EVP012,WFD012-SCN-05,Executive Management Briefing,Easy,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00910,EVR0114,EVP012,WFD012-SCN-06,Executive Management Briefing,Medium,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00911,EVR0114,EVP012,WFD012-SCN-07,Executive Management Briefing,Hard,text,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00912,EVR0114,EVP012,WFD012-SCN-08,Executive Management Briefing,Easy,text,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00913,EVR0115,EVP012,WFD012-SCN-01,Executive Management Briefing,Medium,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00914,EVR0115,EVP012,WFD012-SCN-02,Executive Management Briefing,Medium,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00915,EVR0115,EVP012,WFD012-SCN-03,Executive Management Briefing,Hard,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00916,EVR0115,EVP012,WFD012-SCN-04,Executive Management Briefing,Adversarial,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00917,EVR0115,EVP012,WFD012-SCN-05,Executive Management Briefing,Medium,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00918,EVR0115,EVP012,WFD012-SCN-06,Executive Management Briefing,Medium,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00919,EVR0115,EVP012,WFD012-SCN-07,Executive Management Briefing,Easy,text+csv,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00920,EVR0115,EVP012,WFD012-SCN-08,Executive Management Briefing,Medium,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00921,EVR0116,EVP012,WFD012-SCN-01,Executive Management Briefing,Easy,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00922,EVR0116,EVP012,WFD012-SCN-02,Executive Management Briefing,Medium,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00923,EVR0116,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00924,EVR0116,EVP012,WFD012-SCN-04,Executive Management Briefing,Adversarial,text+docx,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00925,EVR0116,EVP012,WFD012-SCN-05,Executive Management Briefing,Medium,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00926,EVR0116,EVP012,WFD012-SCN-06,Executive Management Briefing,Medium,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00927,EVR0116,EVP012,WFD012-SCN-07,Executive Management Briefing,Hard,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00928,EVR0116,EVP012,WFD012-SCN-08,Executive Management Briefing,Medium,text+pdf,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00929,EVR0117,EVP012,WFD012-SCN-01,Executive Management Briefing,Easy,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00930,EVR0117,EVP012,WFD012-SCN-02,Executive Management Briefing,Medium,text,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00931,EVR0117,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00932,EVR0117,EVP012,WFD012-SCN-04,Executive Management Briefing,Easy,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00933,EVR0117,EVP012,WFD012-SCN-05,Executive Management Briefing,Medium,text+csv,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00934,EVR0117,EVP012,WFD012-SCN-06,Executive Management Briefing,Medium,text,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00935,EVR0117,EVP012,WFD012-SCN-07,Executive Management Briefing,Hard,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00936,EVR0117,EVP012,WFD012-SCN-08,Executive Management Briefing,Medium,text+csv,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00937,EVR0118,EVP012,WFD012-SCN-01,Executive Management Briefing,Hard,text,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00938,EVR0118,EVP012,WFD012-SCN-02,Executive Management Briefing,Hard,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00939,EVR0118,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00940,EVR0118,EVP012,WFD012-SCN-04,Executive Management Briefing,Medium,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00941,EVR0118,EVP012,WFD012-SCN-05,Executive Management Briefing,Medium,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00942,EVR0118,EVP012,WFD012-SCN-06,Executive Management Briefing,Medium,text+pdf,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00943,EVR0118,EVP012,WFD012-SCN-07,Executive Management Briefing,Easy,text+docx,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00944,EVR0118,EVP012,WFD012-SCN-08,Executive Management Briefing,Easy,text+pdf,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00945,EVR0119,EVP012,WFD012-SCN-01,Executive Management Briefing,Medium,text,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00946,EVR0119,EVP012,WFD012-SCN-02,Executive Management Briefing,Hard,text+pdf,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00947,EVR0119,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00948,EVR0119,EVP012,WFD012-SCN-04,Executive Management Briefing,Hard,text+docx,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00949,EVR0119,EVP012,WFD012-SCN-05,Executive Management Briefing,Easy,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00950,EVR0119,EVP012,WFD012-SCN-06,Executive Management Briefing,Easy,text+pdf,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00951,EVR0119,EVP012,WFD012-SCN-07,Executive Management Briefing,Hard,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00952,EVR0119,EVP012,WFD012-SCN-08,Executive Management Briefing,Hard,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00953,EVR0120,EVP012,WFD012-SCN-01,Executive Management Briefing,Hard,text,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00954,EVR0120,EVP012,WFD012-SCN-02,Executive Management Briefing,Adversarial,text,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00955,EVR0120,EVP012,WFD012-SCN-03,Executive Management Briefing,Medium,text+csv,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00956,EVR0120,EVP012,WFD012-SCN-04,Executive Management Briefing,Easy,text+docx,true,true,High,"Prepare a management briefing for Atlas using project, workload, and policy evidence.",WFD012
+EVI00957,EVR0120,EVP012,WFD012-SCN-05,Executive Management Briefing,Adversarial,text+csv,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00958,EVR0120,EVP012,WFD012-SCN-06,Executive Management Briefing,Medium,text+docx,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012
+EVI00959,EVR0120,EVP012,WFD012-SCN-07,Executive Management Briefing,Hard,text+pdf,true,true,High,Create a cross-domain operational risk briefing.,WFD012
+EVI00960,EVR0120,EVP012,WFD012-SCN-08,Executive Management Briefing,Hard,text,true,true,High,Analyze workforce capacity and sales performance for executives.,WFD012

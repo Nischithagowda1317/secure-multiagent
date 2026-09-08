@@ -1,0 +1,11 @@
+﻿role_id,role_name,description,risk_tier
+R001,Admin,System administration and configuration,High
+R002,Executive,Enterprise-wide executive decision access,High
+R003,HR_Manager,HR operations and sensitive employee access,High
+R004,Project_Manager,Project and task management access,Medium
+R005,Finance_Manager,"Financial, purchase and expense approval access",High
+R006,Sales_Manager,Sales analytics and discount approval access,Medium
+R007,Security_Officer,"Security policy, incident and restricted-data access",High
+R008,Employee,Standard authenticated employee access,Low
+R009,Auditor,Read-only audit and compliance access,Medium
+R010,AI_Reviewer,Human review of low-confidence or sensitive AI outputs,Medium

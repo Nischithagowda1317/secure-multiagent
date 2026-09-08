@@ -1,0 +1,3 @@
+# Install a PyTorch build matching your CUDA version from the official PyTorch selector.
+# A generic CPU/GPU-compatible package name is listed here for environments where pip resolves it correctly.
+torch>=2.2

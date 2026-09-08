@@ -1,0 +1,21 @@
+﻿tool_id,tool_name,description,required_permission,read_only,high_risk
+TOOL001,get_employee_profile,Read authorized employee profile fields.,employee.read,true,false
+TOOL002,get_employee_compensation,Read salary and compensation fields.,employee.salary.read,true,true
+TOOL003,get_workload_snapshot,Read workload and open-task indicators.,employee.read,true,false
+TOOL004,get_leave_records,Read leave records according to scope.,leave.read_all,true,true
+TOOL005,approve_leave_request,Approve or reject a leave request.,leave.approve,false,true
+TOOL006,get_project_status,"Read project status, budget, and risk.",project.read,true,false
+TOOL007,get_project_tasks,Read project tasks and dependencies.,task.read,true,false
+TOOL008,create_task_reassignment_request,Create a human approval for task reassignment.,task.reassign,false,true
+TOOL009,execute_task_reassignment,Execute an approved task reassignment.,task.reassign,false,true
+TOOL010,query_sales_orders,Read and aggregate sales orders.,sales.read,true,false
+TOOL011,export_sales_analysis,Export detailed sales records.,sales.export,true,true
+TOOL012,get_financial_requests,Read purchase and expense requests.,finance.read,true,true
+TOOL013,create_purchase_approval,Create purchase approval workflow.,expense.approve,false,true
+TOOL014,search_enterprise_documents,Search authorized document chunks.,document.read_public,true,false
+TOOL015,upload_enterprise_document,Upload and index enterprise documents.,document.upload,false,true
+TOOL016,check_permission,Perform deterministic RBAC and document-scope decision.,ai.query,true,false
+TOOL017,validate_grounding,Score claim support against retrieved evidence.,ai.query,true,false
+TOOL018,create_human_review,Create a human review for sensitive or low-confidence output.,approval.review,false,true
+TOOL019,write_audit_event,Append immutable security/workflow audit event.,ai.query,false,false
+TOOL020,read_evaluation_metrics,Read agent reliability and evaluation metrics.,evaluation.read,true,false

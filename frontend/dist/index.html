@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Secure autonomous multi-agent enterprise assistant dashboard" />
+    <title>Secure Multi-Agent Enterprise Assistant</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .offline-note{position:fixed;right:14px;bottom:12px;z-index:30;background:#0f172a;color:#cbd5e1;border:1px solid #334155;border-radius:999px;padding:7px 11px;font-size:9px;box-shadow:0 8px 30px rgba(15,23,42,.22)}
+      .plain-nav{display:flex;flex-direction:column;gap:5px;margin-top:34px}.plain-nav button{border:0;background:transparent;color:#aebed6;text-align:left;display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px}.plain-nav button.active{background:rgba(59,130,246,.18);color:white;box-shadow:inset 3px 0 #60a5fa}.plain-nav button:hover{background:rgba(255,255,255,.05);color:white}
+      .button-row{display:flex;gap:8px;flex-wrap:wrap}.raw-answer{white-space:pre-wrap}.hidden{display:none!important}.small-note{font-size:10px;color:#64748b;line-height:1.5}.file-chip{display:inline-flex;padding:5px 8px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:9px;margin:3px}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.toolbar input,.toolbar select{min-width:170px}.login-card select{width:100%}.table-scroll td details summary{cursor:pointer}.result-grid{align-items:stretch}.result-grid>.panel{height:100%}.code-block{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto;font:11px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}.metric-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.metric-list>div{background:#f8fafc;border:1px solid #e7edf5;border-radius:9px;padding:11px}.metric-list span,.metric-list strong{display:block}.metric-list span{font-size:9px;color:#64748b;text-transform:uppercase}.metric-list strong{margin-top:5px;font-size:13px}.source-path{word-break:break-all}.role-warning{padding:10px 12px;border-radius:9px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;font-size:11px;margin-bottom:12px}
+    </style>
+  </head>
+  <body>
+    <div id="root"><div class="center-screen"><div class="loading"><span class="spinner"></span>Starting dashboard</div></div></div>
+    <div class="offline-note">Offline-ready dashboard build</div>
+    <script src="/app.js"></script>
+  </body>
+</html>

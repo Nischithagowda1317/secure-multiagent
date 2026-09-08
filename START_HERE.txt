@@ -1,0 +1,51 @@
+SECURE MULTI-AGENT ENTERPRISE ASSISTANT — START HERE
+====================================================
+
+Windows quick start
+-------------------
+1. Extract this ZIP to a normal folder, for example:
+   C:\Users\USER\Downloads\Secure_Multi_Agent_Enterprise_Assistant_Complete_Code
+
+2. Open that folder in File Explorer.
+
+3. Double-click:
+   SETUP_AND_TRAIN.bat
+
+   The first run creates .venv, installs Python packages, initializes the
+   database, trains or verifies all models, builds the RAG index, runs tests,
+   and stores the model files under the models folder.
+
+4. After it finishes, double-click:
+   RUN_DASHBOARD.bat
+
+5. Open this address in Chrome or Edge:
+   http://127.0.0.1:8000
+
+6. Use a demo account shown on the Login page. A useful Project Manager login is:
+   Email:    majid.aleusud@nexacore.example
+   Password: Demo@123!
+
+7. Try this request:
+   Check Project Atlas status and identify overloaded team members.
+
+Important paths
+---------------
+Trained models:          models\
+Training scripts:        backend\scripts\
+Python backend:          backend\app\
+React source:            frontend\src\
+Ready dashboard:         frontend\dist\
+Complete datasets:       datasets\Secure_Multi_Agent_Enterprise_Dataset\
+Detailed instructions:   docs\WINDOWS_STEP_BY_STEP.md
+
+GPU training
+------------
+After setup, install a CUDA-enabled PyTorch build matching your system, then run:
+   TRAIN_GPU_MODEL.bat -Force -NoResume
+
+The neural training script saves:
+   Best model:       models\agent_performance_nn\best_model.pt
+   Resume checkpoint: runtime\checkpoints\agent_performance_nn\latest.pt
+
+The main application does not require GPU training. The included conventional
+ML models and secure RAG index are enough to run the complete demonstration.

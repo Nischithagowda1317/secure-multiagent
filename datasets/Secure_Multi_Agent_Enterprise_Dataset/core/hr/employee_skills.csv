@@ -1,0 +1,601 @@
+﻿employee_skill_id,employee_id,skill_name,proficiency_level,years_experience,verified
+ES00001,E0001,React,Beginner,3,false
+ES00002,E0001,Python,Beginner,7,false
+ES00003,E0001,Machine Learning,Advanced,6,true
+ES00004,E0002,Financial Analysis,Intermediate,11,false
+ES00005,E0002,Project Management,Expert,8,false
+ES00006,E0002,FastAPI,Expert,11,true
+ES00007,E0003,Python,Intermediate,7,true
+ES00008,E0003,React,Advanced,6,false
+ES00009,E0003,PostgreSQL,Beginner,9,true
+ES00010,E0004,Quality Assurance,Expert,2,false
+ES00011,E0004,Process Improvement,Intermediate,8,true
+ES00012,E0004,Python,Beginner,1,true
+ES00013,E0005,Sales Analytics,Beginner,3,false
+ES00014,E0005,Communication,Intermediate,11,false
+ES00015,E0005,Data Analysis,Advanced,9,true
+ES00016,E0006,Process Improvement,Intermediate,10,true
+ES00017,E0006,Financial Analysis,Advanced,10,false
+ES00018,E0006,SQL,Intermediate,3,true
+ES00019,E0007,Machine Learning,Expert,11,true
+ES00020,E0007,Project Management,Expert,6,true
+ES00021,E0007,Process Improvement,Intermediate,12,true
+ES00022,E0008,DevOps,Expert,9,false
+ES00023,E0008,Python,Advanced,2,true
+ES00024,E0008,Cloud Computing,Expert,3,true
+ES00025,E0009,Python,Advanced,5,true
+ES00026,E0009,Machine Learning,Intermediate,1,true
+ES00027,E0009,RAG,Advanced,3,false
+ES00028,E0010,Cybersecurity,Advanced,5,true
+ES00029,E0010,Quality Assurance,Advanced,8,false
+ES00030,E0010,DevOps,Beginner,4,true
+ES00031,E0011,DevOps,Intermediate,4,true
+ES00032,E0011,PostgreSQL,Expert,6,false
+ES00033,E0011,Cybersecurity,Advanced,8,false
+ES00034,E0012,Financial Analysis,Expert,4,true
+ES00035,E0012,PostgreSQL,Expert,6,false
+ES00036,E0012,Sales Analytics,Advanced,3,true
+ES00037,E0013,React,Advanced,5,false
+ES00038,E0013,FastAPI,Expert,3,true
+ES00039,E0013,Python,Beginner,10,true
+ES00040,E0014,Python,Expert,7,false
+ES00041,E0014,RAG,Beginner,10,true
+ES00042,E0014,Data Analysis,Advanced,8,true
+ES00043,E0015,Python,Advanced,7,false
+ES00044,E0015,LLM Evaluation,Intermediate,8,false
+ES00045,E0015,Machine Learning,Beginner,4,true
+ES00046,E0016,PostgreSQL,Beginner,7,true
+ES00047,E0016,FastAPI,Intermediate,7,false
+ES00048,E0016,Python,Intermediate,7,true
+ES00049,E0017,Quality Assurance,Advanced,7,true
+ES00050,E0017,Python,Expert,4,true
+ES00051,E0017,Process Improvement,Intermediate,10,false
+ES00052,E0018,Leadership,Intermediate,10,true
+ES00053,E0018,Data Analysis,Beginner,5,true
+ES00054,E0018,Sales Analytics,Advanced,5,true
+ES00055,E0019,Process Improvement,Expert,3,true
+ES00056,E0019,Python,Intermediate,10,true
+ES00057,E0019,SQL,Advanced,10,false
+ES00058,E0020,Python,Expert,2,true
+ES00059,E0020,React,Expert,5,true
+ES00060,E0020,PostgreSQL,Beginner,4,false
+ES00061,E0021,Python,Beginner,11,true
+ES00062,E0021,Process Improvement,Intermediate,10,false
+ES00063,E0021,SQL,Intermediate,7,true
+ES00064,E0022,Cloud Computing,Advanced,7,true
+ES00065,E0022,DevOps,Beginner,12,false
+ES00066,E0022,Python,Beginner,3,true
+ES00067,E0023,React,Expert,9,true
+ES00068,E0023,Communication,Intermediate,10,false
+ES00069,E0023,Sales Analytics,Intermediate,4,true
+ES00070,E0024,Process Improvement,Beginner,2,true
+ES00071,E0024,Financial Analysis,Intermediate,7,false
+ES00072,E0024,SQL,Advanced,5,false
+ES00073,E0025,Data Analysis,Beginner,7,false
+ES00074,E0025,Sales Analytics,Intermediate,2,true
+ES00075,E0025,Communication,Expert,8,false
+ES00076,E0026,React,Advanced,9,true
+ES00077,E0026,PostgreSQL,Expert,5,true
+ES00078,E0026,FastAPI,Beginner,10,false
+ES00079,E0027,RAG,Beginner,4,false
+ES00080,E0027,LLM Evaluation,Beginner,6,false
+ES00081,E0027,Data Analysis,Expert,7,true
+ES00082,E0028,PostgreSQL,Expert,9,true
+ES00083,E0028,Docker,Advanced,2,true
+ES00084,E0028,Leadership,Advanced,8,true
+ES00085,E0029,LLM Evaluation,Intermediate,8,true
+ES00086,E0029,RAG,Intermediate,2,false
+ES00087,E0029,Python,Advanced,8,true
+ES00088,E0030,Python,Advanced,8,true
+ES00089,E0030,Leadership,Expert,8,true
+ES00090,E0030,Cybersecurity,Expert,6,true
+ES00091,E0031,DevOps,Advanced,7,true
+ES00092,E0031,Cloud Computing,Expert,11,false
+ES00093,E0031,Python,Expert,4,true
+ES00094,E0032,Financial Analysis,Advanced,10,false
+ES00095,E0032,Data Analysis,Advanced,4,true
+ES00096,E0032,SQL,Intermediate,6,true
+ES00097,E0033,Cloud Computing,Intermediate,11,true
+ES00098,E0033,Python,Expert,4,false
+ES00099,E0033,Docker,Advanced,7,true
+ES00100,E0034,DevOps,Intermediate,13,true
+ES00101,E0034,Docker,Intermediate,8,false
+ES00102,E0034,Cybersecurity,Beginner,5,true
+ES00103,E0035,LLM Evaluation,Expert,8,false
+ES00104,E0035,DevOps,Beginner,7,false
+ES00105,E0035,Machine Learning,Advanced,6,true
+ES00106,E0036,SQL,Beginner,4,true
+ES00107,E0036,Process Improvement,Beginner,3,true
+ES00108,E0036,Quality Assurance,Advanced,3,true
+ES00109,E0037,DevOps,Intermediate,3,false
+ES00110,E0037,Python,Advanced,10,true
+ES00111,E0037,FastAPI,Advanced,4,true
+ES00112,E0038,PostgreSQL,Advanced,6,true
+ES00113,E0038,DevOps,Intermediate,2,true
+ES00114,E0038,Docker,Beginner,8,false
+ES00115,E0039,Data Analysis,Beginner,11,true
+ES00116,E0039,Sales Analytics,Expert,11,false
+ES00117,E0039,Leadership,Advanced,12,true
+ES00118,E0040,Machine Learning,Advanced,10,false
+ES00119,E0040,React,Intermediate,2,true
+ES00120,E0040,Cybersecurity,Intermediate,8,false
+ES00121,E0041,Cybersecurity,Expert,6,true
+ES00122,E0041,Data Analysis,Advanced,10,true
+ES00123,E0041,LLM Evaluation,Beginner,7,true
+ES00124,E0042,Docker,Beginner,3,true
+ES00125,E0042,Python,Intermediate,7,false
+ES00126,E0042,PostgreSQL,Expert,7,true
+ES00127,E0043,PostgreSQL,Intermediate,5,true
+ES00128,E0043,React,Expert,5,true
+ES00129,E0043,Financial Analysis,Expert,5,true
+ES00130,E0044,SQL,Intermediate,6,false
+ES00131,E0044,Quality Assurance,Expert,9,true
+ES00132,E0044,Python,Expert,6,true
+ES00133,E0045,Data Analysis,Advanced,6,true
+ES00134,E0045,Python,Advanced,4,true
+ES00135,E0045,Machine Learning,Advanced,5,false
+ES00136,E0046,Sales Analytics,Advanced,12,false
+ES00137,E0046,Communication,Expert,8,false
+ES00138,E0046,Leadership,Expert,9,true
+ES00139,E0047,Sales Analytics,Expert,9,false
+ES00140,E0047,Data Analysis,Beginner,4,true
+ES00141,E0047,Communication,Expert,1,true
+ES00142,E0048,Python,Advanced,5,false
+ES00143,E0048,Docker,Expert,3,false
+ES00144,E0048,DevOps,Beginner,3,false
+ES00145,E0049,Quality Assurance,Advanced,4,true
+ES00146,E0049,SQL,Advanced,3,true
+ES00147,E0049,Process Improvement,Beginner,9,true
+ES00148,E0050,DevOps,Intermediate,9,false
+ES00149,E0050,PostgreSQL,Beginner,1,true
+ES00150,E0050,Python,Beginner,4,false
+ES00151,E0051,Sales Analytics,Expert,8,true
+ES00152,E0051,Leadership,Intermediate,10,true
+ES00153,E0051,Communication,Advanced,7,true
+ES00154,E0052,FastAPI,Intermediate,3,true
+ES00155,E0052,Project Management,Advanced,4,true
+ES00156,E0052,Machine Learning,Intermediate,7,true
+ES00157,E0053,Cybersecurity,Intermediate,1,true
+ES00158,E0053,Docker,Intermediate,10,true
+ES00159,E0053,Cloud Computing,Beginner,10,true
+ES00160,E0054,FastAPI,Expert,5,true
+ES00161,E0054,React,Expert,2,false
+ES00162,E0054,Python,Beginner,3,true
+ES00163,E0055,Project Management,Beginner,4,true
+ES00164,E0055,Cybersecurity,Expert,3,true
+ES00165,E0055,FastAPI,Intermediate,2,true
+ES00166,E0056,Cybersecurity,Beginner,5,true
+ES00167,E0056,Python,Expert,8,true
+ES00168,E0056,Cloud Computing,Intermediate,3,false
+ES00169,E0057,Sales Analytics,Beginner,10,true
+ES00170,E0057,Communication,Intermediate,9,false
+ES00171,E0057,Data Analysis,Beginner,2,false
+ES00172,E0058,Docker,Beginner,6,true
+ES00173,E0058,Python,Intermediate,9,true
+ES00174,E0058,FastAPI,Beginner,2,true
+ES00175,E0059,Leadership,Advanced,3,true
+ES00176,E0059,Sales Analytics,Advanced,2,true
+ES00177,E0059,FastAPI,Advanced,4,true
+ES00178,E0060,Sales Analytics,Beginner,4,true
+ES00179,E0060,Cloud Computing,Beginner,4,false
+ES00180,E0060,Process Improvement,Advanced,10,true
+ES00181,E0061,LLM Evaluation,Intermediate,5,true
+ES00182,E0061,FastAPI,Expert,9,true
+ES00183,E0061,Data Analysis,Intermediate,7,false
+ES00184,E0062,Cloud Computing,Beginner,12,true
+ES00185,E0062,Python,Expert,13,false
+ES00186,E0062,DevOps,Advanced,10,true
+ES00187,E0063,Data Analysis,Intermediate,11,true
+ES00188,E0063,Leadership,Advanced,4,true
+ES00189,E0063,Communication,Beginner,5,true
+ES00190,E0064,Process Improvement,Beginner,3,true
+ES00191,E0064,Quality Assurance,Advanced,3,true
+ES00192,E0064,Python,Advanced,11,false
+ES00193,E0065,Machine Learning,Advanced,11,true
+ES00194,E0065,RAG,Intermediate,8,true
+ES00195,E0065,Python,Beginner,2,true
+ES00196,E0066,DevOps,Beginner,1,true
+ES00197,E0066,Cloud Computing,Beginner,3,false
+ES00198,E0066,Docker,Advanced,3,false
+ES00199,E0067,DevOps,Advanced,10,true
+ES00200,E0067,SQL,Intermediate,4,false
+ES00201,E0067,Sales Analytics,Intermediate,1,true
+ES00202,E0068,FastAPI,Intermediate,4,true
+ES00203,E0068,PostgreSQL,Advanced,1,false
+ES00204,E0068,Python,Intermediate,7,true
+ES00205,E0069,PostgreSQL,Intermediate,4,false
+ES00206,E0069,Python,Advanced,9,true
+ES00207,E0069,Data Analysis,Intermediate,8,true
+ES00208,E0070,Python,Beginner,5,true
+ES00209,E0070,RAG,Beginner,3,false
+ES00210,E0070,LLM Evaluation,Advanced,6,true
+ES00211,E0071,PostgreSQL,Beginner,11,false
+ES00212,E0071,Docker,Advanced,8,true
+ES00213,E0071,FastAPI,Advanced,9,false
+ES00214,E0072,LLM Evaluation,Intermediate,9,false
+ES00215,E0072,Financial Analysis,Advanced,9,false
+ES00216,E0072,Data Analysis,Intermediate,6,true
+ES00217,E0073,Machine Learning,Intermediate,4,true
+ES00218,E0073,Python,Beginner,9,true
+ES00219,E0073,LLM Evaluation,Expert,6,true
+ES00220,E0074,Communication,Intermediate,5,true
+ES00221,E0074,Leadership,Expert,11,false
+ES00222,E0074,Sales Analytics,Advanced,4,false
+ES00223,E0075,Sales Analytics,Advanced,5,true
+ES00224,E0075,Communication,Advanced,2,true
+ES00225,E0075,Data Analysis,Beginner,3,false
+ES00226,E0076,Python,Beginner,1,false
+ES00227,E0076,SQL,Intermediate,7,true
+ES00228,E0076,Quality Assurance,Expert,5,true
+ES00229,E0077,React,Intermediate,4,true
+ES00230,E0077,FastAPI,Advanced,10,false
+ES00231,E0077,Python,Intermediate,5,false
+ES00232,E0078,FastAPI,Intermediate,1,false
+ES00233,E0078,Python,Intermediate,1,true
+ES00234,E0078,React,Advanced,4,true
+ES00235,E0079,Docker,Advanced,7,false
+ES00236,E0079,DevOps,Advanced,11,false
+ES00237,E0079,PostgreSQL,Advanced,6,false
+ES00238,E0080,Python,Expert,5,false
+ES00239,E0080,DevOps,Beginner,3,true
+ES00240,E0080,Sales Analytics,Advanced,3,true
+ES00241,E0081,DevOps,Expert,10,true
+ES00242,E0081,FastAPI,Intermediate,2,true
+ES00243,E0081,PostgreSQL,Intermediate,10,true
+ES00244,E0082,PostgreSQL,Beginner,1,true
+ES00245,E0082,Process Improvement,Advanced,7,true
+ES00246,E0082,React,Intermediate,2,true
+ES00247,E0083,Python,Expert,3,true
+ES00248,E0083,Quality Assurance,Expert,1,true
+ES00249,E0083,Process Improvement,Advanced,1,true
+ES00250,E0084,DevOps,Advanced,9,true
+ES00251,E0084,Leadership,Intermediate,8,true
+ES00252,E0084,RAG,Advanced,1,true
+ES00253,E0085,Python,Advanced,5,true
+ES00254,E0085,Quality Assurance,Advanced,5,false
+ES00255,E0085,SQL,Intermediate,12,false
+ES00256,E0086,Project Management,Expert,9,false
+ES00257,E0086,FastAPI,Advanced,1,false
+ES00258,E0086,DevOps,Intermediate,3,true
+ES00259,E0087,Machine Learning,Intermediate,4,true
+ES00260,E0087,Python,Intermediate,5,false
+ES00261,E0087,Data Analysis,Expert,1,false
+ES00262,E0088,Python,Intermediate,5,true
+ES00263,E0088,FastAPI,Advanced,1,false
+ES00264,E0088,React,Advanced,10,true
+ES00265,E0089,DevOps,Expert,8,false
+ES00266,E0089,Process Improvement,Intermediate,2,true
+ES00267,E0089,Financial Analysis,Expert,12,false
+ES00268,E0090,DevOps,Beginner,5,false
+ES00269,E0090,Cloud Computing,Advanced,9,true
+ES00270,E0090,Cybersecurity,Expert,6,true
+ES00271,E0091,SQL,Intermediate,6,true
+ES00272,E0091,Process Improvement,Expert,5,true
+ES00273,E0091,Quality Assurance,Advanced,10,true
+ES00274,E0092,Cybersecurity,Beginner,8,true
+ES00275,E0092,Process Improvement,Intermediate,4,false
+ES00276,E0092,LLM Evaluation,Intermediate,5,true
+ES00277,E0093,Python,Beginner,12,true
+ES00278,E0093,Machine Learning,Expert,3,false
+ES00279,E0093,LLM Evaluation,Intermediate,12,true
+ES00280,E0094,Cybersecurity,Beginner,3,true
+ES00281,E0094,Machine Learning,Intermediate,1,true
+ES00282,E0094,Data Analysis,Advanced,1,true
+ES00283,E0095,DevOps,Expert,8,false
+ES00284,E0095,Docker,Advanced,4,true
+ES00285,E0095,Cybersecurity,Expert,8,false
+ES00286,E0096,Process Improvement,Intermediate,9,true
+ES00287,E0096,Python,Advanced,8,true
+ES00288,E0096,SQL,Beginner,3,true
+ES00289,E0097,Data Analysis,Intermediate,7,true
+ES00290,E0097,Leadership,Beginner,1,true
+ES00291,E0097,Communication,Advanced,6,false
+ES00292,E0098,Python,Advanced,6,false
+ES00293,E0098,Quality Assurance,Intermediate,8,true
+ES00294,E0098,Process Improvement,Expert,7,false
+ES00295,E0099,Process Improvement,Expert,6,false
+ES00296,E0099,Quality Assurance,Expert,8,false
+ES00297,E0099,Python,Expert,6,true
+ES00298,E0100,Python,Advanced,7,false
+ES00299,E0100,FastAPI,Expert,2,true
+ES00300,E0100,React,Expert,9,true
+ES00301,E0101,FastAPI,Expert,3,false
+ES00302,E0101,React,Advanced,7,true
+ES00303,E0101,DevOps,Expert,7,true
+ES00304,E0102,Sales Analytics,Expert,5,true
+ES00305,E0102,Communication,Intermediate,5,false
+ES00306,E0102,Cloud Computing,Beginner,5,true
+ES00307,E0103,PostgreSQL,Expert,6,true
+ES00308,E0103,Docker,Advanced,5,false
+ES00309,E0103,DevOps,Advanced,6,false
+ES00310,E0104,Communication,Intermediate,8,true
+ES00311,E0104,RAG,Advanced,10,true
+ES00312,E0104,Quality Assurance,Expert,2,true
+ES00313,E0105,Quality Assurance,Intermediate,10,true
+ES00314,E0105,SQL,Beginner,7,true
+ES00315,E0105,Python,Beginner,4,false
+ES00316,E0106,Financial Analysis,Beginner,5,false
+ES00317,E0106,Data Analysis,Beginner,1,true
+ES00318,E0106,Process Improvement,Advanced,5,true
+ES00319,E0107,FastAPI,Advanced,5,true
+ES00320,E0107,React,Expert,10,true
+ES00321,E0107,DevOps,Beginner,2,true
+ES00322,E0108,Leadership,Advanced,9,false
+ES00323,E0108,PostgreSQL,Advanced,1,true
+ES00324,E0108,Communication,Expert,5,true
+ES00325,E0109,LLM Evaluation,Expert,8,true
+ES00326,E0109,Data Analysis,Intermediate,9,true
+ES00327,E0109,Python,Intermediate,7,true
+ES00328,E0110,SQL,Intermediate,4,false
+ES00329,E0110,Process Improvement,Advanced,6,true
+ES00330,E0110,Financial Analysis,Advanced,6,false
+ES00331,E0111,Python,Beginner,9,true
+ES00332,E0111,FastAPI,Beginner,6,true
+ES00333,E0111,PostgreSQL,Beginner,5,true
+ES00334,E0112,Python,Intermediate,5,true
+ES00335,E0112,Quality Assurance,Intermediate,4,true
+ES00336,E0112,SQL,Beginner,10,true
+ES00337,E0113,Docker,Expert,2,true
+ES00338,E0113,Python,Beginner,10,true
+ES00339,E0113,React,Intermediate,8,true
+ES00340,E0114,Docker,Advanced,8,false
+ES00341,E0114,React,Beginner,9,true
+ES00342,E0114,PostgreSQL,Beginner,3,true
+ES00343,E0115,Process Improvement,Beginner,11,true
+ES00344,E0115,Communication,Advanced,6,true
+ES00345,E0115,Sales Analytics,Expert,4,false
+ES00346,E0116,PostgreSQL,Beginner,9,true
+ES00347,E0116,Data Analysis,Expert,5,true
+ES00348,E0116,RAG,Intermediate,6,true
+ES00349,E0117,Communication,Advanced,7,true
+ES00350,E0117,Data Analysis,Expert,11,false
+ES00351,E0117,Sales Analytics,Expert,2,true
+ES00352,E0118,Sales Analytics,Beginner,10,true
+ES00353,E0118,Leadership,Expert,9,true
+ES00354,E0118,Data Analysis,Advanced,8,true
+ES00355,E0119,Docker,Expert,8,true
+ES00356,E0119,PostgreSQL,Beginner,7,true
+ES00357,E0119,DevOps,Intermediate,4,false
+ES00358,E0120,React,Advanced,7,false
+ES00359,E0120,SQL,Beginner,1,false
+ES00360,E0120,Leadership,Advanced,7,true
+ES00361,E0121,Cloud Computing,Beginner,8,true
+ES00362,E0121,Docker,Intermediate,3,false
+ES00363,E0121,SQL,Intermediate,7,true
+ES00364,E0122,Python,Expert,7,true
+ES00365,E0122,Process Improvement,Beginner,12,false
+ES00366,E0122,Quality Assurance,Expert,6,true
+ES00367,E0123,Machine Learning,Expert,6,true
+ES00368,E0123,Cloud Computing,Advanced,14,true
+ES00369,E0123,FastAPI,Expert,7,true
+ES00370,E0124,Sales Analytics,Advanced,6,false
+ES00371,E0124,LLM Evaluation,Beginner,5,true
+ES00372,E0124,Cybersecurity,Expert,2,true
+ES00373,E0125,DevOps,Advanced,3,false
+ES00374,E0125,LLM Evaluation,Intermediate,5,true
+ES00375,E0125,React,Expert,3,false
+ES00376,E0126,Quality Assurance,Advanced,8,false
+ES00377,E0126,LLM Evaluation,Beginner,4,true
+ES00378,E0126,React,Advanced,10,false
+ES00379,E0127,Financial Analysis,Beginner,11,false
+ES00380,E0127,Process Improvement,Advanced,8,true
+ES00381,E0127,SQL,Beginner,12,true
+ES00382,E0128,Python,Beginner,13,true
+ES00383,E0128,FastAPI,Expert,9,false
+ES00384,E0128,Docker,Beginner,7,true
+ES00385,E0129,DevOps,Advanced,5,true
+ES00386,E0129,Cloud Computing,Intermediate,5,true
+ES00387,E0129,Docker,Intermediate,2,false
+ES00388,E0130,Process Improvement,Beginner,11,true
+ES00389,E0130,Financial Analysis,Beginner,11,true
+ES00390,E0130,Leadership,Expert,9,true
+ES00391,E0131,Data Analysis,Beginner,9,true
+ES00392,E0131,Financial Analysis,Advanced,7,false
+ES00393,E0131,SQL,Intermediate,3,true
+ES00394,E0132,Sales Analytics,Advanced,11,true
+ES00395,E0132,Communication,Beginner,3,true
+ES00396,E0132,Data Analysis,Expert,4,false
+ES00397,E0133,Machine Learning,Beginner,8,false
+ES00398,E0133,Financial Analysis,Advanced,4,true
+ES00399,E0133,Docker,Intermediate,9,true
+ES00400,E0134,Machine Learning,Expert,9,false
+ES00401,E0134,LLM Evaluation,Beginner,3,true
+ES00402,E0134,FastAPI,Expert,8,false
+ES00403,E0135,Process Improvement,Advanced,3,true
+ES00404,E0135,SQL,Expert,3,true
+ES00405,E0135,Financial Analysis,Intermediate,5,false
+ES00406,E0136,Quality Assurance,Beginner,4,true
+ES00407,E0136,SQL,Expert,9,false
+ES00408,E0136,Process Improvement,Intermediate,12,false
+ES00409,E0137,Sales Analytics,Beginner,10,true
+ES00410,E0137,Financial Analysis,Intermediate,1,false
+ES00411,E0137,Communication,Beginner,10,false
+ES00412,E0138,Quality Assurance,Beginner,3,true
+ES00413,E0138,SQL,Beginner,4,false
+ES00414,E0138,Sales Analytics,Advanced,8,true
+ES00415,E0139,Communication,Intermediate,7,true
+ES00416,E0139,Financial Analysis,Advanced,10,false
+ES00417,E0139,Sales Analytics,Beginner,9,true
+ES00418,E0140,SQL,Intermediate,4,true
+ES00419,E0140,Python,Expert,5,true
+ES00420,E0140,Quality Assurance,Beginner,1,false
+ES00421,E0141,Docker,Advanced,1,false
+ES00422,E0141,Python,Intermediate,5,true
+ES00423,E0141,React,Expert,4,true
+ES00424,E0142,SQL,Advanced,4,true
+ES00425,E0142,Financial Analysis,Beginner,6,true
+ES00426,E0142,Data Analysis,Beginner,9,true
+ES00427,E0143,RAG,Expert,8,false
+ES00428,E0143,Data Analysis,Beginner,5,false
+ES00429,E0143,LLM Evaluation,Intermediate,2,true
+ES00430,E0144,DevOps,Beginner,9,false
+ES00431,E0144,LLM Evaluation,Beginner,5,false
+ES00432,E0144,Communication,Beginner,4,false
+ES00433,E0145,Process Improvement,Intermediate,9,true
+ES00434,E0145,Financial Analysis,Beginner,8,true
+ES00435,E0145,Python,Expert,2,true
+ES00436,E0146,Project Management,Intermediate,2,true
+ES00437,E0146,RAG,Beginner,5,true
+ES00438,E0146,Quality Assurance,Intermediate,6,true
+ES00439,E0147,Data Analysis,Advanced,1,true
+ES00440,E0147,Communication,Expert,4,true
+ES00441,E0147,Sales Analytics,Expert,3,false
+ES00442,E0148,Cybersecurity,Advanced,3,true
+ES00443,E0148,Docker,Expert,5,true
+ES00444,E0148,Cloud Computing,Intermediate,10,true
+ES00445,E0149,PostgreSQL,Intermediate,10,true
+ES00446,E0149,React,Beginner,2,true
+ES00447,E0149,Python,Advanced,9,true
+ES00448,E0150,Sales Analytics,Beginner,8,false
+ES00449,E0150,Leadership,Intermediate,7,true
+ES00450,E0150,Data Analysis,Intermediate,1,true
+ES00451,E0151,Python,Intermediate,9,false
+ES00452,E0151,FastAPI,Beginner,1,true
+ES00453,E0151,DevOps,Beginner,5,true
+ES00454,E0152,Machine Learning,Intermediate,7,true
+ES00455,E0152,Data Analysis,Beginner,8,false
+ES00456,E0152,Python,Beginner,11,true
+ES00457,E0153,PostgreSQL,Beginner,4,true
+ES00458,E0153,React,Beginner,11,true
+ES00459,E0153,Python,Beginner,4,true
+ES00460,E0154,Project Management,Intermediate,4,true
+ES00461,E0154,Python,Intermediate,8,false
+ES00462,E0154,Docker,Expert,9,true
+ES00463,E0155,Data Analysis,Expert,7,true
+ES00464,E0155,SQL,Intermediate,9,false
+ES00465,E0155,Financial Analysis,Intermediate,8,false
+ES00466,E0156,Docker,Intermediate,5,true
+ES00467,E0156,DevOps,Intermediate,7,false
+ES00468,E0156,React,Beginner,6,false
+ES00469,E0157,Communication,Expert,9,false
+ES00470,E0157,Machine Learning,Intermediate,12,false
+ES00471,E0157,DevOps,Beginner,12,true
+ES00472,E0158,Machine Learning,Beginner,2,true
+ES00473,E0158,LLM Evaluation,Beginner,2,false
+ES00474,E0158,RAG,Advanced,3,false
+ES00475,E0159,Sales Analytics,Advanced,1,true
+ES00476,E0159,Communication,Expert,7,true
+ES00477,E0159,Leadership,Intermediate,1,true
+ES00478,E0160,Docker,Beginner,2,true
+ES00479,E0160,DevOps,Intermediate,1,false
+ES00480,E0160,Cloud Computing,Advanced,5,true
+ES00481,E0161,DevOps,Beginner,1,true
+ES00482,E0161,Cloud Computing,Advanced,5,true
+ES00483,E0161,Python,Intermediate,11,false
+ES00484,E0162,FastAPI,Expert,6,true
+ES00485,E0162,React,Expert,12,true
+ES00486,E0162,Python,Expert,4,false
+ES00487,E0163,Leadership,Expert,3,true
+ES00488,E0163,Data Analysis,Intermediate,7,false
+ES00489,E0163,Sales Analytics,Advanced,5,true
+ES00490,E0164,Process Improvement,Intermediate,4,false
+ES00491,E0164,Python,Beginner,8,true
+ES00492,E0164,Quality Assurance,Intermediate,6,true
+ES00493,E0165,Python,Intermediate,7,false
+ES00494,E0165,Quality Assurance,Expert,12,true
+ES00495,E0165,SQL,Intermediate,9,true
+ES00496,E0166,Python,Advanced,7,false
+ES00497,E0166,Data Analysis,Advanced,3,true
+ES00498,E0166,RAG,Expert,3,true
+ES00499,E0167,SQL,Expert,11,true
+ES00500,E0167,Leadership,Advanced,7,false
+ES00501,E0167,PostgreSQL,Expert,3,true
+ES00502,E0168,Communication,Expert,6,true
+ES00503,E0168,Data Analysis,Advanced,4,true
+ES00504,E0168,Sales Analytics,Beginner,7,true
+ES00505,E0169,Python,Beginner,8,true
+ES00506,E0169,PostgreSQL,Expert,4,true
+ES00507,E0169,DevOps,Beginner,5,false
+ES00508,E0170,PostgreSQL,Beginner,3,true
+ES00509,E0170,FastAPI,Beginner,12,true
+ES00510,E0170,Python,Expert,10,true
+ES00511,E0171,FastAPI,Expert,3,true
+ES00512,E0171,Docker,Advanced,6,true
+ES00513,E0171,React,Beginner,2,false
+ES00514,E0172,Machine Learning,Expert,8,true
+ES00515,E0172,Data Analysis,Beginner,1,true
+ES00516,E0172,RAG,Expert,6,false
+ES00517,E0173,Cloud Computing,Beginner,1,true
+ES00518,E0173,LLM Evaluation,Intermediate,10,true
+ES00519,E0173,Python,Intermediate,10,true
+ES00520,E0174,Docker,Intermediate,5,true
+ES00521,E0174,Cybersecurity,Expert,2,false
+ES00522,E0174,Python,Advanced,1,false
+ES00523,E0175,Leadership,Advanced,8,false
+ES00524,E0175,Quality Assurance,Advanced,10,false
+ES00525,E0175,LLM Evaluation,Beginner,6,true
+ES00526,E0176,Process Improvement,Advanced,4,false
+ES00527,E0176,Data Analysis,Expert,5,false
+ES00528,E0176,SQL,Advanced,10,true
+ES00529,E0177,SQL,Advanced,2,true
+ES00530,E0177,Quality Assurance,Expert,9,true
+ES00531,E0177,Python,Advanced,4,true
+ES00532,E0178,FastAPI,Intermediate,3,true
+ES00533,E0178,Docker,Beginner,5,true
+ES00534,E0178,DevOps,Intermediate,6,true
+ES00535,E0179,Financial Analysis,Intermediate,10,true
+ES00536,E0179,Cybersecurity,Advanced,3,true
+ES00537,E0179,Sales Analytics,Beginner,3,false
+ES00538,E0180,Docker,Advanced,6,true
+ES00539,E0180,Machine Learning,Beginner,7,false
+ES00540,E0180,Cloud Computing,Advanced,4,false
+ES00541,E0181,Data Analysis,Advanced,2,true
+ES00542,E0181,LLM Evaluation,Intermediate,1,true
+ES00543,E0181,Cloud Computing,Intermediate,1,false
+ES00544,E0182,Python,Expert,3,true
+ES00545,E0182,SQL,Advanced,12,true
+ES00546,E0182,Process Improvement,Beginner,11,false
+ES00547,E0183,Machine Learning,Advanced,4,true
+ES00548,E0183,FastAPI,Intermediate,3,false
+ES00549,E0183,Cloud Computing,Beginner,10,true
+ES00550,E0184,Cloud Computing,Beginner,10,true
+ES00551,E0184,Python,Intermediate,7,false
+ES00552,E0184,Docker,Expert,12,false
+ES00553,E0185,RAG,Advanced,3,false
+ES00554,E0185,Financial Analysis,Advanced,1,true
+ES00555,E0185,DevOps,Intermediate,5,true
+ES00556,E0186,Communication,Expert,6,false
+ES00557,E0186,Leadership,Advanced,7,true
+ES00558,E0186,Data Analysis,Advanced,1,false
+ES00559,E0187,Financial Analysis,Intermediate,4,true
+ES00560,E0187,Project Management,Intermediate,6,true
+ES00561,E0187,Quality Assurance,Expert,11,true
+ES00562,E0188,Sales Analytics,Advanced,11,true
+ES00563,E0188,Leadership,Intermediate,3,true
+ES00564,E0188,Data Analysis,Advanced,2,true
+ES00565,E0189,Quality Assurance,Beginner,1,true
+ES00566,E0189,Communication,Beginner,2,true
+ES00567,E0189,Sales Analytics,Beginner,1,false
+ES00568,E0190,RAG,Advanced,8,false
+ES00569,E0190,Docker,Advanced,13,false
+ES00570,E0190,Cloud Computing,Beginner,1,true
+ES00571,E0191,SQL,Intermediate,7,true
+ES00572,E0191,React,Advanced,4,true
+ES00573,E0191,Machine Learning,Expert,2,true
+ES00574,E0192,PostgreSQL,Intermediate,12,true
+ES00575,E0192,Docker,Beginner,10,true
+ES00576,E0192,FastAPI,Intermediate,6,true
+ES00577,E0193,DevOps,Advanced,12,false
+ES00578,E0193,Cybersecurity,Advanced,6,true
+ES00579,E0193,Python,Expert,3,true
+ES00580,E0194,Data Analysis,Advanced,7,true
+ES00581,E0194,Python,Advanced,2,true
+ES00582,E0194,LLM Evaluation,Intermediate,3,false
+ES00583,E0195,Communication,Intermediate,13,false
+ES00584,E0195,Project Management,Advanced,8,true
+ES00585,E0195,Machine Learning,Advanced,14,true
+ES00586,E0196,Financial Analysis,Beginner,5,true
+ES00587,E0196,SQL,Expert,4,true
+ES00588,E0196,Process Improvement,Beginner,4,true
+ES00589,E0197,Docker,Advanced,1,true
+ES00590,E0197,Python,Expert,5,true
+ES00591,E0197,PostgreSQL,Intermediate,5,false
+ES00592,E0198,RAG,Intermediate,6,true
+ES00593,E0198,Python,Advanced,1,true
+ES00594,E0198,Machine Learning,Expert,7,true
+ES00595,E0199,Process Improvement,Advanced,7,true
+ES00596,E0199,Python,Advanced,11,true
+ES00597,E0199,SQL,Expert,10,true
+ES00598,E0200,PostgreSQL,Expert,1,true
+ES00599,E0200,Python,Expert,4,false
+ES00600,E0200,Machine Learning,Advanced,3,true

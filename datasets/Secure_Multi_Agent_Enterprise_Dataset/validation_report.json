@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "root": "/mnt/data/Secure_Multi_Agent_Enterprise_Dataset",
+  "core_csv_tables": 50,
+  "core_rows": 20053,
+  "knowledge_documents": 14,
+  "errors": [],
+  "warnings": []
+}

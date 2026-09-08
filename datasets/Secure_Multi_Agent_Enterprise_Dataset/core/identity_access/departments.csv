@@ -1,0 +1,13 @@
+﻿department_id,department_name,business_group,manager_employee_id,data_classification,active
+D001,Executive Office,Corporate Strategy,E0001,Restricted,true
+D002,Human Resources,People Operations,E0002,Confidential,true
+D003,Engineering,Technology,E0003,Internal,true
+D004,Quality Assurance,Technology,E0004,Internal,true
+D005,Sales,Commercial,E0005,Confidential,true
+D006,Finance,Corporate Services,E0006,Restricted,true
+D007,Operations,Operations,E0007,Internal,true
+D008,IT & Security,Technology,E0008,Restricted,true
+D009,Research & Development,Technology,E0009,Confidential,true
+D010,Customer Success,Commercial,E0010,Confidential,true
+D011,Marketing & Creative,Commercial,E0011,Internal,true
+D012,Learning & Development,People Operations,E0012,Internal,true
