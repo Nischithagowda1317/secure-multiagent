@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -29,14 +29,14 @@ class Settings:
     jwt_secret: str = os.getenv("JWT_SECRET", "academic-demo-change-me-use-a-long-random-secret-2026")
     jwt_algorithm: str = "HS256"
     jwt_exp_minutes: int = int(os.getenv("JWT_EXP_MINUTES", "480"))
-    llm_provider: str = os.getenv("LLM_PROVIDER", "extractive").lower()
+    llm_provider: str = os.getenv("LLM_PROVIDER", "openai").lower()
     llm_fallback_provider: str = os.getenv(
         "LLM_FALLBACK_PROVIDER", "extractive"
     ).lower()
-    ollama_base_url: str = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
-    ollama_model: str = os.getenv("OLLAMA_MODEL", "llama3.1:8b")
-    ollama_timeout_seconds: float = float(
-        os.getenv("OLLAMA_TIMEOUT_SECONDS", "120")
+    openai_api_key: str = field(default=os.getenv("OPENAI_API_KEY", ""), repr=False)
+    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    openai_timeout_seconds: float = float(
+        os.getenv("OPENAI_TIMEOUT_SECONDS", "120")
     )
     data_backend: str = os.getenv("DATA_BACKEND", "csv").lower()
     database_url: str = os.getenv(
@@ -44,6 +44,7 @@ class Settings:
         "postgresql+psycopg://enterprise_user:enterprise_password@127.0.0.1:5432/enterprise_assistant",
     )
     database_schema: str = os.getenv("DATABASE_SCHEMA", "enterprise_ai")
+    runtime_backend: str = os.getenv("RUNTIME_BACKEND", "auto").lower()
     rag_backend: str = os.getenv("RAG_BACKEND", "tfidf").lower()
     chroma_path: Path = Path(
         os.getenv("CHROMA_PATH", str(PROJECT_ROOT / "runtime" / "chroma"))
@@ -63,6 +64,18 @@ class Settings:
         ).split(",")
         if origin.strip()
     )
+
+    @property
+    def uses_postgres(self) -> bool:
+        return self.data_backend in {"postgres", "supabase"}
+
+    @property
+    def resolved_runtime_backend(self) -> str:
+        if self.runtime_backend == "auto":
+            return "postgres" if self.uses_postgres else "sqlite"
+        if self.runtime_backend not in {"postgres", "sqlite"}:
+            raise ValueError("RUNTIME_BACKEND must be auto, postgres, or sqlite.")
+        return self.runtime_backend
 
     def ensure_directories(self) -> None:
         for path in (

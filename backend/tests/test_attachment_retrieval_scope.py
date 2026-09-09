@@ -179,8 +179,8 @@ def test_multiple_pdf_summary_keeps_files_separate_and_attachment_only(client):
 
 
 class UnsupportedAttachmentProvider(LLMProvider):
-    name = "ollama"
-    model = "llama3.1:8b"
+    name = "openai"
+    model = "gpt-4.1-mini"
 
     def __init__(self):
         self.requests: list[GenerationRequest] = []

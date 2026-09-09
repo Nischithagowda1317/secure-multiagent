@@ -14,12 +14,12 @@ from app.utils.text import normalize_text, pipe_values
 
 
 class DataRepository:
-    """Read-only access layer over the curated enterprise CSV package.
+    """Read-only access to enterprise tables in CSV or PostgreSQL.
 
     The dataset is intentionally small enough for an academic prototype, so the
     service loads tables lazily into pandas and keeps them in memory. Runtime
     writes such as approvals, uploads, and audit events are stored separately in
-    SQLite by RuntimeStore.
+    SQLite or PostgreSQL by RuntimeStore.
     """
 
     TABLES: dict[str, str] = {
@@ -80,22 +80,21 @@ class DataRepository:
         self.root = settings.dataset_root
         self._cache: dict[str, pd.DataFrame] = {}
         self._engine: Any | None = None
-        if not self.root.exists():
+        if self.settings.data_backend == "csv" and not self.root.exists():
             raise FileNotFoundError(f"Dataset root does not exist: {self.root}")
-        if self.settings.data_backend == "postgres":
+        if self.settings.uses_postgres:
             try:
-                from sqlalchemy import create_engine
+                from app.services.postgres import create_postgres_engine, validate_schema
+                validate_schema(self.settings.database_schema)
+                self._engine = create_postgres_engine(self.settings.database_url)
             except ImportError as exc:
                 raise RuntimeError(
-                    "DATA_BACKEND=postgres requires the optional PostgreSQL dependencies. "
-                    "Install backend/requirements-postgres.txt first."
+                    "PostgreSQL support requires SQLAlchemy and psycopg. "
+                    "Install backend/requirements.txt first."
                 ) from exc
-            self._engine = create_engine(
-                self.settings.database_url, pool_pre_ping=True, future=True
-            )
         elif self.settings.data_backend != "csv":
             raise ValueError(
-                f"Unsupported DATA_BACKEND={self.settings.data_backend!r}. Use 'csv' or 'postgres'."
+                f"Unsupported DATA_BACKEND={self.settings.data_backend!r}. Use 'csv', 'postgres', or 'supabase'."
             )
 
     def table(self, name: str) -> pd.DataFrame:
@@ -103,7 +102,7 @@ class DataRepository:
             raise KeyError(f"Unknown table: {name}")
         if name not in self._cache:
             relative = self.TABLES[name]
-            if self.settings.data_backend == "postgres":
+            if self.settings.uses_postgres:
                 assert self._engine is not None
                 table_name = Path(relative).stem
                 try:
@@ -116,7 +115,8 @@ class DataRepository:
                     raise RuntimeError(
                         f"Could not read PostgreSQL table "
                         f"{self.settings.database_schema}.{table_name}. "
-                        "Run backend/scripts/load_postgresql.py before starting the app."
+                        "Apply the Supabase migration and run backend/scripts/load_supabase.py "
+                        "(or load_postgresql.py for the legacy local setup)."
                     ) from exc
             else:
                 path = self.root / relative

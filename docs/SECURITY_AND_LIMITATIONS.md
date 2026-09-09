@@ -11,7 +11,7 @@
 - Human-in-the-Loop approval for sensitive actions;
 - audit events for login, denial, upload and approval decisions;
 - local/offline extractive answer mode;
-- optional local Ollama use instead of sending enterprise evidence to a remote provider.
+- OpenAI API generation using authorized evidence only, with backend-only credentials and `store=false`.
 
 ## Academic implementation limitations
 

@@ -5,11 +5,12 @@ import json
 from typing import Any
 
 import httpx
+import pytest
 
 from app.services.llm_providers import (
     GenerationRequest,
     LLMProvider,
-    OllamaProvider,
+    OpenAIProvider,
     ProviderResponse,
 )
 from app.services.llm_service import LLMService
@@ -21,41 +22,41 @@ PROJECT_MANAGER = "majid.aleusud@nexacore.example"
 EMPLOYEE = "rayid.zazana@nexacore.example"
 
 
+def _response(text):
+    return {"status": "completed", "output": [{"type": "message", "role": "assistant", "content": [{"type": "output_text", "text": text}]}]}
+
+
 def _settings() -> Settings:
     return Settings(
-        llm_provider="ollama",
+        llm_provider="openai",
         llm_fallback_provider="extractive",
-        ollama_base_url="http://ollama.test",
-        ollama_model="llama3.1:8b",
-        ollama_timeout_seconds=0.1,
+        openai_api_key="test-api-key",
+        openai_model="gpt-4.1-mini",
+        openai_timeout_seconds=0.1,
     )
 
 
-def test_ollama_provider_success_uses_authorized_payload_only():
+def test_openai_provider_success_uses_authorized_payload_only():
     captured: dict[str, Any] = {}
 
     async def handler(request: httpx.Request) -> httpx.Response:
+        assert request.url.path == "/v1/responses"
+        assert request.headers["Authorization"] == "Bearer test-api-key"
         captured.update(json.loads(request.content))
+        assert "test-api-key" not in request.content.decode()
         return httpx.Response(
             200,
-            json={
-                "message": {
-                    "content": (
-                        "Based on the provided JSON, the enterprise response is: "
-                        "Atlas progress is 58%."
-                    )
-                }
-            },
+            json=_response("Based on the provided JSON, the enterprise response is: Atlas progress is 58%."),
             request=request,
         )
 
     async def scenario():
         async with httpx.AsyncClient(
-            transport=httpx.MockTransport(handler), base_url="http://ollama.test"
+            transport=httpx.MockTransport(handler), base_url="http://openai.test"
         ) as client:
-            provider = OllamaProvider(
-                base_url="http://ollama.test",
-                model="llama3.1:8b",
+            provider = OpenAIProvider(
+                api_key="test-api-key",
+                model="gpt-4.1-mini",
                 timeout_seconds=1,
                 client=client,
             )
@@ -76,11 +77,11 @@ def test_ollama_provider_success_uses_authorized_payload_only():
             return answer, service.metrics()
 
     answer, metrics = asyncio.run(scenario())
-    prompt = captured["messages"][1]["content"]
+    prompt = captured["input"]
     assert answer == "Atlas progress is 58%."
-    assert captured["messages"][0]["role"] == "system"
-    assert "Return only the final enterprise answer" in captured["messages"][0]["content"]
-    assert "Do not calculate, derive, infer" in captured["messages"][0]["content"]
+    assert captured["store"] is False
+    assert "Return only the final enterprise answer" in captured["instructions"]
+    assert "Do not calculate, derive, infer" in captured["instructions"]
     assert "from this JSON" not in prompt
     assert "Authorized progress is 58%." in prompt
     assert "allowed_roles" not in prompt
@@ -90,17 +91,102 @@ def test_ollama_provider_success_uses_authorized_payload_only():
     assert metrics["last_call"]["prompt_token_approx"] > 0
 
 
-def test_ollama_timeout_uses_extractive_fallback():
+@pytest.mark.parametrize("status", [401, 429, 500])
+def test_api_errors_fall_back_without_exposing_response_details(status, caplog):
+    async def handler(request):
+        return httpx.Response(status, json={"error": {"message": "private-error-detail"}}, request=request)
+
+    async def scenario():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
+            provider = OpenAIProvider(api_key="test-api-key", model="gpt-4.1-mini", timeout_seconds=1, client=client)
+            service = LLMService(_settings(), provider=provider)
+            return await service.synthesize("Question", [], [], fallback_text="Fallback answer")
+
+    assert asyncio.run(scenario()) == "Fallback answer"
+    assert "private-error-detail" not in caplog.text
+    assert "test-api-key" not in caplog.text
+
+
+def test_missing_key_uses_fallback_without_network():
+    async def handler(request):
+        pytest.fail("Missing API key must not send a request")
+
+    async def scenario():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
+            provider = OpenAIProvider(api_key="", model="gpt-4.1-mini", timeout_seconds=1, client=client)
+            service = LLMService(_settings(), provider=provider)
+            assert await provider.health_check() is False
+            return await service.synthesize("Question", [], [], fallback_text="Fallback answer")
+
+    assert asyncio.run(scenario()) == "Fallback answer"
+
+
+@pytest.mark.parametrize("body", [
+    {"status": "incomplete", "output": []},
+    {"status": "completed", "output": []},
+    {"status": "completed", "output": [{"type": "message", "role": "assistant", "content": [{"type": "refusal", "refusal": "Refused"}]}]},
+])
+def test_incomplete_empty_or_refusal_responses_use_fallback(body):
+    async def handler(request):
+        return httpx.Response(200, json=body, request=request)
+
+    async def scenario():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
+            provider = OpenAIProvider(api_key="test-api-key", model="gpt-4.1-mini", timeout_seconds=1, client=client)
+            return await LLMService(_settings(), provider=provider).synthesize("Question", [], [], fallback_text="Fallback answer")
+
+    assert asyncio.run(scenario()) == "Fallback answer"
+
+
+def test_response_output_skips_reasoning_and_joins_text_messages():
+    body = _response("First paragraph")
+    body["output"].insert(0, {"type": "reasoning", "summary": []})
+    body["output"].extend(_response("Second paragraph")["output"])
+
+    async def handler(request):
+        return httpx.Response(200, json=body, request=request)
+
+    async def scenario():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
+            provider = OpenAIProvider(api_key="test-api-key", model="gpt-4.1-mini", timeout_seconds=1, client=client)
+            return await provider.generate(GenerationRequest(query="Question"))
+
+    assert asyncio.run(scenario()).text == "First paragraph\nSecond paragraph"
+
+
+def test_health_checks_model_access_and_omits_key():
+    async def handler(request):
+        assert request.method == "GET"
+        assert request.url.path == "/v1/models/gpt-4.1-mini"
+        assert request.headers["Authorization"] == "Bearer test-api-key"
+        return httpx.Response(200, json={"id": "gpt-4.1-mini"}, request=request)
+
+    async def scenario():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
+            provider = OpenAIProvider(api_key="test-api-key", model="gpt-4.1-mini", timeout_seconds=1, client=client)
+            return await LLMService(_settings(), provider=provider).health_check()
+
+    assert asyncio.run(scenario()) == {"llm_provider": "openai", "llm_available": True, "llm_model": "gpt-4.1-mini", "fallback_provider": "extractive"}
+    assert "test-api-key" not in repr(_settings())
+
+
+def test_service_builds_openai_provider_from_settings():
+    service = LLMService(_settings())
+    assert isinstance(service.provider, OpenAIProvider)
+    assert service.generative_enabled
+
+
+def test_openai_timeout_uses_extractive_fallback():
     async def handler(request: httpx.Request) -> httpx.Response:
         raise httpx.ReadTimeout("timed out", request=request)
 
     async def scenario():
         async with httpx.AsyncClient(
-            transport=httpx.MockTransport(handler), base_url="http://ollama.test"
+            transport=httpx.MockTransport(handler), base_url="http://openai.test"
         ) as client:
-            provider = OllamaProvider(
-                base_url="http://ollama.test",
-                model="llama3.1:8b",
+            provider = OpenAIProvider(
+                api_key="test-api-key",
+                model="gpt-4.1-mini",
                 timeout_seconds=0.01,
                 client=client,
             )
@@ -119,17 +205,17 @@ def test_ollama_timeout_uses_extractive_fallback():
     assert "ReadTimeout" in str(metrics.error_status)
 
 
-def test_ollama_unavailable_does_not_break_generation():
+def test_openai_unavailable_does_not_break_generation():
     async def handler(request: httpx.Request) -> httpx.Response:
         raise httpx.ConnectError("connection refused", request=request)
 
     async def scenario():
         async with httpx.AsyncClient(
-            transport=httpx.MockTransport(handler), base_url="http://ollama.test"
+            transport=httpx.MockTransport(handler), base_url="http://openai.test"
         ) as client:
-            provider = OllamaProvider(
-                base_url="http://ollama.test",
-                model="llama3.1:8b",
+            provider = OpenAIProvider(
+                api_key="test-api-key",
+                model="gpt-4.1-mini",
                 timeout_seconds=0.1,
                 client=client,
             )
@@ -145,17 +231,17 @@ def test_hallucinated_numeric_claim_is_replaced_by_fallback():
     async def handler(request: httpx.Request) -> httpx.Response:
         return httpx.Response(
             200,
-            json={"message": {"content": "Atlas progress is 99%."}},
+            json=_response("Atlas progress is 99%."),
             request=request,
         )
 
     async def scenario():
         async with httpx.AsyncClient(
-            transport=httpx.MockTransport(handler), base_url="http://ollama.test"
+            transport=httpx.MockTransport(handler), base_url="http://openai.test"
         ) as client:
-            provider = OllamaProvider(
-                base_url="http://ollama.test",
-                model="llama3.1:8b",
+            provider = OpenAIProvider(
+                api_key="test-api-key",
+                model="gpt-4.1-mini",
                 timeout_seconds=1,
                 client=client,
             )
@@ -174,9 +260,9 @@ def test_hallucinated_numeric_claim_is_replaced_by_fallback():
     assert str(metrics.error_status).startswith("unsupported_numeric_claim")
 
 
-class CapturingOllamaProvider(LLMProvider):
-    name = "ollama"
-    model = "llama3.1:8b"
+class CapturingOpenAIProvider(LLMProvider):
+    name = "openai"
+    model = "gpt-4.1-mini"
 
     def __init__(self, text: str):
         self.text = text
@@ -190,9 +276,9 @@ class CapturingOllamaProvider(LLMProvider):
         return True
 
 
-def test_authorized_atlas_context_only_is_sent_to_llama(client, monkeypatch):
+def test_authorized_atlas_context_only_is_sent_to_openai(client, monkeypatch):
     llm = client.app.state.services.llm
-    provider = CapturingOllamaProvider(
+    provider = CapturingOpenAIProvider(
         "Atlas is at 58% versus 78%, with 6 overdue tasks and 2 blocked tasks. "
         "Overloaded members are E0013, E0079, and E0017."
     )
@@ -213,9 +299,9 @@ def test_authorized_atlas_context_only_is_sent_to_llama(client, monkeypatch):
     assert hr["content"]["scope"] == "project"
 
 
-def test_unauthorized_salary_is_denied_before_ollama_call(client, monkeypatch):
+def test_unauthorized_salary_is_denied_before_openai_call(client, monkeypatch):
     llm = client.app.state.services.llm
-    provider = CapturingOllamaProvider("This must not be called.")
+    provider = CapturingOpenAIProvider("This must not be called.")
     monkeypatch.setattr(llm, "provider", provider)
 
     response = client.post(
@@ -231,7 +317,7 @@ def test_unauthorized_salary_is_denied_before_ollama_call(client, monkeypatch):
 
 def test_rag_sends_authorized_chunks_and_backend_keeps_sources(client, monkeypatch):
     llm = client.app.state.services.llm
-    provider = CapturingOllamaProvider("Employees may work remotely two days per week.")
+    provider = CapturingOpenAIProvider("Employees may work remotely two days per week.")
     monkeypatch.setattr(llm, "provider", provider)
     headers = login_headers(client, EMPLOYEE)
     profile = client.get("/api/auth/me", headers=headers).json()
@@ -260,7 +346,7 @@ def test_rag_sends_authorized_chunks_and_backend_keeps_sources(client, monkeypat
 def test_sensitive_reassignment_llm_cannot_execute(client, monkeypatch):
     services = client.app.state.services
     llm = services.llm
-    provider = CapturingOllamaProvider(
+    provider = CapturingOpenAIProvider(
         "A reassignment plan is prepared and is awaiting human approval."
     )
     monkeypatch.setattr(llm, "provider", provider)
@@ -283,7 +369,7 @@ def test_sensitive_reassignment_llm_cannot_execute(client, monkeypatch):
 
 def test_llm_cannot_override_approval_rejection(client, monkeypatch):
     services = client.app.state.services
-    provider = CapturingOllamaProvider(
+    provider = CapturingOpenAIProvider(
         "The reassignment has been approved and successfully executed."
     )
     monkeypatch.setattr(services.llm, "provider", provider)

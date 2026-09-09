@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from typing import BinaryIO
 
-import fitz
+import pymupdf
 import pandas as pd
 from docx import Document
 
@@ -26,12 +26,12 @@ def extract_text(filename: str, data: bytes) -> str:
         raise ValueError(f"Unsupported file type: {suffix}")
 
     if suffix == ".pdf":
-        document = fitz.open(stream=data, filetype="pdf")
         pages = []
-        for page_number, page in enumerate(document, start=1):
-            text = page.get_text("text").strip()
-            if text:
-                pages.append(f"[Page {page_number}]\n{text}")
+        with pymupdf.open(stream=data, filetype="pdf") as document:
+            for page_number, page in enumerate(document, start=1):
+                text = page.get_text("text").strip()
+                if text:
+                    pages.append(f"[Page {page_number}]\n{text}")
         return "\n\n".join(pages)
 
     if suffix == ".docx":

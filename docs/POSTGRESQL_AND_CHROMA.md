@@ -1,5 +1,8 @@
 # Optional PostgreSQL and ChromaDB Setup
 
+For hosted PostgreSQL with enterprise and runtime data in Supabase, follow
+[Supabase setup and migration](SUPABASE.md).
+
 The supplied default is deliberately easy to run:
 
 ```text
@@ -42,6 +45,7 @@ to:
 
 ```text
 DATA_BACKEND=postgres
+RUNTIME_BACKEND=sqlite
 ```
 
 Keep:
@@ -114,18 +118,6 @@ RAG_BACKEND=chroma
 
 If ChromaDB is missing or the collection cannot be opened, the code safely falls back to the stored TF-IDF base index rather than making the whole dashboard unusable.
 
-## Optional local LLM through Ollama
+## OpenAI API answers
 
-1. Install and run Ollama separately.
-2. Ensure the configured model exists locally.
-3. Change `.env`:
-
-```text
-LLM_PROVIDER=ollama
-OLLAMA_BASE_URL=http://127.0.0.1:11434
-OLLAMA_MODEL=llama3.1:8b
-```
-
-4. Restart FastAPI.
-
-Only authorized evidence and structured agent summaries are sent to the local model. When Ollama fails, extractive output is used.
+Follow [OpenAI API setup](OPENAI.md) to configure `OPENAI_API_KEY` and `OPENAI_MODEL`. Authorized evidence is sent to OpenAI; API failures use the extractive fallback.

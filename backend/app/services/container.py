@@ -40,7 +40,11 @@ class ServiceContainer:
 
 
 def build_services(settings: Settings) -> ServiceContainer:
-    runtime_store = RuntimeStore(settings.runtime_root / "assistant_runtime.db")
+    if settings.resolved_runtime_backend == "postgres":
+        from app.services.postgres_runtime_store import PostgresRuntimeStore
+        runtime_store = PostgresRuntimeStore(settings)
+    else:
+        runtime_store = RuntimeStore(settings.runtime_root / "assistant_runtime.db")
     repository = DataRepository(settings, runtime_store)
     models = ModelRegistry(settings)
     rbac = RBACService(runtime_store)

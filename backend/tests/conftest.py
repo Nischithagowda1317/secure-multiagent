@@ -12,9 +12,13 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 os.environ.setdefault(
     "JWT_SECRET", "pytest-secret-key-that-is-safely-longer-than-thirty-two-bytes"
 )
-os.environ.setdefault("LLM_PROVIDER", "extractive")
+os.environ["LLM_PROVIDER"] = "extractive"
+os.environ["OPENAI_API_KEY"] = ""
 TEST_RUNTIME_ROOT = PROJECT_ROOT / "runtime" / "pytest"
 os.environ["RUNTIME_ROOT"] = str(TEST_RUNTIME_ROOT)
+# Tests must never connect to or mutate the database configured in .env.
+os.environ["DATA_BACKEND"] = "csv"
+os.environ["RUNTIME_BACKEND"] = "sqlite"
 
 from app.main import app  # noqa: E402
 

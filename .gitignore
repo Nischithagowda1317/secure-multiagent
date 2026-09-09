@@ -12,3 +12,4 @@ runtime/checkpoints/*
 *.log
 .DS_Store
 Thumbs.db
+/pages-site/

@@ -97,6 +97,9 @@ class RuntimeStore:
     def now() -> str:
         return datetime.now(timezone.utc).isoformat()
 
+    def _lock_approval_transaction(self, connection: Any) -> None:
+        """PostgreSQL overrides this to coordinate workflows across workers."""
+
     def add_audit(
         self,
         user_id: str,
@@ -215,6 +218,7 @@ class RuntimeStore:
         if normalized not in {"Approved", "Rejected", "Cancelled"}:
             raise ValueError("Decision must be Approved, Rejected, or Cancelled")
         with self._lock, self.connect() as connection:
+            self._lock_approval_transaction(connection)
             cursor = connection.execute(
                 """
                 UPDATE runtime_approvals
@@ -254,6 +258,7 @@ class RuntimeStore:
         reason = "Approval does not contain a valid reassignment plan."
         now = self.now()
         with self._lock, self.connect() as connection:
+            self._lock_approval_transaction(connection)
             row = connection.execute(
                 "SELECT * FROM runtime_approvals WHERE approval_id = ?", (approval_id,)
             ).fetchone()
@@ -383,6 +388,7 @@ class RuntimeStore:
     ) -> dict[str, Any] | None:
         now = self.now()
         with self._lock, self.connect() as connection:
+            self._lock_approval_transaction(connection)
             row = connection.execute(
                 "SELECT * FROM runtime_approvals WHERE approval_id = ?", (approval_id,)
             ).fetchone()

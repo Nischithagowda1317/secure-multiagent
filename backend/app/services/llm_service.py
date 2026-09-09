@@ -12,7 +12,7 @@ from app.services.llm_providers import (
     ExtractiveProvider,
     GenerationRequest,
     LLMProvider,
-    OllamaProvider,
+    OpenAIProvider,
 )
 from app.settings import Settings
 from app.utils.json_tools import json_safe
@@ -245,11 +245,11 @@ class LLMService:
         self._normalized_numeric_match_count = 0
 
     def _build_provider(self, provider_name: str) -> LLMProvider:
-        if provider_name == "ollama":
-            return OllamaProvider(
-                base_url=self.settings.ollama_base_url,
-                model=self.settings.ollama_model,
-                timeout_seconds=self.settings.ollama_timeout_seconds,
+        if provider_name == "openai":
+            return OpenAIProvider(
+                api_key=self.settings.openai_api_key,
+                model=self.settings.openai_model,
+                timeout_seconds=self.settings.openai_timeout_seconds,
             )
         if provider_name != "extractive":
             logger.warning(
@@ -259,7 +259,7 @@ class LLMService:
 
     @property
     def generative_enabled(self) -> bool:
-        return self.provider.name == "ollama"
+        return self.provider.name == "openai"
 
     @property
     def last_call(self) -> LLMCallMetrics | None:
@@ -359,8 +359,8 @@ class LLMService:
         available = await self.provider.health_check()
         return {
             "llm_provider": self.provider.name,
-            "ollama_available": available if self.provider.name == "ollama" else False,
-            "ollama_model": self.settings.ollama_model,
+            "llm_available": available,
+            "llm_model": self.provider.model,
             "fallback_provider": self.fallback_provider.name,
         }
 

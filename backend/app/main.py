@@ -60,6 +60,7 @@ async def health(request: Request):
         "dataset_root": str(settings.dataset_root),
         "models_root": str(settings.models_root),
         "data_backend": settings.data_backend,
+        "runtime_backend": settings.resolved_runtime_backend,
         "rag_backend": settings.rag_backend,
         **llm_status,
     }

@@ -1,23 +1,24 @@
 from __future__ import annotations
 
 import argparse
-import os
 from pathlib import Path
 
 import pandas as pd
 
 from _bootstrap import PROJECT_ROOT
+from app.settings import settings
+from app.services.postgres import create_postgres_engine, validate_schema
 
 
 def _load_optional_dependencies():
     try:
-        from sqlalchemy import create_engine, text
+        from sqlalchemy import text
     except ImportError as exc:
         raise SystemExit(
             "PostgreSQL support is not installed. Run:\n"
             "  pip install -r backend/requirements-postgres.txt"
         ) from exc
-    return create_engine, text
+    return text
 
 
 def iter_source_tables(dataset_root: Path):
@@ -30,11 +31,16 @@ def iter_source_tables(dataset_root: Path):
 
 
 def main(database_url: str, schema: str, replace: bool) -> None:
-    create_engine, text = _load_optional_dependencies()
+    text = _load_optional_dependencies()
+    validate_schema(schema)
+    from sqlalchemy.engine import make_url
+    host = make_url(database_url).host or ""
+    if host.endswith((".supabase.co", ".supabase.com")) or settings.data_backend == "supabase":
+        raise SystemExit("For Supabase, apply supabase/migrations SQL and run backend/scripts/load_supabase.py. This preserves constraints and RLS.")
     dataset_root = (
         PROJECT_ROOT / "datasets" / "Secure_Multi_Agent_Enterprise_Dataset"
     )
-    engine = create_engine(database_url, pool_pre_ping=True, future=True)
+    engine = create_postgres_engine(database_url)
     with engine.begin() as connection:
         connection.execute(text(f'CREATE SCHEMA IF NOT EXISTS "{schema}"'))
 
@@ -79,12 +85,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--database-url",
-        default=os.getenv(
-            "DATABASE_URL",
-            "postgresql+psycopg://enterprise_user:enterprise_password@127.0.0.1:5432/enterprise_assistant",
-        ),
+        default=settings.database_url,
     )
-    parser.add_argument("--schema", default=os.getenv("DATABASE_SCHEMA", "enterprise_ai"))
+    parser.add_argument("--schema", default=settings.database_schema)
     parser.add_argument(
         "--replace",
         action="store_true",

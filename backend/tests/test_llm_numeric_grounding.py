@@ -5,7 +5,7 @@ import asyncio
 from app.services.llm_providers import (
     GenerationRequest,
     LLMProvider,
-    OllamaProvider,
+    OpenAIProvider,
     ProviderResponse,
 )
 from app.services.llm_service import LLMService
@@ -14,17 +14,17 @@ from app.settings import Settings
 
 def _settings() -> Settings:
     return Settings(
-        llm_provider="ollama",
+        llm_provider="openai",
         llm_fallback_provider="extractive",
-        ollama_base_url="http://ollama.test",
-        ollama_model="llama3.1:8b",
-        ollama_timeout_seconds=1,
+        openai_api_key="test-api-key",
+        openai_model="gpt-4.1-mini",
+        openai_timeout_seconds=1,
     )
 
 
 class NumericResponseProvider(LLMProvider):
-    name = "ollama"
-    model = "llama3.1:8b"
+    name = "openai"
+    model = "gpt-4.1-mini"
 
     def __init__(self, text: str):
         self.text = text
@@ -152,7 +152,7 @@ def test_currency_symbol_and_grouping_are_safe_equivalent_formats():
     answer, metrics, request = _generate(
         "Sales total $740,000.", {"sales_usd": 740000}
     )
-    prompt = OllamaProvider._build_prompt(request)
+    prompt = OpenAIProvider._build_prompt(request)
 
     assert answer == "Sales total $740,000."
     assert metrics is not None and metrics.fallback_used is False

@@ -11,7 +11,7 @@ A complete academic implementation of a secure enterprise assistant that combine
 - explainable outputs, confidence, evidence and agent traces;
 - model training, evaluation, checkpointing and artifact storage;
 - a FastAPI backend and a browser dashboard;
-- optional local LLM generation through Ollama;
+- OpenAI API generation with an extractive fallback;
 - optional PostgreSQL and ChromaDB backends.
 
 The package is self-contained: it includes the curated datasets, generated enterprise documents, trained model artifacts, training scripts, tests, a prebuilt dashboard and full step-by-step documentation.
@@ -185,7 +185,7 @@ An authorized administrator can also upload documents into the persistent enterp
 
 ## Default and optional operating modes
 
-The default mode requires no server database or external model:
+For offline operation without a server database or external model:
 
 ```text
 DATA_BACKEND=csv
@@ -193,15 +193,17 @@ RAG_BACKEND=tfidf
 LLM_PROVIDER=extractive
 ```
 
-Optional modes:
+The configured Supabase and OpenAI setup uses:
 
 ```text
-DATA_BACKEND=postgres
-RAG_BACKEND=chroma
-LLM_PROVIDER=ollama
+DATA_BACKEND=supabase
+RAG_BACKEND=tfidf
+LLM_PROVIDER=openai
+OPENAI_MODEL=gpt-4.1-mini
+OPENAI_API_KEY=your-openai-api-key
 ```
 
-See `docs/POSTGRESQL_AND_CHROMA.md` and `docs/WINDOWS_STEP_BY_STEP.md` before changing these values.
+See [OpenAI setup](docs/OPENAI.md) and [Supabase setup](docs/SUPABASE.md) for credentials and startup steps.
 
 ## Detailed guides
 
@@ -218,4 +220,10 @@ See `docs/POSTGRESQL_AND_CHROMA.md` and `docs/WINDOWS_STEP_BY_STEP.md` before ch
 
 ## Important technical scope
 
-This project trains task-specific ML models and builds retrieval indexes. It does **not** fine-tune the weights of GPT, Llama or Mistral. Fine-tuning a large language model is unnecessary for the required demonstration. The optional Ollama adapter can use a local pretrained model for more natural wording, while enterprise facts still come from authorized tools and RAG evidence.
+This project trains task-specific ML models and builds retrieval indexes. It does **not** fine-tune the weights of GPT, Llama or Mistral. Fine-tuning a large language model is unnecessary for the required demonstration. The OpenAI adapter generates natural-language answers, while enterprise facts still come from authorized tools and RAG evidence.
+
+## Supabase PostgreSQL
+
+See [Supabase setup](docs/SUPABASE.md) for connection settings, the
+[migration SQL](supabase/migrations/202609090001_supabase_postgres.sql), and importing
+existing CSV/SQLite data.

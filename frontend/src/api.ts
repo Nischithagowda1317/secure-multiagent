@@ -1,6 +1,13 @@
 import type { ChatResponse, DemoAccount, UserProfile } from "./types";
 
-const API = "/api";
+declare global {
+  interface Window {
+    ENTERPRISE_CONFIG?: { apiBaseUrl?: string };
+  }
+}
+
+const API = (window.ENTERPRISE_CONFIG?.apiBaseUrl ?? "/api").replace(/\/+$/, "");
+export const backendConfigured = Boolean(API);
 
 function token(): string | null {
   return localStorage.getItem("enterprise_token");

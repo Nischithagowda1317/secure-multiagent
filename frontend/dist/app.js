@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const root = document.getElementById("root");
-  const API = "/api";
+  const API = (window.ENTERPRISE_CONFIG?.apiBaseUrl ?? "/api").replace(/\/+$/, "");
   const state = {
     token: localStorage.getItem("enterprise_token"),
     user: null,
@@ -91,11 +91,15 @@
       state.accounts = await request("/auth/demo-accounts");
       const list=document.getElementById("account-list");
       if (!list) return;
+      if (!state.accounts.length) {
+        list.innerHTML='<p role="status">No sign-in accounts are available yet. Ask your administrator to finish setting up this workspace.</p>';
+        return;
+      }
       list.innerHTML=state.accounts.map((account,index)=>`<button type="button" data-account="${index}"><strong>${esc(account.roles.filter(r=>r!=="Employee").join(" / ")||"Employee")}</strong><small>${esc(account.email)}</small></button>`).join("");
       list.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>selectAccount(Number(button.dataset.account))));
       const preferred=state.accounts.findIndex(a=>a.roles.includes("Admin"));
       selectAccount(preferred>=0?preferred:0);
-    } catch (error) { document.getElementById("account-list").innerHTML=errorBox(error.message); }
+    } catch (error) { const list=document.getElementById("account-list"); if(list) list.innerHTML=errorBox(error.message); }
   }
   function selectAccount(index) {
     const account=state.accounts[index]; if(!account)return;
@@ -233,6 +237,10 @@
   }
 
   async function start() {
+    if (!API) {
+      root.innerHTML = `<main class="center-screen"><section class="login-card"><div class="brand login-brand"><div class="brand-mark">NC</div><div><strong>NexaCore</strong><span>Enterprise AI Assistant</span></div></div><h1>Assistant service is not connected yet</h1><p>The dashboard has been published. Sign-in, document analysis, and AI responses will be available once the assistant service is connected.</p></section></main>`;
+      return;
+    }
     if (!state.token) return renderLogin();
     try { state.user=await get("/auth/me"); renderShell(); } catch { logout(); }
   }

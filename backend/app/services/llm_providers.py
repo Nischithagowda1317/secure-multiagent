@@ -137,39 +137,46 @@ class ExtractiveProvider(LLMProvider):
         return " ".join(selected) if selected else str(top.get("chunk_text", "")).strip()
 
 
-class OllamaProvider(LLMProvider):
-    name = "ollama"
+class OpenAIProvider(LLMProvider):
+    name = "openai"
 
     def __init__(
         self,
         *,
-        base_url: str,
+        api_key: str,
         model: str,
         timeout_seconds: float,
         client: httpx.AsyncClient | None = None,
     ) -> None:
-        self.base_url = base_url.rstrip("/")
+        self._api_key = api_key.strip()
         self.model = model
         self.timeout_seconds = timeout_seconds
         self._client = client
 
     async def generate(self, request: GenerationRequest) -> ProviderResponse:
+        if not self._api_key:
+            raise ValueError("OPENAI_API_KEY is not configured")
         user_prompt = self._build_prompt(request)
         payload = {
             "model": self.model,
-            "stream": False,
-            "messages": [
-                {"role": "system", "content": SYSTEM_INSTRUCTION},
-                {"role": "user", "content": user_prompt},
-            ],
-            "options": {"temperature": 0.1},
+            "instructions": SYSTEM_INSTRUCTION,
+            "input": user_prompt,
+            "store": False,
         }
-        response = await self._post("/api/chat", payload)
+        response = await self._request("POST", "/v1/responses", payload=payload)
         response.raise_for_status()
         body = response.json()
-        text = str(body.get("message", {}).get("content", "")).strip()
+        if not isinstance(body, dict) or body.get("status") != "completed" or body.get("error"):
+            raise ValueError("OpenAI response did not complete")
+        text = "\n".join(
+            part["text"]
+            for item in body.get("output", [])
+            if item.get("type") == "message" and item.get("role") == "assistant"
+            for part in item.get("content", [])
+            if part.get("type") == "output_text" and isinstance(part.get("text"), str)
+        ).strip()
         if not text:
-            raise ValueError("Ollama returned an empty or invalid chat response")
+            raise ValueError("OpenAI returned an empty or invalid response")
         prompt_size = len(SYSTEM_INSTRUCTION) + len(user_prompt)
         return ProviderResponse(
             text=text,
@@ -179,32 +186,34 @@ class OllamaProvider(LLMProvider):
         )
 
     async def health_check(self) -> bool:
+        if not self._api_key:
+            return False
         try:
-            response = await self._get("/api/tags", timeout=min(5.0, self.timeout_seconds))
+            from urllib.parse import quote
+            response = await self._request(
+                "GET", f"/v1/models/{quote(self.model, safe='')}",
+                timeout=min(5.0, self.timeout_seconds),
+            )
             response.raise_for_status()
             body = response.json()
-            names = {
-                str(model.get("name") or model.get("model"))
-                for model in body.get("models", [])
-                if isinstance(model, dict)
-            }
-            return self.model in names
+            return isinstance(body, dict) and body.get("id") == self.model
         except (httpx.HTTPError, ValueError, TypeError):
             return False
 
-    async def _post(self, path: str, payload: dict[str, Any]) -> httpx.Response:
+    async def _request(
+        self, method: str, path: str, *, payload: dict[str, Any] | None = None,
+        timeout: float | None = None,
+    ) -> httpx.Response:
+        options = {
+            "headers": {"Authorization": f"Bearer {self._api_key}"},
+            "timeout": timeout if timeout is not None else self.timeout_seconds,
+        }
+        if payload is not None:
+            options["json"] = payload
         if self._client is not None:
-            return await self._client.post(path, json=payload, timeout=self.timeout_seconds)
-        async with httpx.AsyncClient(
-            base_url=self.base_url, timeout=self.timeout_seconds
-        ) as client:
-            return await client.post(path, json=payload)
-
-    async def _get(self, path: str, timeout: float) -> httpx.Response:
-        if self._client is not None:
-            return await self._client.get(path, timeout=timeout)
-        async with httpx.AsyncClient(base_url=self.base_url, timeout=timeout) as client:
-            return await client.get(path)
+            return await self._client.request(method, path, **options)
+        async with httpx.AsyncClient(base_url="https://api.openai.com") as client:
+            return await client.request(method, path, **options)
 
     @classmethod
     def _build_prompt(cls, request: GenerationRequest) -> str:

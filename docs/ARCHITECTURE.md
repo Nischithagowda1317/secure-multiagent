@@ -56,7 +56,7 @@ Temporary attachments are extracted and indexed only for the current request. Au
 
 ### 8. LLM layer
 
-`LLM_PROVIDER=extractive` uses deterministic evidence selection and works offline. `LLM_PROVIDER=ollama` sends only authorized evidence and structured agent summaries to a local Ollama model. If Ollama is unavailable, the service falls back to extractive output.
+`LLM_PROVIDER=extractive` uses deterministic evidence selection and works offline. `LLM_PROVIDER=openai` sends only authorized evidence and structured agent summaries to the OpenAI Responses API, using the backend `OPENAI_API_KEY`. API failures use extractive output. See [OpenAI setup](OPENAI.md).
 
 ### 9. Validation, HITL and audit
 

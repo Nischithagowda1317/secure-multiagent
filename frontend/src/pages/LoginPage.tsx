@@ -5,6 +5,7 @@ import { ErrorBox, Loading } from "../components/UI";
 
 export default function LoginPage({ onLogin }: { onLogin: (token: string, user: UserProfile) => void }) {
   const [accounts, setAccounts] = useState<DemoAccount[]>([]);
+  const [accountsLoading, setAccountsLoading] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("Demo@123!");
   const [loading, setLoading] = useState(false);
@@ -15,7 +16,7 @@ export default function LoginPage({ onLogin }: { onLogin: (token: string, user: 
       setAccounts(items);
       const preferred = items.find((item) => item.roles.includes("Admin")) ?? items[0];
       if (preferred) setEmail(preferred.email);
-    }).catch((err: Error) => setError(err.message));
+    }).catch((err: Error) => setError(err.message)).finally(() => setAccountsLoading(false));
   }, []);
 
   async function submit(event: React.FormEvent) {
@@ -61,7 +62,9 @@ export default function LoginPage({ onLogin }: { onLogin: (token: string, user: 
           </form>
           <div className="account-picker">
             <span>Quick role selection</span>
-            {!accounts.length && !error ? <Loading label="Loading accounts" /> : (
+            {accountsLoading ? <Loading label="Loading accounts" /> : !accounts.length ? (
+              <p role="status">No sign-in accounts are available yet. Ask your administrator to finish setting up this workspace.</p>
+            ) : (
               <div className="account-list">
                 {accounts.map((account) => (
                   <button key={account.user_id} type="button" className={email === account.email ? "selected" : ""} onClick={() => { setEmail(account.email); setPassword(account.temporary_password); }}>

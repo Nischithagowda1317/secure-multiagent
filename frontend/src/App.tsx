@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { me } from "./api";
+import { backendConfigured, me } from "./api";
 import Sidebar from "./components/Sidebar";
 import { Loading } from "./components/UI";
 import ApprovalsPage from "./pages/ApprovalsPage";
@@ -21,10 +21,12 @@ export default function App() {
   const [checking, setChecking] = useState(true);
 
   useEffect(() => {
+    if (!backendConfigured) { setChecking(false); return; }
     if (!localStorage.getItem("enterprise_token")) { setChecking(false); return; }
     me().then(setUser).catch(() => localStorage.removeItem("enterprise_token")).finally(() => setChecking(false));
   }, []);
 
+  if (!backendConfigured) return <main className="center-screen"><section className="login-card"><h1>Assistant service is not connected yet</h1><p>The dashboard has been published. Sign-in, document analysis, and AI responses will be available once the assistant service is connected.</p></section></main>;
   if (checking) return <div className="center-screen"><Loading label="Restoring secure session" /></div>;
   if (!user) return <LoginPage onLogin={(token, profile) => { localStorage.setItem("enterprise_token", token); setUser(profile); }} />;
 
