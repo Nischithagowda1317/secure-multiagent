@@ -11,6 +11,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 load_dotenv(PROJECT_ROOT / ".env")
 
 
+def _env_or_default(name: str, default: str) -> str:
+    """Treat empty optional values from deployment settings as unset."""
+    return os.getenv(name, "").strip() or default
+
+
 @dataclass(frozen=True)
 class Settings:
     project_name: str = "Secure Multi-Agent Enterprise Assistant"
@@ -28,7 +33,7 @@ class Settings:
     )
     jwt_secret: str = os.getenv("JWT_SECRET", "academic-demo-change-me-use-a-long-random-secret-2026")
     jwt_algorithm: str = "HS256"
-    jwt_exp_minutes: int = int(os.getenv("JWT_EXP_MINUTES", "480"))
+    jwt_exp_minutes: int = int(_env_or_default("JWT_EXP_MINUTES", "480"))
     llm_provider: str = os.getenv("LLM_PROVIDER", "openai").lower()
     llm_fallback_provider: str = os.getenv(
         "LLM_FALLBACK_PROVIDER", "extractive"
@@ -36,7 +41,7 @@ class Settings:
     openai_api_key: str = field(default=os.getenv("OPENAI_API_KEY", ""), repr=False)
     openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
     openai_timeout_seconds: float = float(
-        os.getenv("OPENAI_TIMEOUT_SECONDS", "120")
+        _env_or_default("OPENAI_TIMEOUT_SECONDS", "120")
     )
     data_backend: str = os.getenv("DATA_BACKEND", "csv").lower()
     database_url: str = os.getenv(
@@ -52,9 +57,9 @@ class Settings:
     chroma_collection: str = os.getenv(
         "CHROMA_COLLECTION", "enterprise_knowledge"
     )
-    max_upload_mb: int = int(os.getenv("MAX_UPLOAD_MB", "10"))
+    max_upload_mb: int = int(_env_or_default("MAX_UPLOAD_MB", "10"))
     router_confidence_threshold: float = float(
-        os.getenv("ROUTER_CONFIDENCE_THRESHOLD", "0.60")
+        _env_or_default("ROUTER_CONFIDENCE_THRESHOLD", "0.60")
     )
     snapshot_date: str = os.getenv("DATASET_SNAPSHOT_DATE", "2026-08-28")
     cors_origins: tuple[str, ...] = tuple(
