@@ -1,19 +1,31 @@
 from __future__ import annotations
 
 import os
+import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from dotenv import load_dotenv
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-load_dotenv(PROJECT_ROOT / ".env")
+BACKEND_ROOT = Path(__file__).resolve().parents[1]
+# Locally this file is backend/app/settings.py; a Vercel service is flattened
+# to /var/task/app/settings.py, with its bundled assets in /var/task.
+PROJECT_ROOT = BACKEND_ROOT.parent if BACKEND_ROOT.name == "backend" else BACKEND_ROOT
+IS_VERCEL = os.getenv("VERCEL") == "1"
+if not IS_VERCEL:
+    load_dotenv(PROJECT_ROOT / ".env")
 
 
 def _env_or_default(name: str, default: str) -> str:
     """Treat empty optional values from deployment settings as unset."""
     return os.getenv(name, "").strip() or default
+
+
+RUNTIME_ROOT = Path(_env_or_default(
+    "RUNTIME_ROOT",
+    str(Path(tempfile.gettempdir()) / "enterprise-assistant" if IS_VERCEL else PROJECT_ROOT / "runtime"),
+))
 
 
 @dataclass(frozen=True)
@@ -27,7 +39,7 @@ class Settings:
         )
     )
     models_root: Path = Path(os.getenv("MODELS_ROOT", str(PROJECT_ROOT / "models")))
-    runtime_root: Path = Path(os.getenv("RUNTIME_ROOT", str(PROJECT_ROOT / "runtime")))
+    runtime_root: Path = RUNTIME_ROOT
     frontend_dist: Path = Path(
         os.getenv("FRONTEND_DIST", str(PROJECT_ROOT / "frontend" / "dist"))
     )
@@ -52,7 +64,7 @@ class Settings:
     runtime_backend: str = os.getenv("RUNTIME_BACKEND", "auto").lower()
     rag_backend: str = os.getenv("RAG_BACKEND", "tfidf").lower()
     chroma_path: Path = Path(
-        os.getenv("CHROMA_PATH", str(PROJECT_ROOT / "runtime" / "chroma"))
+        _env_or_default("CHROMA_PATH", str(RUNTIME_ROOT / "chroma"))
     )
     chroma_collection: str = os.getenv(
         "CHROMA_COLLECTION", "enterprise_knowledge"
@@ -83,15 +95,17 @@ class Settings:
         return self.runtime_backend
 
     def ensure_directories(self) -> None:
+        # Models are read-only deployment assets. Training scripts create their
+        # own output directories; importing the API must not write there.
         for path in (
-            self.models_root,
             self.runtime_root,
             self.runtime_root / "uploads",
             self.runtime_root / "logs",
             self.runtime_root / "checkpoints",
-            self.chroma_path,
         ):
             path.mkdir(parents=True, exist_ok=True)
+        if self.rag_backend == "chroma":
+            self.chroma_path.mkdir(parents=True, exist_ok=True)
 
 
 settings = Settings()

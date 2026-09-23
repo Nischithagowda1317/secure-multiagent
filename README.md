@@ -207,6 +207,7 @@ See [OpenAI setup](docs/OPENAI.md) and [Supabase setup](docs/SUPABASE.md) for cr
 
 ## Detailed guides
 
+- `docs/VERCEL.md` — Vercel deployment, environment variables and runtime storage
 - `docs/WINDOWS_STEP_BY_STEP.md` — complete beginner-friendly execution sequence
 - `docs/TRAINING_AND_MODEL_STORAGE.md` — how every model is trained and saved
 - `docs/ARCHITECTURE.md` — components and request lifecycle

@@ -9,6 +9,7 @@
     "backend": {
       "root": "backend",
       "framework": "fastapi",
+      "buildCommand": "python scripts/prepare_vercel.py",
       "entrypoint": "app.main:app"
     }
   },

@@ -13,3 +13,5 @@ runtime/checkpoints/*
 .DS_Store
 Thumbs.db
 /pages-site/
+/backend/models/
+/backend/datasets/
