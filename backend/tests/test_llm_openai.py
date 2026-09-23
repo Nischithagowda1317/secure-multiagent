@@ -91,10 +91,16 @@ def test_openai_provider_success_uses_authorized_payload_only():
     assert metrics["last_call"]["prompt_token_approx"] > 0
 
 
-@pytest.mark.parametrize("status", [401, 429, 500])
-def test_api_errors_fall_back_without_exposing_response_details(status, caplog):
+@pytest.mark.parametrize("status,code", [
+    (401, "invalid_api_key"), (429, "insufficient_quota"),
+    (429, "rate_limit_exceeded"), (404, "model_not_found"), (500, "server_error"),
+])
+def test_api_errors_fall_back_without_exposing_response_details(status, code, caplog):
     async def handler(request):
-        return httpx.Response(status, json={"error": {"message": "private-error-detail"}}, request=request)
+        return httpx.Response(status, json={"error": {
+            "message": "private-error-detail test-api-key", "code": code,
+            "type": "api_error",
+        }}, request=request)
 
     async def scenario():
         async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
@@ -105,6 +111,19 @@ def test_api_errors_fall_back_without_exposing_response_details(status, caplog):
     assert asyncio.run(scenario()) == "Fallback answer"
     assert "private-error-detail" not in caplog.text
     assert "test-api-key" not in caplog.text
+    assert f"HTTP {status} code={code} type=api_error" in caplog.text
+
+
+@pytest.mark.parametrize("body", [
+    b"<html>private-error-detail</html>",
+    b'[]', b'{"error":null}',
+    b'{"error":{"code":"sk-private-secret","type":"private\\nlog injection"}}',
+])
+def test_http_error_summary_handles_unexpected_or_sensitive_bodies(body):
+    request = httpx.Request("POST", "https://openai.test/v1/responses")
+    response = httpx.Response(502, content=body, request=request)
+    error = httpx.HTTPStatusError("private-error-detail", request=request, response=response)
+    assert LLMService._error_status(error) == "HTTPStatusError: HTTP 502"
 
 
 def test_missing_key_uses_fallback_without_network():

@@ -32,3 +32,30 @@ incomplete answers and rejected numeric claims use the extractive fallback.
 For fully offline answers set `LLM_PROVIDER=extractive`.
 
 Tests use mock API responses and do not make live OpenAI requests.
+
+## Troubleshooting fallback warnings
+
+`LLM provider failed; using fallback provider` means the workflow continued
+with an extractive answer after generation failed. For HTTP failures, logs now
+include the status and the API's `error.code` and `error.type` when available,
+without logging the response message, request body, or authorization header:
+
+```text
+HTTPStatusError: HTTP 429 code=insufficient_quota type=insufficient_quota
+```
+
+Check the actual code before changing configuration:
+
+- `401`: verify the active API key and project access.
+- `429`: distinguish rate limiting from exhausted credits or spending limits.
+  Billing and quota failures require fixing the applicable credits or limits;
+  retrying alone will not resolve them.
+- `400` or `404`: check request parameters and access to the configured model.
+- `500` or `503`: the provider may be temporarily unavailable; retry later.
+
+On Vercel, configure `OPENAI_API_KEY`, `LLM_PROVIDER=openai` and
+`OPENAI_MODEL=gpt-4.1-mini` in the deployment's environment variables and
+redeploy. Updating your computer's `.env` does not update Vercel. For local
+changes, restart the backend.
+
+See [OpenAI error codes](https://developers.openai.com/api/docs/guides/error-codes).

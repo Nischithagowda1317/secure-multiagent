@@ -8,6 +8,8 @@ from dataclasses import asdict, dataclass
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
+import httpx
+
 from app.services.llm_providers import (
     ExtractiveProvider,
     GenerationRequest,
@@ -494,6 +496,21 @@ class LLMService:
     def _error_status(exc: Exception) -> str:
         if isinstance(exc, UngroundedResponseError):
             return str(exc)
+        if isinstance(exc, httpx.HTTPStatusError):
+            # API error messages may echo credentials or supplied input. Keep
+            # only the HTTP status and machine-readable classification fields.
+            details = [f"HTTPStatusError: HTTP {exc.response.status_code}"]
+            try:
+                body = exc.response.json()
+            except ValueError:
+                body = None
+            error = body.get("error") if isinstance(body, dict) else None
+            if isinstance(error, dict):
+                for field in ("code", "type"):
+                    value = error.get(field)
+                    if isinstance(value, str) and re.fullmatch(r"[a-z][a-z0-9_]{0,79}", value):
+                        details.append(f"{field}={value}")
+            return " ".join(details)
         name = type(exc).__name__
         message = str(exc).strip()
         return f"{name}: {message[:160]}" if message else name
