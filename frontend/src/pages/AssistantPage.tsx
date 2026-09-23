@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { sendChat } from "../api";
 import JsonData from "../components/JsonData";
 import Trace from "../components/Trace";
+import EvidenceSources from "../components/EvidenceSources";
 import { Badge, ErrorBox, Panel, Progress } from "../components/UI";
 import type { ChatResponse } from "../types";
 
@@ -225,7 +226,7 @@ export default function AssistantPage() {
           <div className="two-column assistant-secondary-results">
             <Panel className="result-panel trace-panel" title="Agent execution trace" subtitle="Visible multi-agent workflow"><Trace agents={response.agents} /></Panel>
             <Panel className="result-panel evidence-panel" title="Evidence sources" subtitle={`${response.sources.length} authorized sources`}>
-              <div className="source-list">{response.sources.map((source, index) => <div key={`${source.source_id}-${index}`}><strong>{source.title}</strong><span>{source.source_type}{source.section ? ` · ${source.section}` : ""}</span>{source.score !== undefined && <small>Similarity {source.score.toFixed(3)}</small>}</div>)}</div>
+              <EvidenceSources sources={response.sources} />
             </Panel>
           </div>
 

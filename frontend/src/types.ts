@@ -22,9 +22,9 @@ export interface SourceReference {
   source_id: string;
   title: string;
   source_type: string;
-  section?: string;
-  path?: string;
-  score?: number;
+  section?: string | null;
+  path?: string | null;
+  score?: number | null;
 }
 
 export interface AgentTrace {
