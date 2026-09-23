@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import difflib
 import re
+from datetime import date, datetime
 from functools import cached_property
 from pathlib import Path
 from typing import Any
@@ -106,11 +107,24 @@ class DataRepository:
                 assert self._engine is not None
                 table_name = Path(relative).stem
                 try:
-                    self._cache[name] = pd.read_sql_table(
-                        table_name,
+                    from sqlalchemy import text
+
+                    # Both identifiers come from validated configuration and
+                    # our fixed TABLES map, never from a user's query. Avoid
+                    # read_sql_table's many schema-reflection round trips.
+                    frame = pd.read_sql_query(
+                        text(f'SELECT * FROM "{self.settings.database_schema}"."{table_name}"'),
                         con=self._engine,
-                        schema=self.settings.database_schema,
                     )
+                    # Preserve read_sql_table's date normalization without
+                    # querying PostgreSQL's system catalogs for type metadata.
+                    for column in frame.columns:
+                        if not pd.api.types.is_object_dtype(frame[column].dtype):
+                            continue
+                        values = frame[column].dropna()
+                        if not values.empty and isinstance(values.iloc[0], (date, datetime)):
+                            frame[column] = pd.to_datetime(frame[column])
+                    self._cache[name] = frame
                 except Exception as exc:
                     raise RuntimeError(
                         f"Could not read PostgreSQL table "

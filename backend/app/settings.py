@@ -73,7 +73,7 @@ class Settings:
     router_confidence_threshold: float = float(
         _env_or_default("ROUTER_CONFIDENCE_THRESHOLD", "0.60")
     )
-    snapshot_date: str = os.getenv("DATASET_SNAPSHOT_DATE", "2026-08-28")
+    snapshot_date: str = _env_or_default("DATASET_SNAPSHOT_DATE", "2026-08-28")
     cors_origins: tuple[str, ...] = tuple(
         origin.strip()
         for origin in os.getenv(

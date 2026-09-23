@@ -3,11 +3,12 @@ from dataclasses import replace
 from unittest.mock import patch
 
 import pytest
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, event, text
 
 from app.services.postgres import create_postgres_engine, validate_schema
 from app.services.postgres_runtime_store import PostgresRuntimeStore, _Connection
 from app.services.runtime_store import RuntimeStore
+from app.services.repository import DataRepository
 from app.settings import settings
 
 
@@ -35,6 +36,46 @@ def test_supabase_rejects_plaintext_and_placeholder_connections():
 def test_runtime_follows_data_backend(backend, expected):
     config = replace(settings, data_backend=backend, runtime_backend="auto")
     assert config.resolved_runtime_backend == expected
+
+
+def test_enterprise_table_read_uses_one_query_and_caches_rows():
+    engine = create_engine("sqlite://")
+    try:
+        with engine.begin() as conn:
+            conn.execute(text("CREATE TABLE users (user_id TEXT, email TEXT)"))
+            conn.execute(text("INSERT INTO users VALUES ('U001', 'demo@example.test')"))
+        statements = []
+        event.listen(engine, "before_cursor_execute", lambda conn, cursor, statement, *args: statements.append(statement))
+        config = replace(settings, data_backend="supabase", database_schema="main")
+        with patch("app.services.postgres.create_postgres_engine", return_value=engine):
+            repository = DataRepository(config)
+        users = repository.table("users")
+        assert users.to_dict("records") == [{"user_id": "U001", "email": "demo@example.test"}]
+        assert repository.table("users") is users
+        assert len(statements) == 1  # No schema reflection or repeat reads.
+        with pytest.raises(KeyError):
+            repository.table('users"; DROP TABLE users; --')
+        assert len(statements) == 1
+    finally:
+        engine.dispose()
+
+
+def test_direct_table_read_preserves_date_serialization():
+    from datetime import date
+    import json
+    import pandas as pd
+    from app.utils.json_tools import json_safe
+
+    config = replace(settings, data_backend="supabase", database_schema="enterprise_ai")
+    with patch("app.services.postgres.create_postgres_engine"):
+        repository = DataRepository(config)
+    frame = pd.DataFrame({"start_date": [date(2026, 1, 2), None], "full_name": ["Demo", "Other"]})
+    with patch("app.services.repository.pd.read_sql_query", return_value=frame):
+        employees = repository.table("employees")
+    rows = json.loads(json.dumps(json_safe(employees.to_dict("records"))))
+    assert rows[0]["start_date"] == "2026-01-02T00:00:00"
+    assert rows[1]["start_date"] is None
+    assert rows[0]["full_name"] == "Demo"
 
 
 class AdapterStore(PostgresRuntimeStore):

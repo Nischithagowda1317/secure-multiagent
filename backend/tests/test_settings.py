@@ -105,3 +105,8 @@ def test_local_paths_and_chroma_follow_runtime_override(monkeypatch, isolated_se
     assert config.runtime_root == tmp_path / "runtime_root"
     assert config.chroma_path == config.runtime_root / "chroma"
     assert config.chroma_path.is_dir()
+
+
+def test_blank_snapshot_date_uses_dataset_default(monkeypatch, isolated_settings):
+    monkeypatch.setenv("DATASET_SNAPSHOT_DATE", " ")
+    assert isolated_settings().snapshot_date == "2026-08-28"

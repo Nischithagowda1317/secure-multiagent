@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { sendChat } from "../api";
 import JsonData from "../components/JsonData";
 import Trace from "../components/Trace";
@@ -53,8 +53,21 @@ export default function AssistantPage() {
   const [response, setResponse] = useState<ChatResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
+  const resultRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!loading) return;
+    const started = Date.now();
+    const timer = window.setInterval(() => setElapsedSeconds(Math.floor((Date.now() - started) / 1000)), 1000);
+    return () => window.clearInterval(timer);
+  }, [loading]);
+
+  useEffect(() => {
+    if (response || error) resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [response, error]);
 
   async function submit(event: React.FormEvent) {
     event.preventDefault();
@@ -62,7 +75,7 @@ export default function AssistantPage() {
       setError("Enter a message or attach a file.");
       return;
     }
-    setLoading(true); setError(""); setResponse(null);
+    setElapsedSeconds(0); setLoading(true); setError(""); setResponse(null);
     try { setResponse(await sendChat(message, files)); }
     catch (err) { setError(err instanceof Error ? err.message : "The workflow failed"); }
     finally { setLoading(false); }
@@ -154,6 +167,7 @@ export default function AssistantPage() {
         </div>
       </Panel>
 
+      <div ref={resultRef} />
       {error && <ErrorBox message={error} />}
 
       {!response && !loading && !error && (
@@ -180,7 +194,7 @@ export default function AssistantPage() {
       {loading && (
         <div className="assistant-running" role="status" aria-live="polite">
           <span className="assistant-running-orbit"><i /></span>
-          <div><strong>Coordinating secure agents</strong><span>Authorizing the request, retrieving evidence, and validating the response…</span></div>
+          <div><strong>Coordinating secure agents · {elapsedSeconds}s</strong><span>{elapsedSeconds >= 15 ? "Your request is still processing. Keep this page open; the answer will appear below." : "Authorizing the request, retrieving evidence, and validating the response…"}</span></div>
         </div>
       )}
 
