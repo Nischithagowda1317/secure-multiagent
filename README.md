@@ -11,7 +11,7 @@ A complete academic implementation of a secure enterprise assistant that combine
 - explainable outputs, confidence, evidence and agent traces;
 - model training, evaluation, checkpointing and artifact storage;
 - a FastAPI backend and a browser dashboard;
-- OpenAI API generation with an extractive fallback;
+- OpenAI API generation with clear errors and an optional extractive fallback;
 - optional PostgreSQL and ChromaDB backends.
 
 The package is self-contained: it includes the curated datasets, generated enterprise documents, trained model artifacts, training scripts, tests, a prebuilt dashboard and full step-by-step documentation.
@@ -201,6 +201,7 @@ RAG_BACKEND=tfidf
 LLM_PROVIDER=openai
 OPENAI_MODEL=gpt-4.1-mini
 OPENAI_API_KEY=your-openai-api-key
+LLM_FALLBACK_PROVIDER=none
 ```
 
 See [OpenAI setup](docs/OPENAI.md) and [Supabase setup](docs/SUPABASE.md) for credentials and startup steps.

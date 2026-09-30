@@ -14,7 +14,6 @@ from app.services.llm_providers import (
     ExtractiveProvider,
     GenerationRequest,
     LLMProvider,
-    NvidiaProvider,
     OpenAIProvider,
 )
 from app.settings import Settings
@@ -232,7 +231,8 @@ class LLMService:
         fallback_provider: LLMProvider | None = None,
     ) -> None:
         self.settings = settings
-        if settings.llm_fallback_provider != "extractive" and fallback_provider is None:
+        self.fallback_enabled = settings.llm_fallback_provider != "none"
+        if settings.llm_fallback_provider not in {"extractive", "none"} and fallback_provider is None:
             logger.warning(
                 "Unsupported fallback provider '%s'; using extractive.",
                 settings.llm_fallback_provider,
@@ -248,12 +248,6 @@ class LLMService:
         self._normalized_numeric_match_count = 0
 
     def _build_provider(self, provider_name: str) -> LLMProvider:
-        if provider_name == "nvidia":
-            return NvidiaProvider(
-                api_key=self.settings.nvidia_api_key,
-                model=self.settings.nvidia_model,
-                timeout_seconds=self.settings.nvidia_timeout_seconds,
-            )
         if provider_name == "openai":
             return OpenAIProvider(
                 api_key=self.settings.openai_api_key,
@@ -268,7 +262,7 @@ class LLMService:
 
     @property
     def generative_enabled(self) -> bool:
-        return self.provider.name in {"openai", "nvidia"}
+        return self.provider.name == "openai"
 
     @property
     def last_call(self) -> LLMCallMetrics | None:
@@ -313,18 +307,21 @@ class LLMService:
                 normalized_numeric_match_count = guard.normalized_match_count
                 if guard.error_status:
                     raise UngroundedResponseError(guard.error_status)
-        except Exception as exc:  # provider failures must not break the workflow
-            fallback_used = self.provider.name != self.fallback_provider.name
+        except Exception as exc:
+            fallback_used = self.fallback_enabled and self.provider.name != self.fallback_provider.name
             error_status = self._error_status(exc)
             logger.warning(
-                "LLM provider failed; using fallback provider "
-                "(provider=%s model=%s error=%s).",
+                "LLM provider failed (provider=%s model=%s error=%s fallback_enabled=%s).",
                 self.provider.name,
                 self.provider.model,
                 error_status,
+                self.fallback_enabled,
             )
-            response = await self.fallback_provider.generate(request)
-            answer = sanitize_llm_response(response.text)
+            if self.fallback_enabled:
+                response = await self.fallback_provider.generate(request)
+                answer = sanitize_llm_response(response.text)
+            else:
+                answer = ""
 
         latency_ms = int((time.perf_counter() - started) * 1000)
         self._call_count += 1
@@ -362,6 +359,11 @@ class LLMService:
             numeric_grounding_status,
             normalized_numeric_match_count,
         )
+        if error_status and not self.fallback_enabled:
+            raise LLMUnavailableError(
+                "OpenAI could not produce a validated answer. Check the OpenAI API key, "
+                "model access, and quota, then try again. No offline answer was substituted."
+            ) from None
         return answer
 
     async def health_check(self) -> dict[str, Any]:
@@ -370,14 +372,14 @@ class LLMService:
             "llm_provider": self.provider.name,
             "llm_available": available,
             "llm_model": self.provider.model,
-            "fallback_provider": self.fallback_provider.name,
+            "fallback_provider": self.fallback_provider.name if self.fallback_enabled else "none",
         }
 
     def metrics(self) -> dict[str, Any]:
         return {
             "provider": self.provider.name,
             "model": self.provider.model,
-            "fallback_provider": self.fallback_provider.name,
+            "fallback_provider": self.fallback_provider.name if self.fallback_enabled else "none",
             "call_count": self._call_count,
             "fallback_count": self._fallback_count,
             "error_count": self._error_count,
@@ -525,3 +527,7 @@ class LLMService:
 
 class UngroundedResponseError(ValueError):
     pass
+
+
+class LLMUnavailableError(RuntimeError):
+    """Public, credential-free error when generation fails and fallback is disabled."""

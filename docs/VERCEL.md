@@ -17,25 +17,16 @@ RUNTIME_BACKEND=postgres
 JWT_SECRET=<your generated secret>
 RAG_BACKEND=tfidf
 LLM_PROVIDER=openai
-OPENAI_API_KEY=<your API key>
+OPENAI_API_KEY=<your OpenAI API key>
+OPENAI_MODEL=gpt-4.1-mini
+OPENAI_TIMEOUT_SECONDS=120
+LLM_FALLBACK_PROVIDER=none
 ```
 
-Use `LLM_PROVIDER=extractive` to run without an external language model.
-For an NVIDIA key (starting with `nvapi-`), use these settings instead of the
-OpenAI settings above:
-
-```dotenv
-LLM_PROVIDER=nvidia
-NVIDIA_API_KEY=<your NVIDIA API key>
-NVIDIA_MODEL=meta/llama-3.3-70b-instruct
-NVIDIA_TIMEOUT_SECONDS=120
-LLM_FALLBACK_PROVIDER=extractive
-```
-
-An NVIDIA key in `OPENAI_API_KEY` does not authenticate with OpenAI. NVIDIA uses
-its own [chat completions endpoint](https://docs.api.nvidia.com/nim/reference/meta-llama-3_3-70b-instruct-infer).
-The app can still return an offline extractive answer when the provider fails,
-so seeing a local answer does not confirm that the API key worked.
+Generated answers use the OpenAI Responses API. Keep `LLM_FALLBACK_PROVIDER=none`
+to show a clear error if generation fails instead of returning an offline answer.
+Set the key on the backend only, following the [OpenAI quickstart](https://developers.openai.com/api/docs/quickstart).
+No local language model is needed. Remove any old `NVIDIA_*` deployment variables.
 
 The local `.env` is not loaded on Vercel. Supabase must already have the migration
 and imported data described in [SUPABASE.md](SUPABASE.md).
@@ -63,7 +54,7 @@ an older commit will reproduce the bug. The frontend service runs its regression
 tests and builds fresh Vite assets. If manually redeploying, disable the existing
 build cache, then confirm that the successful deployment is assigned to the
 production domain. Reload with Ctrl+Shift+R and sign in again if `/api/auth/me`
-returns 401. That 401 is an application session failure, not an NVIDIA API error.
+returns 401. That 401 is an application session failure, not an OpenAI API error.
 
 After deployment, `/api/health` should report the intended `llm_provider` and
 `llm_model`. Its availability probe checks the model catalog; submit an assistant

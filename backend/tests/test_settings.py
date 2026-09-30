@@ -9,7 +9,6 @@ SETTINGS_FILE = Path(__file__).resolve().parents[1] / "app" / "settings.py"
 NUMERIC_SETTINGS = {
     "JWT_EXP_MINUTES": ("jwt_exp_minutes", 480, "60", 60),
     "OPENAI_TIMEOUT_SECONDS": ("openai_timeout_seconds", 120.0, "30.5", 30.5),
-    "NVIDIA_TIMEOUT_SECONDS": ("nvidia_timeout_seconds", 120.0, "30.5", 30.5),
     "MAX_UPLOAD_MB": ("max_upload_mb", 10, "5", 5),
     "ROUTER_CONFIDENCE_THRESHOLD": ("router_confidence_threshold", 0.6, "0", 0.0),
 }
@@ -111,3 +110,11 @@ def test_local_paths_and_chroma_follow_runtime_override(monkeypatch, isolated_se
 def test_blank_snapshot_date_uses_dataset_default(monkeypatch, isolated_settings):
     monkeypatch.setenv("DATASET_SNAPSHOT_DATE", " ")
     assert isolated_settings().snapshot_date == "2026-08-28"
+
+
+def test_default_configuration_uses_openai_without_offline_fallback(monkeypatch, isolated_settings):
+    monkeypatch.delenv("LLM_PROVIDER", raising=False)
+    monkeypatch.delenv("LLM_FALLBACK_PROVIDER", raising=False)
+    config = isolated_settings()
+    assert config.llm_provider == "openai"
+    assert config.llm_fallback_provider == "none"

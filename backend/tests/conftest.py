@@ -13,6 +13,7 @@ os.environ.setdefault(
     "JWT_SECRET", "pytest-secret-key-that-is-safely-longer-than-thirty-two-bytes"
 )
 os.environ["LLM_PROVIDER"] = "extractive"
+os.environ["LLM_FALLBACK_PROVIDER"] = "extractive"
 os.environ["OPENAI_API_KEY"] = ""
 TEST_RUNTIME_ROOT = PROJECT_ROOT / "runtime" / "pytest"
 os.environ["RUNTIME_ROOT"] = str(TEST_RUNTIME_ROOT)

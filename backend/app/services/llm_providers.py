@@ -139,7 +139,6 @@ class ExtractiveProvider(LLMProvider):
 
 class OpenAIProvider(LLMProvider):
     name = "openai"
-    base_url = "https://api.openai.com"
 
     def __init__(
         self,
@@ -213,7 +212,7 @@ class OpenAIProvider(LLMProvider):
             options["json"] = payload
         if self._client is not None:
             return await self._client.request(method, path, **options)
-        async with httpx.AsyncClient(base_url=self.base_url) as client:
+        async with httpx.AsyncClient(base_url="https://api.openai.com") as client:
             return await client.request(method, path, **options)
 
     @classmethod
@@ -263,55 +262,3 @@ class OpenAIProvider(LLMProvider):
             "source_type",
         )
         return {key: json_safe(item.get(key)) for key in allowed_keys if item.get(key) is not None}
-
-
-class NvidiaProvider(OpenAIProvider):
-    """NVIDIA-hosted chat completions, sharing the authorized prompt builder."""
-
-    name = "nvidia"
-    base_url = "https://integrate.api.nvidia.com"
-
-    async def generate(self, request: GenerationRequest) -> ProviderResponse:
-        if not self._api_key:
-            raise ValueError("NVIDIA_API_KEY is not configured")
-        user_prompt = self._build_prompt(request)
-        response = await self._request("POST", "/v1/chat/completions", payload={
-            "model": self.model,
-            "messages": [
-                {"role": "system", "content": SYSTEM_INSTRUCTION},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": 0.2,
-            "max_tokens": 2048,
-            "stream": False,
-        })
-        response.raise_for_status()
-        body = response.json()
-        choices = body.get("choices") if isinstance(body, dict) else None
-        choice = choices[0] if isinstance(choices, list) and choices else None
-        if not isinstance(choice, dict) or choice.get("finish_reason") != "stop":
-            raise ValueError("NVIDIA response did not complete")
-        message = choice.get("message")
-        text = message.get("content") if isinstance(message, dict) else None
-        if not isinstance(text, str) or not text.strip():
-            raise ValueError("NVIDIA returned an empty or invalid response")
-        return ProviderResponse(
-            text=text.strip(),
-            provider=self.name,
-            model=self.model,
-            prompt_token_approx=max(1, round((len(SYSTEM_INSTRUCTION) + len(user_prompt)) / 4)),
-        )
-
-    async def health_check(self) -> bool:
-        if not self._api_key:
-            return False
-        try:
-            response = await self._request("GET", "/v1/models", timeout=min(5.0, self.timeout_seconds))
-            response.raise_for_status()
-            body = response.json()
-            models = body.get("data") if isinstance(body, dict) else None
-            return isinstance(models, list) and any(
-                isinstance(model, dict) and model.get("id") == self.model for model in models
-            )
-        except (httpx.HTTPError, ValueError, TypeError):
-            return False

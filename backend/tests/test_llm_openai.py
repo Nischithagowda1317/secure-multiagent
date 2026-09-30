@@ -13,7 +13,7 @@ from app.services.llm_providers import (
     OpenAIProvider,
     ProviderResponse,
 )
-from app.services.llm_service import LLMService
+from app.services.llm_service import LLMService, LLMUnavailableError
 from app.settings import Settings
 from conftest import login_headers
 
@@ -34,6 +34,63 @@ def _settings() -> Settings:
         openai_model="gpt-4.1-mini",
         openai_timeout_seconds=0.1,
     )
+
+
+@pytest.mark.parametrize("status", [401, 429, 500])
+def test_openai_only_mode_reports_failure_without_offline_answer(status):
+    async def scenario():
+        async with httpx.AsyncClient(
+            transport=httpx.MockTransport(lambda request: httpx.Response(
+                status, json={"error": {"message": "private-key-and-detail"}},
+            )), base_url="https://openai.test",
+        ) as client:
+            provider = OpenAIProvider(api_key="test", model="gpt-4.1-mini", timeout_seconds=1, client=client)
+            service = LLMService(Settings(llm_fallback_provider="none"), provider=provider)
+            with pytest.raises(LLMUnavailableError, match="No offline answer") as error:
+                await service.synthesize("Question", [], [], fallback_text="Offline answer")
+            assert "private-key-and-detail" not in str(error.value)
+            assert service.last_call.fallback_used is False
+            assert service.metrics()["error_count"] == 1
+            assert service.metrics()["fallback_provider"] == "none"
+
+    asyncio.run(scenario())
+
+
+def test_openai_only_missing_key_returns_readable_chat_error(client, monkeypatch):
+    llm = client.app.state.services.llm
+    monkeypatch.setattr(llm, "provider", OpenAIProvider(api_key="", model="gpt-4.1-mini", timeout_seconds=1))
+    monkeypatch.setattr(llm, "fallback_enabled", False)
+    response = client.post("/api/chat", headers=login_headers(client, EMPLOYEE), data={
+        "message": "What is the remote-work policy?",
+    })
+    assert response.status_code == 503
+    assert "OpenAI" in response.json()["detail"]
+    assert "No offline answer" in response.json()["detail"]
+
+
+def test_openai_only_success_still_returns_answer_and_nullable_sources(client, monkeypatch):
+    llm = client.app.state.services.llm
+    monkeypatch.setattr(llm, "provider", CapturingOpenAIProvider("Atlas progress is 58%."))
+    monkeypatch.setattr(llm, "fallback_enabled", False)
+    response = client.post("/api/chat", headers=login_headers(client, PROJECT_MANAGER), data={
+        "message": "Analyze Project Atlas status and identify overloaded team members.",
+    })
+    assert response.status_code == 200, response.text
+    assert response.json()["answer"] == "- Atlas progress is 58%."
+    assert any(source["score"] is None for source in response.json()["sources"])
+    assert llm.last_call.fallback_used is False
+
+
+def test_openai_only_rejects_ungrounded_answer_without_offline_substitution():
+    service = LLMService(
+        Settings(llm_fallback_provider="none"),
+        provider=CapturingOpenAIProvider("Atlas progress is 99%."),
+    )
+    with pytest.raises(LLMUnavailableError):
+        asyncio.run(service.synthesize("Atlas progress?", [], [
+            {"title": "Project", "content": {"progress_percent": 58}},
+        ], fallback_text="Offline answer"))
+    assert service.last_call.fallback_used is False
 
 
 def test_openai_provider_success_uses_authorized_payload_only():

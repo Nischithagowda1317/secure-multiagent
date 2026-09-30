@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, Uplo
 
 from app.schemas import ChatResponse
 from app.security.auth import current_user
+from app.services.llm_service import LLMUnavailableError
 
 
 router = APIRouter(prefix="/api", tags=["Enterprise Assistant"])
@@ -41,9 +42,12 @@ async def chat(
         )
     if not message.strip() and not attached_files:
         raise HTTPException(status_code=422, detail="Enter a message or attach a file.")
-    return await services.orchestrator.run(
-        query=message.strip(),
-        user=user,
-        temporary_chunks=temporary_chunks,
-        attached_files=attached_files,
-    )
+    try:
+        return await services.orchestrator.run(
+            query=message.strip(),
+            user=user,
+            temporary_chunks=temporary_chunks,
+            attached_files=attached_files,
+        )
+    except LLMUnavailableError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from None
