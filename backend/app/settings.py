@@ -46,7 +46,7 @@ class Settings:
     jwt_secret: str = os.getenv("JWT_SECRET", "academic-demo-change-me-use-a-long-random-secret-2026")
     jwt_algorithm: str = "HS256"
     jwt_exp_minutes: int = int(_env_or_default("JWT_EXP_MINUTES", "480"))
-    llm_provider: str = os.getenv("LLM_PROVIDER", "openai").lower()
+    llm_provider: str = _env_or_default("LLM_PROVIDER", "openai").lower()
     llm_fallback_provider: str = os.getenv(
         "LLM_FALLBACK_PROVIDER", "extractive"
     ).lower()
@@ -54,6 +54,11 @@ class Settings:
     openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
     openai_timeout_seconds: float = float(
         _env_or_default("OPENAI_TIMEOUT_SECONDS", "120")
+    )
+    nvidia_api_key: str = field(default=os.getenv("NVIDIA_API_KEY", ""), repr=False)
+    nvidia_model: str = _env_or_default("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct")
+    nvidia_timeout_seconds: float = float(
+        _env_or_default("NVIDIA_TIMEOUT_SECONDS", "120")
     )
     data_backend: str = os.getenv("DATA_BACKEND", "csv").lower()
     database_url: str = os.getenv(

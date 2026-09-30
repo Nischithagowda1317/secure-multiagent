@@ -14,6 +14,7 @@ from app.services.llm_providers import (
     ExtractiveProvider,
     GenerationRequest,
     LLMProvider,
+    NvidiaProvider,
     OpenAIProvider,
 )
 from app.settings import Settings
@@ -247,6 +248,12 @@ class LLMService:
         self._normalized_numeric_match_count = 0
 
     def _build_provider(self, provider_name: str) -> LLMProvider:
+        if provider_name == "nvidia":
+            return NvidiaProvider(
+                api_key=self.settings.nvidia_api_key,
+                model=self.settings.nvidia_model,
+                timeout_seconds=self.settings.nvidia_timeout_seconds,
+            )
         if provider_name == "openai":
             return OpenAIProvider(
                 api_key=self.settings.openai_api_key,
@@ -261,7 +268,7 @@ class LLMService:
 
     @property
     def generative_enabled(self) -> bool:
-        return self.provider.name == "openai"
+        return self.provider.name in {"openai", "nvidia"}
 
     @property
     def last_call(self) -> LLMCallMetrics | None:

@@ -21,6 +21,22 @@ OPENAI_API_KEY=<your API key>
 ```
 
 Use `LLM_PROVIDER=extractive` to run without an external language model.
+For an NVIDIA key (starting with `nvapi-`), use these settings instead of the
+OpenAI settings above:
+
+```dotenv
+LLM_PROVIDER=nvidia
+NVIDIA_API_KEY=<your NVIDIA API key>
+NVIDIA_MODEL=meta/llama-3.3-70b-instruct
+NVIDIA_TIMEOUT_SECONDS=120
+LLM_FALLBACK_PROVIDER=extractive
+```
+
+An NVIDIA key in `OPENAI_API_KEY` does not authenticate with OpenAI. NVIDIA uses
+its own [chat completions endpoint](https://docs.api.nvidia.com/nim/reference/meta-llama-3_3-70b-instruct-infer).
+The app can still return an offline extractive answer when the provider fails,
+so seeing a local answer does not confirm that the API key worked.
+
 The local `.env` is not loaded on Vercel. Supabase must already have the migration
 and imported data described in [SUPABASE.md](SUPABASE.md).
 
@@ -33,6 +49,27 @@ Commit and push the changes to the connected Git branch, then deploy that new
 commit. Environment variable changes also require a new deployment. Check
 `/api/auth/demo-accounts`, then sign in using an existing application account.
 There is no need to rerun the database migration for this deployment fix.
+
+## Assistant turns blank after a response
+
+`Cannot read properties of null (reading 'toFixed')` is a frontend rendering
+error. Structured evidence sources can legitimately have `score: null`.
+`EvidenceSources.tsx` handles that by only formatting finite numbers. The old
+production bundle `index-D2PdnPG7.js` checked only for `undefined` and still
+crashes on `null`.
+
+Deploy the latest source commit containing `EvidenceSources.tsx`; redeploying
+an older commit will reproduce the bug. The frontend service runs its regression
+tests and builds fresh Vite assets. If manually redeploying, disable the existing
+build cache, then confirm that the successful deployment is assigned to the
+production domain. Reload with Ctrl+Shift+R and sign in again if `/api/auth/me`
+returns 401. That 401 is an application session failure, not an NVIDIA API error.
+
+After deployment, `/api/health` should report the intended `llm_provider` and
+`llm_model`. Its availability probe checks the model catalog; submit an assistant
+question to confirm generation and inspect the response's LLM validation or
+server logs for fallback usage. Test a Project Atlas question too, since its
+structured sources include null similarity scores.
 
 The error `Read-only file system: '/var/models'` came from assuming the original
 repository layout after Vercel flattened the backend service, and creating model

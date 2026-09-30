@@ -81,7 +81,16 @@ with TestClient(app) as client:
     headers = {"Authorization": "Bearer " + login.json()["access_token"]}
     assert client.get("/api/auth/me", headers=headers).status_code == 200
     assert app.state.services.rag._base is not None
-print("Bundled startup, model loading and login succeeded.")
+    chat = client.post("/api/chat", headers=headers, data={
+        "message": "Analyze Project Atlas status and identify overloaded team members."
+    })
+    assert chat.status_code == 200, chat.text
+    payload = chat.json()
+    assert payload["answer"]
+    assert payload["status"] == "Completed"
+    # Structured agents legitimately return sources without similarity scores.
+    assert any(source["score"] is None for source in payload["sources"])
+print("Bundled startup, model loading, login and chat succeeded.")
 '''
     result = subprocess.run(
         [sys.executable, "-c", script], cwd=bundle, env=env,

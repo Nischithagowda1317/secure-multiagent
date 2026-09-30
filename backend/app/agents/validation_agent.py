@@ -52,6 +52,10 @@ class ValidationAgent:
             warnings.append(
                 "LLM output failed the grounding guard; extractive fallback was used."
             )
+        elif error_status:
+            warnings.append(
+                "The AI provider is unavailable. This answer uses retrieved records instead."
+            )
         if not action_boundary_passed:
             warnings.append(
                 "Generated text claimed completion while human approval was pending."

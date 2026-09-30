@@ -9,6 +9,7 @@ SETTINGS_FILE = Path(__file__).resolve().parents[1] / "app" / "settings.py"
 NUMERIC_SETTINGS = {
     "JWT_EXP_MINUTES": ("jwt_exp_minutes", 480, "60", 60),
     "OPENAI_TIMEOUT_SECONDS": ("openai_timeout_seconds", 120.0, "30.5", 30.5),
+    "NVIDIA_TIMEOUT_SECONDS": ("nvidia_timeout_seconds", 120.0, "30.5", 30.5),
     "MAX_UPLOAD_MB": ("max_upload_mb", 10, "5", 5),
     "ROUTER_CONFIDENCE_THRESHOLD": ("router_confidence_threshold", 0.6, "0", 0.0),
 }
