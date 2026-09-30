@@ -36,6 +36,35 @@ def _settings() -> Settings:
     )
 
 
+@pytest.mark.parametrize("misplaced_key", ["sk-test-secret", "nvapi-test-secret", "test-api-key"])
+def test_key_in_model_setting_is_not_exposed_or_sent(misplaced_key, caplog):
+    def handler(request):
+        pytest.fail("Misconfigured credentials must not be put in a model URL or prompt")
+
+    async def scenario():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="https://openai.test") as client:
+            provider = OpenAIProvider(api_key="test-api-key", model=misplaced_key, timeout_seconds=1, client=client)
+            service = LLMService(Settings(llm_fallback_provider="none"), provider=provider)
+            health = await service.health_check()
+            assert health["llm_available"] is False
+            assert health["llm_model"] is None
+            assert "OPENAI_MODEL" in health["llm_configuration_error"]
+            assert misplaced_key not in json.dumps(health)
+            with pytest.raises(LLMUnavailableError):
+                await service.synthesize("Question", [], [])
+            assert misplaced_key not in json.dumps(service.metrics())
+            assert misplaced_key not in repr(Settings(openai_model=misplaced_key))
+
+    asyncio.run(scenario())
+    assert misplaced_key not in caplog.text
+
+
+def test_model_name_is_trimmed_without_replacing_it():
+    provider = OpenAIProvider(api_key="test", model=" gpt-4.1-mini ", timeout_seconds=1)
+    assert provider.model == "gpt-4.1-mini"
+    assert provider.configuration_error is None
+
+
 @pytest.mark.parametrize("status", [401, 429, 500])
 def test_openai_only_mode_reports_failure_without_offline_answer(status):
     async def scenario():

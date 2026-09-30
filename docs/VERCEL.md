@@ -28,6 +28,13 @@ to show a clear error if generation fails instead of returning an offline answer
 Set the key on the backend only, following the [OpenAI quickstart](https://developers.openai.com/api/docs/quickstart).
 No local language model is needed. Remove any old `NVIDIA_*` deployment variables.
 
+`OPENAI_MODEL` must be the literal model name `gpt-4.1-mini`. Put the OpenAI key
+only in `OPENAI_API_KEY`. A key pasted into the model field causes the availability
+probe and generation to fail. The provider rejects recognized key values in that
+field without exposing them in health responses, metrics, or model request URLs.
+Also replace an existing `LLM_FALLBACK_PROVIDER=extractive` override with `none`
+when OpenAI-only answers are required.
+
 The local `.env` is not loaded on Vercel. Supabase must already have the migration
 and imported data described in [SUPABASE.md](SUPABASE.md).
 
@@ -55,6 +62,11 @@ tests and builds fresh Vite assets. If manually redeploying, disable the existin
 build cache, then confirm that the successful deployment is assigned to the
 production domain. Reload with Ctrl+Shift+R and sign in again if `/api/auth/me`
 returns 401. That 401 is an application session failure, not an OpenAI API error.
+
+If production now serves a different asset filename while an existing browser
+tab still reports `index-D2PdnPG7.js`, close that tab and open a new private window.
+In Chrome DevTools you can also select Network > Disable cache and reload. An
+already-open page keeps executing its previously loaded JavaScript after a deployment.
 
 After deployment, `/api/health` should report the intended `llm_provider` and
 `llm_model`. Its availability probe checks the model catalog; submit an assistant

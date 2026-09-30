@@ -51,7 +51,7 @@ class Settings:
         "LLM_FALLBACK_PROVIDER", "none"
     ).lower()
     openai_api_key: str = field(default=os.getenv("OPENAI_API_KEY", ""), repr=False)
-    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    openai_model: str = field(default=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"), repr=False)
     openai_timeout_seconds: float = float(
         _env_or_default("OPENAI_TIMEOUT_SECONDS", "120")
     )

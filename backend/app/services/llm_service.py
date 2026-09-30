@@ -368,11 +368,13 @@ class LLMService:
 
     async def health_check(self) -> dict[str, Any]:
         available = await self.provider.health_check()
+        configuration_error = getattr(self.provider, "configuration_error", None)
         return {
             "llm_provider": self.provider.name,
             "llm_available": available,
             "llm_model": self.provider.model,
             "fallback_provider": self.fallback_provider.name if self.fallback_enabled else "none",
+            **({"llm_configuration_error": configuration_error} if configuration_error else {}),
         }
 
     def metrics(self) -> dict[str, Any]:

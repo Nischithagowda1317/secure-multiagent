@@ -149,11 +149,26 @@ class OpenAIProvider(LLMProvider):
         client: httpx.AsyncClient | None = None,
     ) -> None:
         self._api_key = api_key.strip()
-        self.model = model
+        model = model.strip()
+        self.configuration_error: str | None = None
+        if model and (model == self._api_key or model.startswith(("sk-", "nvapi-", "Bearer "))):
+            # Model names are exposed by health checks and metrics. Never retain
+            # a credential accidentally pasted into OPENAI_MODEL in that field.
+            self.model = None
+            self.configuration_error = "OPENAI_MODEL must contain a model name, such as gpt-4.1-mini, not an API key."
+        elif not model:
+            self.model = None
+            self.configuration_error = "OPENAI_MODEL is empty; set it to gpt-4.1-mini."
+        else:
+            self.model = model
+        if not self.configuration_error and self._api_key.startswith("nvapi-"):
+            self.configuration_error = "OPENAI_API_KEY must contain an OpenAI-issued key."
         self.timeout_seconds = timeout_seconds
         self._client = client
 
     async def generate(self, request: GenerationRequest) -> ProviderResponse:
+        if self.configuration_error:
+            raise ValueError(self.configuration_error)
         if not self._api_key:
             raise ValueError("OPENAI_API_KEY is not configured")
         user_prompt = self._build_prompt(request)
@@ -186,7 +201,7 @@ class OpenAIProvider(LLMProvider):
         )
 
     async def health_check(self) -> bool:
-        if not self._api_key:
+        if self.configuration_error or not self._api_key:
             return False
         try:
             from urllib.parse import quote
